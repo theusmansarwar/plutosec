@@ -33,7 +33,7 @@
     margin-bottom: 10px;
   }
   .left-container .card-text p {
-    font-size: 14px;
+    font-size: var(--text-size);
     margin-bottom: 10px;
   }
   .left-container .card-text .btn {

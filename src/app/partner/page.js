@@ -11,6 +11,8 @@ import Popular from '@/Components/Popular';
 import TestimonialCard from '@/Components/TestimonialCard';
 import PartnerProgram from '@/Components/PartnerProgram';
 import Testimonial from '@/Components/Testimonial';
+import MissionFlipCard from '@/Components/MissionFlipCard';
+import OurPartnersCard from '@/Components/OurPartnersCard';
 const page = () => {
   const pathname = usePathname();
 
@@ -46,9 +48,32 @@ const page = () => {
       <h1 className={styles.htext}>Partners Program</h1>
     <p className={styles.ptext}>Lorem ipsum odor amet, consectetuer adipiscing elit. Nascetur eget vulputate amet aptent vivamus.Lorem ipsum odor amet, consectetuer adipiscing elit. Nascetur eget vulputate amet aptent vivamus.Lorem ipsum odor amet, consectetuer adipiscing elit. Nascetur eget vulputate amet aptent vivamus.</p>
     <PartnerProgram/>
+    <MissionFlipCard/>
+    <OurPartnersCard/>
+    <div className="heading-area">
+              <div className="left">
+              <div className="headings">
+              <h1>Ready to get started?</h1>
+              <img src="/headingimg.svg" />
+            </div>
+                <p className="description-heading">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Nascetur eget
+                  vulputate amet aptent vivamus.Lorem ipsum odor amet, consectetuer
+                  adipiscing elit. Nascetur eget vulputate amet aptent vivamus.Lorem
+                  ipsum odor amet, consectetuer adipiscing elit. Nascetur eget
+                  vulputate amet aptent vivamus.
+                </p>
+              </div>
+            <div className={styles.contactcard}>
+              <p>Lead Intranet Specialist</p>
+                <div className={styles.btn}>Contact Us</div>
+             
+            </div>
+
+            
+            </div>
     <Testimonial/>
-    <GetInTouch/>
-    <Popular/>
+   
     </div>
 
 
