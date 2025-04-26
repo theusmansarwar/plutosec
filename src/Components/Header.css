@@ -1,0 +1,131 @@
+.Header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: var(--mid-space);
+  margin-left: var(--left-space);
+ 
+  
+  z-index: 3;
+}
+.language-select{
+   display: flex;
+   align-items: center;
+}
+.language-select .icons{
+    color: var(--headings-color);
+  font-size: 22px;
+ }
+.language-select select {
+  background-color: transparent;
+  color: var(--headings-color);
+  font-size: 18px;
+  padding: 10px;
+  border-style: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.language-select select option {
+ background-color: rgba(0, 0, 0, 0.7);
+ font-size: 12px;
+}
+
+/* Base Header styles ... */
+
+.menu-icon {
+  display: none;
+  font-size: 32px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+ul.nav {
+  display: flex;
+  border: var(--default-border);
+  box-shadow: var(--default-box-shadow);
+  border-radius: 50px;
+  width: 60%;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+ul.nav li {
+  padding: 15px;
+  color: var(--text-color);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ul.nav li.active,
+ul.nav li:hover {
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  border-radius: 50px;
+
+}
+.Header img {
+  height: 50px;
+ 
+   }
+
+
+@media (max-width: 900px) {
+  .language-select{
+    display:none;
+ }
+  .Header {
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    margin-left: 0px;
+    background-color: rgba(0, 0, 0, 0.679);
+  }
+  .Header img {
+ height: 35px;
+ margin-top: 5px;
+ margin-left: var(--left-space);
+  }
+  .menu-icon {
+    display: block;
+    margin-top: 5px;
+    margin-right: var(--right-space);
+  }
+
+  ul.nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    
+    padding: 5px;
+    z-index: 10;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  ul.nav.open {
+    display: flex;
+  }
+
+  ul.nav li {
+    text-align: center;
+    padding: 8px;
+  }
+
+  .language-select {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .Header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px;
+  }
+}

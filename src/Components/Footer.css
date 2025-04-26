@@ -1,0 +1,153 @@
+.footer {
+    background-color: black;
+    color: #fff;
+  }
+  
+  .footer-container {
+    display: flex;
+    
+    justify-content: space-between;
+    margin-right: var(--left-space);
+    margin-left: var(--right-space);
+    width: var(--mid-space);
+    padding-top: 50px;
+  }
+  
+  .footer-section {
+   width: 22%;
+   align-items: center;
+  }
+  .footer-section:last-child {
+    width: 30%;
+   }
+ 
+   
+  .logo {
+   margin-top: -20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footer-description {
+    font-size: var(--default-p-size2);
+
+  }
+  
+  .social-icons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon {
+    background: var(--background-color);
+    color: #000;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+  .icon:hover{
+    color: var(--shadow-low3);
+    background-color: transparent;
+    border: 2px solid var(--shadow-low3);
+    cursor: pointer;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: var(--headings-color);
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: var(--default-p-size2);
+    width: fit-content;
+  }
+  .footer-section ul li:hover {
+    color: var(--headings-color);
+  }
+  .footer-section input {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 220px;
+    border-color: var(--headings-color);
+    border-radius: var(--default-border-radius);
+    background-color: transparent;
+    color: var(--text-color);
+  }
+  
+  .footer-section button {
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 8px;
+   
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: var(--default-border-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid var(--background-color);
+    background-color: var(--background-color);
+  }
+  .footer-section button:hover{
+     background-color: transparent;
+    color: var(--background-color);
+    border: 2px solid var(--background-color);
+  }
+  
+  .footer-section .contact-info p {
+    margin: 6px 0;
+    font-size: var(--default-p-size2);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .footer-section .contact-info p:hover {
+    color: var(--headings-color);
+  }
+  .footer-section .contact-info p svg {
+   color: var(--headings-color);
+   font-size: 16px;
+   margin-right: 5px;
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    color: var(--headings-color);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .footer-bottom hr {
+    border: 1px solid #444;
+    margin-bottom: 10px;
+  }
+  
+
+  @media (max-width: 900px) {
+    .footer-container {
+      flex-direction: column;
+      }
+    .footer-section {
+        margin-top: 20px;
+        width: 100%;
+       }
+       .footer-section:last-child {
+         width: 100%;
+        }
+
+
+  }

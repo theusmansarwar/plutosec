@@ -1,0 +1,73 @@
+/* Services.css */
+
+.services2-section{
+
+    margin-bottom: 50px;
+  }
+  
+  .service2-section {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .service-area-section2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .service-grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .service-item2 {
+    background:var(--gradient-one);
+    padding: 1.5rem;
+    border-radius:var(--default-border-radius);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    box-shadow: var(--default-box-shadow);
+
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .service-item2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-item2 img {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    color: var(--headings-color);
+    
+  }
+ 
+  .service-item2  h2 {
+    
+    color: var(--headings-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-item2 p {
+    color: var(--text-color);
+    font-size: var(--default-p-size);
+  }
+  
+  @media (max-width: 900px) {
+    
+    
+        .service-grid2 {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 2rem;
+          width: 100%;
+        }
+    
+       
+      }
