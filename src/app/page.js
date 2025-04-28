@@ -9,6 +9,7 @@ import Contact from '@/Components/Contact';
 import Popular from '@/Components/Popular';
 import Testimonial from '@/Components/Testimonial';
 import Terminal from '@/Components/Terminal';
+import Certificatelist from '@/Components/Certificateslist';
 
 export default function Home() {
   useEffect(() => {
@@ -32,8 +33,8 @@ export default function Home() {
 
 <div className={styles.featured}>
   <div className={styles.left} >  
-    <h1>Securing our Communities</h1>
-      <p>PlutoSec is a leading cybersecurity company in Canada, specializing in advanced penetration testing by certified experts. We provide in-depth security assessments for enterprises and government organizations to identify vulnerabilities and strengthen cyber resilience.</p>
+    <h1>Protect your data now with strong cybersecurity services</h1>
+      <p>PlutoSec is a leading cybersecurity company in Canada, specializing in advanced penetration testing by certified experts. We offer detailed security assessments to help enterprises and government organizations identify vulnerabilities and enhance cyber resilience.</p>
       <div className={styles['btn-section']}>
         <div className={styles['filled-btn']}>Get Started</div>
         <div className={styles['outline-btn']}>Contact Us</div>
@@ -50,6 +51,7 @@ export default function Home() {
       
 
    <Services/>
+   <Certificatelist/>
    <Whyus/>
    <Blogs/>
    <div className="headings">

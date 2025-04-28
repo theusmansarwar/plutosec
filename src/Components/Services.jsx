@@ -15,7 +15,7 @@ const Services = () => {
       name: "Pentest Services",
       slug: "pentest-services",
       introduction:
-        "Penetration Testing Services – Web App, Network, API & Mobile App Security. In today’s digital landscape, safeguarding your...",
+        "Advanced penetration testing for web applications, networks, APIs, and mobile apps to detect vulnerabilities and enhance security defenses.",
     },
     {
       _id: "2",
@@ -23,7 +23,7 @@ const Services = () => {
       name: "Managed Security Services",
       slug: "managed-security-services",
       introduction:
-        "Our comprehensive MSSP solution integrates 24/7 monitoring, incident response, and advanced threat detection.",
+        "Continuous security monitoring, threat detection, and incident response to safeguard enterprise environments against evolving cyber threats.",
     },
     {
       _id: "3",
@@ -31,7 +31,7 @@ const Services = () => {
       name: "Red Teaming | Blue Teaming",
       slug: "red-blue-teaming",
       introduction:
-        "Choose PlutoSec for premier red team security simulations and blue team defensive strategies.",
+        "Comprehensive red and blue teaming services to simulate real-world attacks, uncover security gaps, and strengthen your cyber resilience.",
     },
     {
       _id: "4",
@@ -39,7 +39,7 @@ const Services = () => {
       name: "Cloud Security Solutions",
       slug: "cloud-security-solutions",
       introduction:
-        "Looking for cloud security assessment services? PlutoSec protects your sensitive data in the cloud.",
+        "Cloud security assessments and risk analysis to protect sensitive data and ensure compliance across multi-cloud environments.",
     },
     {
       _id: "5",
@@ -47,7 +47,7 @@ const Services = () => {
       name: "Extended Detection & Response (XDR)",
       slug: "xdr-services",
       introduction:
-        "PlutoSec leads with Managed Detection and Response (MDR) and advanced XDR cybersecurity capabilities.",
+        "Integrated threat detection and response across endpoints, networks, and cloud platforms for complete visibility and rapid threat mitigation.",
     },
     {
       _id: "6",
@@ -71,11 +71,7 @@ const Services = () => {
           <img src="/headingimg.svg" />
         </div>
             <p>
-              Lorem ipsum odor amet, consectetuer adipiscing elit. Nascetur eget
-              vulputate amet aptent vivamus.Lorem ipsum odor amet, consectetuer
-              adipiscing elit. Nascetur eget vulputate amet aptent vivamus.Lorem
-              ipsum odor amet, consectetuer adipiscing elit. Nascetur eget
-              vulputate amet aptent vivamus.
+            PlutoSec offers a range of cybersecurity solutions to protect your organization from evolving threats. Our services are designed to strengthen your security across multiple platforms.
             </p>
           </div>
           <p className="viewall-text" onClick={() => router.push("/services")}>

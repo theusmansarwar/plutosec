@@ -9,15 +9,13 @@ const Whyus = () => {
           <img src="/headingimg.svg" />
         </div>
         <p>
-          Across Canada, including cities like Toronto, Vancouver, and Montreal,
-          we prioritize security and privacy. Our professional team specializes
-          in advanced penetration testing, exceeding standard requirements to
-          understand your specific cybersecurity needs.
-        </p>
-        <p>
-          Through a consultative approach, we ensure clients comprehend our
-          evaluations and offer expert guidance aligned with NIST and ISO
-          standards to enhance your security strategy effectively.
+          PlutoSec leads cybersecurity in Canada and is trusted by businesses in
+          Toronto, Vancouver, Montreal, and more. Our expert team provides
+          advanced penetration testing customized to meet your needs and
+          industry standards. We take a consultative approach, ensuring you
+          fully understand each evaluation and gain actionable insights. We
+          improve your security with precision and lasting results by following
+          trusted frameworks like NIST and ISO.
         </p>
       </div>
       <div className="right">
