@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import { useParams } from "next/navigation";
 import styles from "./page.module.css";
 import "../../globals.css";
 import Breadcrumb from "@/Components/Breadcrumb";
@@ -9,9 +6,23 @@ import Popular from "@/Components/Popular";
 import KeyOfferings from "@/Components/KeyOfferings";
 import SuccessStories from "@/Components/SuccessStories";
 
-const Page = () => {
-  const { slug } = useParams();
+export async function generateStaticParams() {
+  const slugs = [
+    "penetration-testing",
+    "compliance-consulting",
+    "extended-detection",
+    "red-teaming-blue-teaming",
+    "identity-and-access-management",
+    "devsecops",
+    "managed-security",
+    "cloud-security-solutions",
+    "vulnerability-assessment",
+  ];
+  return slugs.map((slug) => ({ slug }));
+}
 
+export default async function Page({ params }) {
+  const { slug } = await params;
   let htext = "";
   let ptext = "";
 
@@ -80,6 +91,4 @@ const Page = () => {
       {/* <Popular /> */}
     </div>
   );
-};
-
-export default Page;
+}
