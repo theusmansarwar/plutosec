@@ -35,7 +35,7 @@ const Contact = () => {
     };
 
     try {
-      const res = await fetch("https://zemalt.com/api/CreateLeads", {
+      const res = await fetch("https://plutosec.ca/api/CreateLeads", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
