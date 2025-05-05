@@ -49,9 +49,7 @@
     margin-top: 10px;
     margin-left: 20px;
   }
-  ul li::marker {
-    color: var(--headings-color); /* Change the color of the bullets */
-}
+
   .aboutus ul li strong {
     color: var(--headings-color);
 
