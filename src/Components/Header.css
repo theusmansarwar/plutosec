@@ -41,7 +41,7 @@
   cursor: pointer;
 }
 
-ul.nav {
+ul.navs {
   display: flex;
   border: var(--default-border);
   box-shadow: var(--default-box-shadow);
@@ -51,15 +51,15 @@ ul.nav {
   transition: all 0.3s ease;
 }
 
-ul.nav li {
+ul.navs li {
   padding: 15px;
   color: var(--text-color);
   font-size: 16px;
   cursor: pointer;
 }
 
-ul.nav li.active,
-ul.nav li:hover {
+ul.navs li.active,
+ul.navs li:hover {
   color: var(--primary-color);
   background-color: var(--background-color);
   border-radius: 50px;
@@ -93,7 +93,7 @@ ul.nav li:hover {
     margin-right: var(--right-space);
   }
 
-  ul.nav {
+  ul.navs {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -112,7 +112,7 @@ ul.nav li:hover {
     display: flex;
   }
 
-  ul.nav li {
+  ul.navs li {
     text-align: center;
     padding: 8px;
   }

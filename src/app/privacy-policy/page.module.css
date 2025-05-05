@@ -1,0 +1,95 @@
+.aboutpage {
+    width: var(--mid-space);
+    margin-left: var(--left-space);
+    margin-right: var(--right-space);
+    margin-bottom: 50px;
+  }
+  .aboutpage .htext {
+    
+    text-align: center;
+    color: var(--headings-color);
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 48px;
+  }
+  .aboutus p {
+    width: var(--mid-space);
+    margin-left: var(--left-space);
+    margin-right: var(--right-space);
+    text-align: justify;
+    color: var(--text-color);
+  
+    margin-bottom: 10px;
+    font-size: var(--default-p-size);
+  }
+  .aboutus a{
+    color: var(--headings-color);
+  }
+  .aboutus a:hover{
+    color: var(--shadow-low3);
+    cursor: pointer;
+  }
+  .aboutus h2 {
+    color: var(--headings-color);
+    margin-top: 30px;
+    width: var(--mid-space);
+    margin-left: var(--left-space);
+    margin-right: var(--right-space);
+  }
+  .aboutus ul {
+    color: var(--text-color);
+    margin-top: 10px;
+    width: var(--mid-space);
+    margin-left: var(--left-space);
+    margin-right: var(--right-space);
+    list-style: disc;
+  }
+  .aboutus ul li {
+    color: var(--text-color);
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  ul li::marker {
+    color: var(--headings-color); /* Change the color of the bullets */
+}
+  .aboutus ul li strong {
+    color: var(--headings-color);
+
+  }
+  .bgSection {
+    border-radius: var(--default-border-radius);
+    background-image: url("/contactbg.svg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: var(--default-box-shadow);
+    border: var(--default-border);
+  }
+  .bgSection1 {
+  
+    height: 250px;
+    width: 100%;
+    border-radius: var(--default-border-radius);
+    background-color: rgba(0, 0, 0, 0.623);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+      .bgSection {
+          height: 150px;
+          margin-top: 70px;
+        }
+        .bgSection1 {
+          height: 150px;
+     
+        }
+        .ContactFormArea .htext{
+       
+          font-size: 38px;
+        
+          
+        }
+  }
+  

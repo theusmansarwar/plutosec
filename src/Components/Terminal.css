@@ -3,7 +3,7 @@
   .terminal-window {
  width: 80%;
     height: 350px;
-    background-color: #00000055;
+    background-color: #00000080;
     border-radius: 10px;
     box-shadow: var(--default-box-shadow);
     display: flex;
@@ -52,7 +52,7 @@
   }
   
   .line::before {
-    content: "$ ";
+    content: "$r00t@PlutoSec ";
     color: var(--headings-color);
   }
   

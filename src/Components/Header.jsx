@@ -5,12 +5,13 @@ import { usePathname, useRouter } from 'next/navigation';
 import { AiOutlineGlobal } from 'react-icons/ai';
 import { FiMenu, FiX } from 'react-icons/fi';
 import './Header.css';
+import { useLanguage } from "@/Context/LanguageContext"; 
 
-const Header = () => {
+const Header = ({headerData}) => {
   const pathname = usePathname();
   const router = useRouter();
   const [activeItem, setActiveItem] = useState('');
-  const [language, setLanguage] = useState('EN');
+  const { language, setLanguage } = useLanguage(); 
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const menuItems = [
@@ -24,7 +25,7 @@ const Header = () => {
   useEffect(() => {
     const foundItem = menuItems.find((item) => item.path === pathname);
     if (foundItem) setActiveItem(foundItem.label);
-  }, [pathname]);
+  }, [pathname,headerData]);
 
   const handleNavClick = (item) => {
     setActiveItem(item.label);
@@ -41,8 +42,8 @@ const Header = () => {
         {mobileOpen ? <FiX /> : <FiMenu />}
       </div>
 
-      {/* Nav menu */}
-      <ul className={`nav ${mobileOpen ? 'open' : ''}`}>
+      {/* navsmenu */}
+      <ul className={`navs${mobileOpen ? 'open' : ''}`}>
         {menuItems.map((item) => (
           <li
             key={item.label}

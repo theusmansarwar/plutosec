@@ -6,7 +6,7 @@ margin-bottom: 50px;
 }
 .why-area .left{
  width: 50%;
- height: 300px;
+ height: 350px;
  display: flex;
  align-items: flex-end;
  justify-content: right;
@@ -36,13 +36,15 @@ margin-bottom: 50px;
    }
 .why-area .right{
     width: 50%;
- height: 300px;
+height: fit-content;
+
     
 }
 .why-area .right p{
   color: var(--text-color);
   font-size: var(--default-color);
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  line-height: 1.5;
     
 }
 

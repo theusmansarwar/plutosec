@@ -1,24 +1,25 @@
 
-"use client";
+
 import Contact from '@/Components/Contact'
 import React from 'react'
 import styles from './page.module.css';
 import "../globals.css";
 import Faq from '@/Components/Faq';
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import GetInTouch from '@/Components/GetInTouch';
 import Popular from '@/Components/Popular';
 import TestimonialCard from '@/Components/TestimonialCard';
 import MissionFlipCard2 from '@/Components/MissionFlipCard2';
 import WhyChoose from '@/Components/WhyChoose';
 import ValuesFlipCardList from '@/Components/ValuesFlipCard';
+import Breadcrumb from '@/Components/Breadcrumb';
 
-
+export const metadata = {
+  title: "Why Choose Us | PlutoSec",
+  description: "Discover why our company is the best choice for your needs, with outstanding service and quality.",
+};
 const page = () => {
-  const pathname = usePathname();
 
-  const pathSegments = pathname.split("/").filter((segment) => segment);
   return (
    
     <div className={styles.ContactFormArea} >
@@ -26,29 +27,11 @@ const page = () => {
       <div className={styles.bgSection}>
         <div className={styles.bgSection1}>
           {" "}
-          <nav className="breadcrumb">
-            <ul>
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              {pathSegments.map((segment, index) => {
-                const href = "/" + pathSegments.slice(0, index + 1).join("/");
-                const label = segment.replace(/-/g, " "); // optional: replace dashes with spaces
-
-                return (
-                  <li key={index}>
-                    <Link href={href}>
-                      {label.charAt(0).toUpperCase() + label.slice(1)}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
+          <Breadcrumb />
         </div>
       </div>
       <h1 className={styles.htext}>Why Choose Us</h1>
-    <p className={styles.ptext}>Lorem ipsum odor amet, consectetuer adipiscing elit. Nascetur eget vulputate amet aptent vivamus.Lorem ipsum odor amet, consectetuer adipiscing elit. Nascetur eget vulputate amet aptent vivamus.Lorem ipsum odor amet, consectetuer adipiscing elit. Nascetur eget vulputate amet aptent vivamus.</p>
+    <p className={styles.ptext}>Cyber threats grow fast, but we stay faster. PlutoSec is a trusted name in cybersecurity. We protect your data using smart tools and expert support. You get fast detection and strong response against threats. Our team handles identity access and keeps your cloud safe. We follow all rules and help you stay compliant. PlutoSec stays ahead to keep you secure. You can focus on your goals without worry.</p>
     <WhyChoose/>
    
     <ValuesFlipCardList/>

@@ -4,13 +4,13 @@
 --secondary-color:#D4C9BE;
 --background-color:#00d0e7;
 --headings-color: var(--background-color);
---shadow-low1:#0080cf31;
+--shadow-low1:#00d0e74a;
 --shadow-low2:#006bcf00;
 --shadow-low3:#91f3fe;
 --default-box-shadow:0 0 8px var(--background-color);
---left-space:3%;
---mid-space:94%;
---right-space:3%;
+--left-space:5%;
+--mid-space:90%;
+--right-space:5%;
 --default-border:1px solid var(--headings-color);
 --text-color:white;
 --font-family-base: var(--font-montserrat);
@@ -18,6 +18,7 @@
 --default-p-size2:14px;
 --default-border-radius:6px;
 --gradient-one: linear-gradient(to bottom right, #e7e7e725, #000000);
+/* --gradient-one: #0e0e0e; */
 }
 
 * {
@@ -85,6 +86,7 @@ textarea{
 
 .breadcrumb a:hover {
   color:var(--shadow-low3);/* your theme primary color */
+  text-decoration: underline;
 }
 
 .bg-wrapper {
@@ -119,7 +121,7 @@ h1{
 }
 /* Pink radial circle style */
 .circle {
-  width: 70%;
+  width: 80%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   background: radial-gradient(circle, var(--shadow-low1) 0%, var(--shadow-low2) 70%);
@@ -129,7 +131,7 @@ h1{
 
 }
 .circle:first-child {
-  margin-right: -15%;
+  margin-right: -25%;
  
 
 

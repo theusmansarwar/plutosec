@@ -28,13 +28,14 @@
   background-size: cover;
   background-position: center;
   box-shadow: var(--default-box-shadow);
+  border: var(--default-border);
 }
 .bgSection1 {
 
   height: 250px;
   width: 100%;
   border-radius: var(--default-border-radius);
-  background-color: rgba(0, 0, 0, 0.523);
+  background-color: rgba(0, 0, 0, 0.623);
   position: relative;
   display: flex;
   align-items: center;

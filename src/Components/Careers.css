@@ -7,7 +7,7 @@
 
   .apply-form-left {
     width: 60%;
-    height: 610px;
+    height: 700px;
     flex: 1;
     padding: 50px;
     padding-top: 0%;
@@ -48,8 +48,7 @@
     margin-bottom: 6px;
     color: #fff;
   }
-  .apply-form-left .form-fields input[type="text"],
-  .apply-form-left .form-fields input[type="email"] {
+  .apply-form-left .form-fields input {
     width: 100%;
     padding: 12px;
     background-color: transparent;
@@ -59,13 +58,15 @@
     border-bottom: 1px solid gray;
 
   }
-  .apply-form-left .form-fields input[type="text"]:focus,
-  .apply-form-left .form-fields input[type="email"]:focus {
+  .apply-form-left .form-fields input:focus{
   
 
 
     border-bottom: 1px solid var(--background-color);
  
+  }
+  .apply-form-left .field-group:focus-within label {
+    color: var(--background-color);
   }
   .apply-form-left .name-row {
     display: flex;
@@ -117,9 +118,9 @@
   }
   .apply-form-right {
     width: 40%;
-    height: 610px;
+    height: 700px;
     flex: 1;
-    background: #222;
+    background: linear-gradient(to bottom right, #187f8fc8, #000000);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,6 +129,7 @@
     position: relative;
     border-radius: 15px;
     box-shadow: var(--default-box-shadow);
+
   }
   .apply-form-right .center-image {
     width: auto;

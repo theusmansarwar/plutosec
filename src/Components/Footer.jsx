@@ -1,32 +1,34 @@
-'use client';  // Ensure the component is a Client Component
+"use client"; // Ensure the component is a Client Component
 
-import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
-import './Footer.css';
+import React, { useState } from "react";
+import { useRouter } from "next/navigation";
+import "./Footer.css";
 import { RiFacebookFill, RiTwitterXLine } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
+import { FaInstagram } from "react-icons/fa6";
+import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
   const router = useRouter(); // Use the router for client-side navigation
-  const [language, setLanguage] = useState('EN');
+
 
   const menuItems = [
-    { label: 'Services', path: '/services' },
-    { label: 'Career', path: '/careers' },
-    { label: 'Testimonials', path: '/testimonial' },
-    { label: 'Contact Us', path: '/contact' },
-    { label: 'Partner Program', path: '/partner' },
-    { label: 'Why Us', path: '/why-us' },
-    { label: 'T&S', path: '/terms' },
-    { label: 'Privacy Policy', path: '/privacy-policy' },
-    { label: 'About Us', path: '/about-us' },
+    { label: "Services", path: "/services" },
+    { label: "Career", path: "/careers" },
+    { label: "Testimonials", path: "/testimonial" },
+    { label: "Contact Us", path: "/contact" },
+    { label: "Partner Program", path: "/partner" },
+    { label: "Why Us", path: "/why-us" },
+    { label: "Terms & Condition", path: "/terms-and-condition" },
+    { label: "Privacy Policy", path: "/privacy-policy" },
+    { label: "About Us", path: "/about-us" },
   ];
 
   const handleNavClick = (item) => {
-    router.push(item.path); // Use router.push() for navigation
+    router.push(item.path);
   };
 
   return (
@@ -34,14 +36,39 @@ const Footer = () => {
       <div className="footer-container">
         {/* Logo & About */}
         <div className="footer-section">
-          <img src='/shortlogo.svg' className="logo" />
+          <img src="/shortlogo.svg" className="logo" />
           <p className="footer-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+            Defending Digital Assets – Empowering Cybersecurity Experts, and
+            Shaping a Secure Future.
           </p>
           <div className="social-icons">
-            <div className="icon"><RiFacebookFill /></div>
-            <div className="icon"><FaLinkedinIn /></div>
-            <div className="icon"><RiTwitterXLine /></div>
+            <a
+              href="https://www.facebook.com/plutosec.ca"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="icon">
+                <RiFacebookFill />
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/pluto-security-ltd/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="icon">
+                <FaLinkedinIn />
+              </div>
+            </a>
+            <a
+              href="https://www.instagram.com/plutosec.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="icon">
+                <AiFillInstagram />
+              </div>
+            </a>
           </div>
         </div>
 
@@ -50,7 +77,9 @@ const Footer = () => {
           <h4>Company</h4>
           <ul>
             {menuItems.slice(0, 4).map((item) => (
-              <li key={item.label} onClick={() => handleNavClick(item)}>{item.label}</li>
+              <li key={item.label} onClick={() => handleNavClick(item)}>
+                {item.label}
+              </li>
             ))}
           </ul>
         </div>
@@ -60,7 +89,9 @@ const Footer = () => {
           <h4>Others</h4>
           <ul>
             {menuItems.slice(4).map((item) => (
-              <li key={item.label} onClick={() => handleNavClick(item)}>{item.label}</li>
+              <li key={item.label} onClick={() => handleNavClick(item)}>
+                {item.label}
+              </li>
             ))}
           </ul>
         </div>
@@ -72,9 +103,15 @@ const Footer = () => {
           <input type="email" placeholder="Enter Your Email" />
           <button>Subscribe</button>
           <div className="contact-info">
-            <p><CiMail /> info@hello.com</p>
-            <p><IoCallOutline /> +1 000-000-0000</p>
-            <p><IoLocationOutline /> 8819 Ohio St. South Gate, CA 90280</p>
+            <p>
+              <CiMail /> contact@plutosec.ca
+            </p>
+            <p>
+              <IoCallOutline /> +1 (905) 367-6038
+            </p>
+            <p>
+              <IoLocationOutline /> 335 Yonge St, Toronto, ON M5B 2L3
+            </p>
           </div>
         </div>
       </div>

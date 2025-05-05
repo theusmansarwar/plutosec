@@ -19,24 +19,25 @@
     margin-bottom: 10px;
   }
   .quote-icon {
-    font-size: 56px;
-    color: rgba(128, 128, 128, 0.322);
+    font-size: 60px;
+    color: var(--shadow-low1);
    margin-top: -40px;
-   margin-right: 20px;
+   margin-right: 20%;
     display: flex;
     justify-content: end;
   }
   .star {
-    font-size: 20px;
+    font-size:30px;
   }
   .testimonial-container .left-container .review {
     margin: 10px 0;
     font-size: var(--default-p-size);
     color: var(--text-color);
+    width: 70%;
   }
   .testimonial-container .left-container .name {
     color: var(--background-color);
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 5px;
   }
   .testimonial-container .left-container .designation {

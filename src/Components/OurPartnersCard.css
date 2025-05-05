@@ -9,6 +9,7 @@
     border-radius: 10px;
     border: 1px solid var(--background-color);
     overflow: hidden;
+    box-shadow: var(--default-box-shadow);
   }
   .partners-card .card-header {
     background-color: black;

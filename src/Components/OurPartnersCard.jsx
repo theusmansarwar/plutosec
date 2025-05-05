@@ -6,18 +6,15 @@ const partnerData = [
   {
     logo: "/tsplus-logo.svg", // make sure this path is correct or use an import if you want
     description: [
-      "amet, ex sit luctus Ut maximus Ut convallis, placerat ex malesuada odio eget elit Nunc est. commodo quis malesuada ipsum Nunc fringilla sapien Lorem sit odio",
-      "massa non tortor. tincidunt sollicitudin. enim. viverra tincidunt Nunc amet, maximus quis viverra dui. sodales. lacus, Ut elit lorem. quis elit varius urna ex",
-      "volutpat malesuada ipsum placerat. dui tempor Quisque sit Nam vel nec lobortis, gravida nec porta enim. Donec diam scelerisque Donec placerat. quis ipsum non",
-    ],
+      "TS Plus gives you powerful tools to manage projects and automate tasks. You can boost productivity and keep your team focused. The platform supports smooth collaboration and helps you complete work faster. It connects well with your existing tools. You also get features that fit any team size.",
+    "PlutoSec adds a layer of strong cybersecurity to TS Plus. Your data stays safe from online threats. The combined solution supports your business goals. You get efficiency with full protection. You also get peace of mind."],
   },
   {
     logo: "/pecb-logo.svg",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.",
-      "In condimentum facilisis porta. Sed nec diam eu diam mattis viverra nulla.",
-      "Fringilla vitae, scelerisque eget, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus.",
-    ],
+      "PECB offers certifications in information security, compliance, and quality management. You can meet global standards like ISO and stay ahead in your field. The programs help you grow professionally and build trust in your organization. Each course brings practical knowledge. You can apply it in real business environments.",
+      "PlutoSec brings deep cybersecurity strength to the partnership. You get more value from every training. Your team becomes ready to face digital risks. The collaboration helps you build trust and protect your operations."
+       ],
   },
 ];
 
@@ -31,11 +28,7 @@ const OurPartnersCard = () => {
             <img src="/headingimg.svg" />
           </div>
           <p className="description-heading">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Nascetur eget
-            vulputate amet aptent vivamus.Lorem ipsum odor amet, consectetuer
-            adipiscing elit. Nascetur eget vulputate amet aptent vivamus.Lorem
-            ipsum odor amet, consectetuer adipiscing elit. Nascetur eget
-            vulputate amet aptent vivamus.
+          Our partners share our mission to build a safer digital world. They bring value, trust, and expertise. Together, we deliver stronger security solutions to every client.
           </p>
         </div>
       </div>

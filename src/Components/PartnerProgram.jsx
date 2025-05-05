@@ -10,12 +10,11 @@ const PartnerProgram = () => {
           <img src='/image2.jpg' alt="Handshake" className="left-image" />
         </div>
         <div className="card-text">
-          <h3>Nam Id Non. At Nunc At, Ex. Viverra Id Quisque</h3>
+          <h3>Stronger Together in Cybersecurity</h3>
           <p>
-            enim, hendrerit turpis nisl, varius varius Lorem Viverra Morbi
-            scelerisque quis nec praesent dui.tincidunt Vestibulum elit eget
-            tempor vitae fringilla sed
-          </p>
+          PlutoSec partners with MSPs, consultants, and tech providers to deliver practical, flexible security solutions.
+ Our program is built on collaboration and shared success.
+ Together, we help businesses stay secure in a rapidly evolving digital world. </p>
           <button className="btn">Learn More</button>
         </div>
       </div>

@@ -1,7 +1,7 @@
 
 .values-flip-card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 4 cards per row */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 4 cards per row */
     gap: 20px; /* space between cards */
 
     justify-items: center; 

@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./Testimonial.css";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowRightLong, FaQuoteLeft } from "react-icons/fa6";
 
 const testimonials = [
   {
@@ -49,7 +49,7 @@ const Testimonial = () => {
         {testimonials.map((item) => (
           <div key={item.id} className="testimonial-card">
             <img src={item.image} alt={item.name} className="profile-img" />
-            <div className="quote">“</div>
+            <div className="quote"><FaQuoteLeft /></div>
             <p className="testimonial-text">{item.quote}</p>
             <hr className="divider" />
             <p className="role">{item.role}</p>

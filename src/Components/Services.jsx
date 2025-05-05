@@ -13,7 +13,7 @@ const Services = () => {
       _id: "1",
       image: "/Security.svg",
       name: "Pentest Services",
-      slug: "pentest-services",
+      slug: "penetration-testing",
       introduction:
         "Advanced penetration testing for web applications, networks, APIs, and mobile apps to detect vulnerabilities and enhance security defenses.",
     },
@@ -21,7 +21,7 @@ const Services = () => {
       _id: "2",
       image: "/Security.svg",
       name: "Managed Security Services",
-      slug: "managed-security-services",
+      slug: "managed-security",
       introduction:
         "Continuous security monitoring, threat detection, and incident response to safeguard enterprise environments against evolving cyber threats.",
     },
@@ -29,7 +29,7 @@ const Services = () => {
       _id: "3",
       image: "/Security.svg",
       name: "Red Teaming | Blue Teaming",
-      slug: "red-blue-teaming",
+      slug: "red-teaming-blue-teaming",
       introduction:
         "Comprehensive red and blue teaming services to simulate real-world attacks, uncover security gaps, and strengthen your cyber resilience.",
     },
@@ -45,7 +45,7 @@ const Services = () => {
       _id: "5",
       image: "/Security.svg",
       name: "Extended Detection & Response (XDR)",
-      slug: "xdr-services",
+      slug: "extended-detection",
       introduction:
         "Integrated threat detection and response across endpoints, networks, and cloud platforms for complete visibility and rapid threat mitigation.",
     },
@@ -82,7 +82,7 @@ const Services = () => {
         <div className="service-area-section">
           <div className="service-grid">
             {services.map((service) => (
-              <div className="service-item" key={service._id}>
+              <div className="service-item" key={service._id} onClick={() => router.push(`/services/${service.slug}`)}>
 
                 <img src={service.image} alt={service.name} />
                 <div className="right">

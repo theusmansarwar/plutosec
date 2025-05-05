@@ -32,11 +32,7 @@ const MissionFlipCard = () => {
               <img src="/headingimg.svg" />
             </div>
                 <p className="description-heading">
-                  Lorem ipsum odor amet, consectetuer adipiscing elit. Nascetur eget
-                  vulputate amet aptent vivamus.Lorem ipsum odor amet, consectetuer
-                  adipiscing elit. Nascetur eget vulputate amet aptent vivamus.Lorem
-                  ipsum odor amet, consectetuer adipiscing elit. Nascetur eget
-                  vulputate amet aptent vivamus.
+                You get real value when you join us. We help you grow and succeed. You gain access to expert tools and strong support. Our team stays by your side to guide you through every step. You also get trusted resources that make your work easier.
                 </p>
               </div>
             

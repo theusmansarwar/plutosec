@@ -1,0 +1,114 @@
+.offerings-container {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  /* Tabs */
+  .tab-container {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: -65px;
+    display: flex;
+    align-items: center;
+ gap: 20px;
+  }
+  .tab {
+    width: 150px;
+    height: 100%;
+    color: var(--background-color);
+    text-align: center;
+    border: 1px solid #00D0FF;
+    border-bottom: 1px solid #00D0FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    background:var(--gradient-one);
+    z-index: 10;
+    font-size: var(--default-p-size);
+  }
+  .tab.active {
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    background: var(--background-color);
+    color: black;
+    height: 65px;
+    position: relative;
+top: 3;
+    z-index: 1;
+  }
+  .offerings-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    border: 1px solid #00D0FF;
+    position: relative;
+    z-index: 2;
+    height: fit-content;
+    padding: 30px;
+    background:var(--gradient-one);
+    border-radius: var(--default-border-radius);
+  }
+  .offerings-content.first-tab-active {
+    border-top-left-radius: 0;
+  }
+  .offerings-content .left {
+    width: 60%;
+    
+  }
+  .offerings-content .left ul li {
+ line-height: 3;
+    color: white;
+    list-style: disc;
+    margin-left: 20px;
+  }
+  .offerings-content .right {
+    width: 40%;
+    position: relative;
+    height:100%;
+  
+  }
+  .bg-image {
+    background-image: url("/keyofferings.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 480px;
+    position: absolute;
+  }
+  .offerings-content .right .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  @media (max-width: 900px) {
+   
+    .tab-container {
+      
+     gap: 5px;
+      }
+      .tab {
+        width: 100px;
+    
+        font-size: 10px;
+      }
+      .offerings-content {
+        padding: 10px;
+      }
+      .offerings-content .right {
+      display: none;
+      }
+      .offerings-content .left {
+        width: 100%;
+      }
+  }

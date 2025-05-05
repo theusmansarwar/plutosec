@@ -23,16 +23,7 @@ const cardsData = [
       title: "Integrity",
       items: ["Be honest", "Stay accountable", "Build trust"],
     },
-    {
-      id: 5,
-      title: "Customer Focus",
-      items: ["Listen to feedback", "Deliver value", "Exceed expectations"],
-    },
-    {
-      id: 6,
-      title: "Continuous Improvement",
-      items: ["Reflect often", "Embrace change", "Keep learning"],
-    },
+  
   ];
   
 
@@ -69,11 +60,7 @@ const cardsData = [
               <img src="/headingimg.svg" />
             </div>
                 <p className="description-heading">
-                  Lorem ipsum odor amet, consectetuer adipiscing elit. Nascetur eget
-                  vulputate amet aptent vivamus.Lorem ipsum odor amet, consectetuer
-                  adipiscing elit. Nascetur eget vulputate amet aptent vivamus.Lorem
-                  ipsum odor amet, consectetuer adipiscing elit. Nascetur eget
-                  vulputate amet aptent vivamus.
+                Strong values build strong security. PlutoSec stands on trust, speed, and clear action. You get support that never slows down. We act with purpose and always put your safety first. These values guide every step we take. That’s how we protect what matters to you.
                 </p>
               </div>
             

@@ -6,41 +6,42 @@ import "./Services.css";
 
 const faqs = [
   {
-    question: "What services does Zemalt offer?",
+    question: "What services does PlutoSec provide?",
     answer:
-      "Zemalt specializes in SEO, Google Ads, content writing, social media ads, web development, and UI/UX design, helping businesses enhance their online presence and drive real results.",
+      "PlutoSec offers a range of cybersecurity solutions. We provide penetration testing, vulnerability assessments, and managed security services. Our goal is to safeguard your systems, networks, and data against cyber threats.",
   },
   {
-    question: "How can Zemalt improve my website’s SEO?",
+    question: "How can PlutoSec help improve my security?",
     answer:
-      "We use advanced on-page, off-page, and technical SEO strategies to boost rankings, increase organic traffic, and improve website authority on search engines like Google.",
+      "We identify weaknesses in your systems and give actionable steps to fix them. Our team strengthens your defenses and enhances your protection. We ensure your business meets security standards and reduces risk.",
   },
   {
-    question: "Why should I choose Zemalt for Google Ads management?",
+    question: "What industries does PlutoSec serve?",
     answer:
-      "Our data-driven approach ensures high ROI, targeted audience reach, and optimized ad spending, maximizing conversions while keeping costs low.",
+      "PlutoSec serves many industries. We work with businesses in healthcare, finance, manufacturing, and more. We tailor our solutions to meet the specific security needs of each sector.",
   },
   {
-    question: "How does Zemalt create high-quality content?",
+    question: "Is PlutoSec suitable for small businesses?",
     answer:
-      "Our expert writers craft SEO-optimized, engaging, and industry-specific content tailored to your brand, increasing visibility and audience engagement.",
+      "Yes, PlutoSec fits businesses of all sizes. We offer scalable solutions for small businesses and large enterprises. Our team customizes services to meet your needs and budget.",
   },
   {
-    question: "What makes Zemalt’s social media ads effective?",
+    question: "How do I get started with PlutoSec?",
     answer:
-      "We create highly targeted, visually compelling, and conversion-focused ad campaigns that boost engagement, brand awareness, and sales.",
+      "Contact us through our website. Share your concerns, and we’ll create a plan to protect your systems. We will guide you through the process and ensure the best security measures.",
   },
   {
-    question: "How does Zemalt’s web development service benefit my business?",
+    question: "Why should I trust PlutoSec for my cybersecurity?",
     answer:
-      "We design fast, secure, and user-friendly websites optimized for SEO and conversions, ensuring a seamless user experience and business growth.",
+      "PlutoSec is experienced and reliable. We use advanced tools and techniques to protect your business. Our team is committed to keeping your systems secure and preventing threats.",
   },
   {
-    question: "Can Zemalt enhance my website’s UI/UX design?",
+    question: "What is the cost of PlutoSec services?",
     answer:
-      "Yes! Our UI/UX experts craft intuitive, visually appealing, and user-centered designs that enhance user experience and increase retention.",
+      "The cost depends on your specific security needs. Contact us for a detailed consultation. We will provide a transparent pricing plan based on your requirements.",
   },
 ];
+
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);

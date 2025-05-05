@@ -3,6 +3,8 @@ import React from "react";
 import "./Whypluto.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 
 const clientImages = [
   "/person.jpg",
@@ -11,7 +13,7 @@ const clientImages = [
   "/person.jpg",
 ];
 const Whypluto = () => {
-
+  const router = useRouter(); 
   return (
     <div>
       <div className="Head-area">
@@ -45,15 +47,28 @@ const Whypluto = () => {
         </div>
         <div className="right">
           <p>
-            We proudly introduce ourselves as a digital creative agency
-            committed to realizing our clients' vision and mission through
-            creative, innovative, and technology-based solutions in the digital
-            world. We proudly introduce ourselves as a digital creative agency
-            committed to realizing our clients' vision and mission through
-            creative, innovative, and technology-based solutions in the digital
-            world. and technology-based solutions in the digital world.
+            PlutoSec provides expert cybersecurity to keep your business safe.
+            We use advanced technology to protect your business from emerging
+            threats. Our team’s expertise helps secure your systems and data
+            effectively.
           </p>
-          <button className="send-btn">Learn more</button>
+          <p>
+            We focus on proactive security. Our services detect vulnerabilities
+            before they cause harm. You will enjoy fast response times and
+            dependable support.
+          </p>
+          <p>
+            PlutoSec customised solutions based on your needs. We collaborate
+            closely with you to create strategies that match your business
+            goals. Our approach ensures your security aligns with your unique
+            challenges.
+          </p>
+          <p>
+            Choose PlutoSec to safeguard your future. We work hard to protect
+            your data and systems so you can focus on your growth. Trust us to
+            keep your organization safe from potential threats.
+          </p>
+          <button className="send-btn"  onClick={() => router.push("/why-us")}>Learn more</button>
         </div>
       </div>
     </div>

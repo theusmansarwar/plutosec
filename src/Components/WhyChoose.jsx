@@ -11,24 +11,16 @@ const WhyChoose = () => {
               <img src="/headingimg.svg" />
             </div>
             <p>
-              viverra vitae lacus, elit ultrices vitae ex. Vestibulum lorem. Sed
-              faucibus viverra sit odio tempor orci adipiscing placerat. lacus
-              nisi id non elit vitae at
+            We are cybersecurity professionals who defend your data. Our team works with purpose and speed. You get smart support from people who understand threats.
             </p>
             <p>
-              Nunc elit. odio libero, elit varius sodales. dui diam elit. id
-              quis diam elit. dui orci cursus ex nulla, dui. id Donec porta Ut
-              ipsum vel eu fringilla vitae
+            We believe strong security should be simple. That’s why we build tools that solve problems fast. You don’t have time to guess. We give you clear answers.
             </p>
             <p>
-              ultrices diam lacus malesuada convallis. Lorem sit amet, Quisque
-              sit quis ultrices venenatis felis, vitae Lorem gravida lacus nibh
-              Praesent tincidunt Ut massa
+            Every company needs protection. No matter the size, we help you stay safe. You focus on your work. We handle the rest.
             </p>
             <p>
-              vehicula, dui laoreet Donec nec quis odio Nunc tincidunt porta eu
-              diam sollicitudin. dui faucibus odio placerat nibh Donec ex
-              Vestibulum gravida maximus Morbi
+            PlutoSec stands for trust. We work hard so you don’t have to worry. You stay one step ahead because we never fall behind.
             </p>
           </div>
     

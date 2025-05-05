@@ -10,8 +10,10 @@ import Popular from '@/Components/Popular';
 import Testimonial from '@/Components/Testimonial';
 import Terminal from '@/Components/Terminal';
 import Certificatelist from '@/Components/Certificateslist';
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   useEffect(() => {
     const script = document.createElement('script');
     script.type = 'module';
@@ -36,8 +38,8 @@ export default function Home() {
     <h1>Protect your data now with strong cybersecurity services</h1>
       <p>PlutoSec is a leading cybersecurity company in Canada, specializing in advanced penetration testing by certified experts. We offer detailed security assessments to help enterprises and government organizations identify vulnerabilities and enhance cyber resilience.</p>
       <div className={styles['btn-section']}>
-        <div className={styles['filled-btn']}>Get Started</div>
-        <div className={styles['outline-btn']}>Contact Us</div>
+        <div className={styles['filled-btn']} onClick={() => router.push("/contact")}>Get Started</div>
+        <div className={styles['outline-btn']} onClick={() => router.push("/contact")}>Contact Us</div>
       </div></div>
       <div className={styles.right} > 
   <Terminal/>
@@ -53,7 +55,7 @@ export default function Home() {
    <Services/>
    <Certificatelist/>
    <Whyus/>
-   <Blogs/>
+   {/* <Blogs/> */}
    <div className="headings">
           <h1>Contact Us</h1>
           <img src="/headingimg.svg" />

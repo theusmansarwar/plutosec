@@ -13,25 +13,25 @@ const Services2 = () => {
       _id: "1",
       image: "/Security.svg",
       name: "Pentest Services",
-      slug: "pentest-services",
+      slug: "penetration-testing",
       introduction:
-        "Penetration Testing Services – Web App, Network, API & Mobile App Security. In today’s digital landscape, safeguarding your...",
+        "We simulate real attacks to discover vulnerabilities and help strengthen your overall security posture effectively.",
     },
     {
       _id: "2",
       image: "/Security.svg",
       name: "Managed Security Services",
-      slug: "managed-security-services",
+      slug: "managed-security",
       introduction:
-        "Our comprehensive MSSP solution integrates 24/7 monitoring, incident response, and advanced threat detection.",
+        "We manage your entire security infrastructure continuously, preventing, detecting, and responding to threats in real time.",
     },
     {
       _id: "3",
       image: "/Security.svg",
       name: "Red Teaming | Blue Teaming",
-      slug: "red-blue-teaming",
+      slug: "red-teaming-blue-teaming",
       introduction:
-        "Choose PlutoSec for premier red team security simulations and blue team defensive strategies.",
+        "We test and measure your security readiness through adversarial simulations and defensive strategies.",
     },
     {
       _id: "4",
@@ -39,15 +39,15 @@ const Services2 = () => {
       name: "Cloud Security Solutions",
       slug: "cloud-security-solutions",
       introduction:
-        "Looking for cloud security assessment services? PlutoSec protects your sensitive data in the cloud.",
+        "We secure your cloud platforms using intelligent controls, continuous monitoring, and robust configuration management tools.",
     },
     {
       _id: "5",
       image: "/Security.svg",
       name: "Extended Detection & Response (XDR)",
-      slug: "xdr-services",
+      slug: "extended-detection",
       introduction:
-        "PlutoSec leads with Managed Detection and Response (MDR) and advanced XDR cybersecurity capabilities.",
+        "Our advanced XDR detects and responds to threats across endpoints, networks, and cloud environments instantly.",
     },
     {
       _id: "6",
@@ -55,35 +55,34 @@ const Services2 = () => {
       name: "Vulnerability Assessment Services",
       slug: "vulnerability-assessment",
       introduction:
-        "Top-tier cybersecurity firm offering in-depth vulnerability assessments and protection for digital assets.",
+        "We scan and assess systems for vulnerabilities. It helps prioritize fixes before attackers can exploit them.",
     },
-
-{
-  _id: "7",
-  image: "/Security.svg",
-  name: "Cloud Security Solutions",
-  slug: "cloud-security-solutions",
-  introduction:
-    "Looking for cloud security assessment services? PlutoSec protects your sensitive data in the cloud.",
-},
-{
-  _id: "8",
-  image: "/Security.svg",
-  name: "Extended Detection & Response (XDR)",
-  slug: "xdr-services",
-  introduction:
-    "PlutoSec leads with Managed Detection and Response (MDR) and advanced XDR cybersecurity capabilities.",
-},
-{
-  _id: "9",
-  image: "/Security.svg",
-  name: "Vulnerability Assessment Services",
-  slug: "vulnerability-assessment",
-  introduction:
-    "Top-tier cybersecurity firm offering in-depth vulnerability assessments and protection for digital assets.",
-},
-   
+    {
+      _id: "7",
+      image: "/Security.svg",
+      name: "Identity & Access Management",
+      slug: "identity-and-access-management",
+      introduction:
+        "We protect your systems by controlling user access. Strict identity verification and authentication reduce risk.",
+    },
+    {
+      _id: "8",
+      image: "/Security.svg",
+      name: "Compliance Consulting",
+      slug: "compliance-consulting",
+      introduction:
+        "We guide you through security standards. Our expert consulting ensures compliance and helps you achieve certifications",
+    },
+    {
+      _id: "9",
+      image: "/Security.svg",
+      name: "DevSecOps",
+      slug: "devsecops",
+      introduction:
+        "We embed security throughout development, operations, and delivery pipelines. This prevents vulnerabilities from reaching production.",
+    },
   ];
+  
   
 
   return (
@@ -93,7 +92,8 @@ const Services2 = () => {
         <div className="service-area-section2">
           <div className="service-grid2">
             {services.map((service) => (
-              <div className="service-item2" key={service._id}>
+              <div className="service-item2" key={service._id} 
+              onClick={() => router.push(`/services/${service.slug}`)}>
 
                 <img src={service.image} alt={service.name} />
                 <h2>{service.name}</h2>

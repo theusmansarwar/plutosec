@@ -16,7 +16,7 @@ const TestimonialCard = () => {
             <FaStar
               key={index}
               className="star"
-              style={{ color: index < rating ? "gold" : "#ccc" }}
+              style={{ color: index < rating ? "var(--background-color)" : "#ccc" }}
             />
           ))}
         </div>

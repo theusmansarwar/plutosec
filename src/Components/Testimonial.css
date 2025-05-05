@@ -10,7 +10,7 @@ margin-bottom: 50px;
   width: 100%;
 }
 
-/* Existing styles preserved and adjusted */
+
 .testimonial-card {
   background:var(--gradient-one);
   color: var(--text-color);
@@ -36,11 +36,14 @@ margin-bottom: 50px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
+  box-shadow: var(--default-box-shadow);
+  border: 2px solid var(--headings-color);
 }
 
 .quote {
-  font-size: 3rem;
-  color: var(--text-color);
+  font-size: 2rem;
+  color: var(--headings-color);
+
 }
 
 .testimonial-text {

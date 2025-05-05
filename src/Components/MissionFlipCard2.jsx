@@ -5,18 +5,18 @@ import { FaHandHoldingUsd, FaRocket, FaGlobe } from "react-icons/fa";
 
 const cardData = [
   {
-    title: "Grow Your Wealth",
-    text: "Manage your finances better with our expert tools.",
+    title: "Grow Your Business",
+    text: "Secure your digital environment. Protect assets and boost efficiency. Focus on growth without the risk.",
     Icon: FaHandHoldingUsd
   },
   {
     title: "Launch Your Business",
-    text: "Start your entrepreneurial journey with us.",
+    text: "Start strong with the right security measures. Secure your brand from day one. Protect your growth potential",
     Icon: FaRocket
   },
   {
     title: "Global Connections",
-    text: "Expand your reach to international markets.",
+    text: "Expand globally with confidence. Ensure cybersecurity resilience wherever you operate. Safeguard your connections worldwide.",
     Icon: FaGlobe
   }
 ];
@@ -32,11 +32,7 @@ const MissionFlipCard2 = () => {
               <img src="/headingimg.svg" />
             </div>
                 <p className="description-heading">
-                  Lorem ipsum odor amet, consectetuer adipiscing elit. Nascetur eget
-                  vulputate amet aptent vivamus.Lorem ipsum odor amet, consectetuer
-                  adipiscing elit. Nascetur eget vulputate amet aptent vivamus.Lorem
-                  ipsum odor amet, consectetuer adipiscing elit. Nascetur eget
-                  vulputate amet aptent vivamus.
+                PlutoSec protects businesses with advanced cybersecurity solutions. We deliver services that keep your digital assets secure and your operations running smoothly. Our goal is to make your business resilient in an ever-changing cyber landscape. We help you build trust, enhance security, and grow confidently.
                 </p>
               </div>
             

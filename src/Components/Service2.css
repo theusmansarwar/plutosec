@@ -17,14 +17,14 @@
   
   .service-grid2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 2rem;
     width: 100%;
   }
   
   .service-item2 {
     background:var(--gradient-one);
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius:var(--default-border-radius);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
