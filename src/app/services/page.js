@@ -27,7 +27,7 @@ const page = () => {
         </div>
       </div>
     <h1 className={styles.htext}>Our Services</h1>
-    <p className={styles.ptext}>Lorem ipsum odor amet, consectetuer adipiscing elit. Nascetur eget vulputate amet aptent vivamus.Lorem ipsum odor amet, consectetuer adipiscing elit. Nascetur eget vulputate amet aptent vivamus.Lorem ipsum odor amet, consectetuer adipiscing elit. Nascetur eget vulputate amet aptent vivamus.</p>
+    <p className={styles.ptext}>Our team provides advanced cybersecurity solutions to help businesses detect threats and defend their systems. We ensure your digital assets stay protected. Our experts assess vulnerabilities and offer reliable services to strengthen your security posture.</p>
     <Services2/>
     <Whypluto/>
     <Testimonial/>

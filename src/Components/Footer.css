@@ -140,6 +140,7 @@
   @media (max-width: 900px) {
     .footer-container {
       flex-direction: column;
+      margin-top: 30px;
       }
     .footer-section {
         margin-top: 20px;
@@ -148,6 +149,9 @@
        .footer-section:last-child {
          width: 100%;
         }
-
+        .footer-bottom {
+        
+          margin-bottom: 50px;
+        }
 
   }

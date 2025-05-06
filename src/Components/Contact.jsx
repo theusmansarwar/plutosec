@@ -1,5 +1,6 @@
 'use client';
 import "./Contact.css";
+import axios from "axios";
 import { useState } from "react";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { IoIosCall, IoMdMail } from "react-icons/io";
@@ -33,15 +34,11 @@ const Contact = () => {
       subject: formData.subject,
       query: formData.message,
     };
-
+  
     try {
-      const res = await fetch("https://plutosec.ca/api/CreateLeads", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-
-      if (res.ok) {
+      const res = await axios.post("https://plutosec.ca/api/CreateLeads", payload);
+  
+      if (res.status == 201) {
         setStatus("success");
         setFormData({
           firstname: "",
@@ -59,7 +56,7 @@ const Contact = () => {
       setStatus("error");
     }
   };
-
+  
   return (
     <div className="contact-container">
       <div className="contact-info2">

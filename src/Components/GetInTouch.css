@@ -126,6 +126,7 @@
       .get-in-touch .right-container {
         width: 100%;
         justify-content: center;
+        height: fit-content;
        
       }
       .get-in-touch .right-container .right-image {

@@ -188,5 +188,9 @@ color: var(--text-color);
       .headings img {
         display: none;
       }
+      .heading-area .viewall-text{
+        height: fit-content;
+      margin: 0%;
+      } 
      
     }

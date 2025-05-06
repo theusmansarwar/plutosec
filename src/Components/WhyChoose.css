@@ -95,6 +95,11 @@ align-items: center;
       width: 100%;
       height: fit-content;
     }
+    .why-choose-us .left-container .left-text p:last-child {
+      font-size: var(--default-p-size);
+      color: var(--text-color);
+      margin-bottom: 0px;
+    }
     .why-choose-us .right-container .left-images {
       width: 100%;
     }

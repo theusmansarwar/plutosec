@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
     <LanguageProvider>
       <HtmlWrapper>
         <head>
+          <meta name="google-site-verification" content="6lxBCbEUwWnkkyGfpvEJvaP_LBDcQ8IOtyc2LEqDeKM" />
           <Script
             type="module"
             src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"

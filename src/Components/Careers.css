@@ -154,6 +154,11 @@
     right: 0;
     z-index: 1;
   }
+  .selected-file-name{
+    font-size: var(--default-p-size2);
+    color: white;
+    margin-top: 5px;
+  }
   @media (max-width: 900px) {
     .apply-form-container {
       flex-direction: column-reverse;
