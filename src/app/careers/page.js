@@ -7,7 +7,7 @@ import Link from "next/link";
 import Breadcrumb from "@/Components/Breadcrumb";
 export const metadata = {
   title: "Careers | PlutoSec",
-  description: "Discover why our company is the best choice for your needs, with outstanding service and quality.",
+  description: "Join PlutoSec’s growing cybersecurity team. Tackle new challenges, grow your skills, and help protect the digital world from threats.",
 };
 const page = () => {
 

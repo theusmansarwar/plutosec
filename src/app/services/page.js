@@ -12,7 +12,7 @@ import Link from "next/link";
 import Breadcrumb from '@/Components/Breadcrumb';
 export const metadata = {
   title: "Services | PlutoSec",
-  description: "Discover why our company is the best choice for your needs, with outstanding service and quality.",
+  description: "Get expert cybersecurity solutions to detect threats, fix vulnerabilities, and protect your digital assets with trusted, advanced services.",
 };
 const page = () => {
 

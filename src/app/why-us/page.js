@@ -16,7 +16,7 @@ import Breadcrumb from '@/Components/Breadcrumb';
 
 export const metadata = {
   title: "Why Choose Us | PlutoSec",
-  description: "Discover why our company is the best choice for your needs, with outstanding service and quality.",
+  description: "Stay ahead of cyber threats with PlutoSec. We offer smart tools, expert support, and full protection for your data, cloud, and compliance.",
 };
 const page = () => {
 

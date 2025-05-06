@@ -7,7 +7,7 @@ import Breadcrumb from "@/Components/Breadcrumb";
 export const metadata = {
   title: "Careers | PlutoSec",
   description:
-    "Discover why our company is the best choice for your needs, with outstanding service and quality.",
+    "At PlutoSec, we prioritize your privacy. Learn how we collect, use, protect your data, and your rights with clear, secure practices.",
 };
 const page = () => {
   return (

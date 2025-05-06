@@ -58,7 +58,7 @@ ul.nav li:hover {
   border-radius: 50px;
 }
 .Header img {
-  height: 50px;
+  height: 40px;
    }
 @media (max-width: 900px) {
   .language-select{

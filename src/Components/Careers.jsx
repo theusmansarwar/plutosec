@@ -3,10 +3,13 @@
 import React, { useRef, useState } from "react";
 import axios from "axios";
 import "./Careers.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Careers = () => {
   const fileInputRef = useRef(null);
   const [selectedFileName, setSelectedFileName] = useState("");
+  const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -39,7 +42,7 @@ const Careers = () => {
     form.append("phone", formData.phone);
     form.append("jobTitle", formData.jobTitle);
 
-    if (fileInputRef.current.files[0]) {
+    if (fileInputRef.current?.files[0]) {
       form.append("resume", fileInputRef.current.files[0]);
     }
 
@@ -51,18 +54,35 @@ const Careers = () => {
       });
 
       if (res.status == 201) {
-        alert("Application submitted successfully!");
-      } else {
-        alert("Failed to submit application.");
+        toast.success(res?.data?.message || "Application submitted successfully!");
+        setErrors({});
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          jobTitle: "",
+        });
+        setSelectedFileName("");
+        if (fileInputRef.current) fileInputRef.current.value = null;
       }
     } catch (err) {
-      console.error("Error submitting form:", err);
-      alert("There was an error submitting your application.");
+      if (err.response?.status == 400 && err.response.data?.missingFields) {
+        const fieldErrors = {};
+        err.response.data.missingFields.forEach((field) => {
+          fieldErrors[field.name] = field.message;
+        });
+        setErrors(fieldErrors);
+      } else {
+        toast.error("Something went wrong. Please try again later.");
+      }
     }
   };
 
   return (
     <div className="apply-form-container">
+      <ToastContainer position="top-right" autoClose={3000} pauseOnHover={false} />
+
       <div className="apply-form-left">
         <div>
           <h1>Apply Now</h1>
@@ -76,31 +96,37 @@ const Careers = () => {
           <div className="name-row">
             <div className="field-group">
               <label htmlFor="firstName">First Name</label>
-              <input id="firstName" type="text" placeholder="First name" onChange={handleChange} />
+              {errors.name && <p className="error-msg">{errors.name}</p>}
+              <input id="firstName" type="text" placeholder="First name" value={formData.firstName} onChange={handleChange} />
             </div>
             <div className="field-group">
               <label htmlFor="lastName">Last Name</label>
-              <input id="lastName" type="text" placeholder="Last name" onChange={handleChange} />
+              {errors.name && <p className="error-msg">{errors.name}</p>}
+              <input id="lastName" type="text" placeholder="Last name" value={formData.lastName} onChange={handleChange} />
             </div>
           </div>
 
           <div className="field-group">
             <label htmlFor="jobTitle">Job Title</label>
-            <input id="jobTitle" type="text" placeholder="Job title" onChange={handleChange} />
+            {errors.jobTitle && <p className="error-msg">{errors.jobTitle}</p>}
+            <input id="jobTitle" type="text" placeholder="Job title" value={formData.jobTitle} onChange={handleChange} />
           </div>
 
           <div className="field-group">
             <label htmlFor="email">Email Address</label>
-            <input id="email" type="email" placeholder="Email address" onChange={handleChange} />
+            {errors.email && <p className="error-msg">{errors.email}</p>}
+            <input id="email" type="email" placeholder="Email address" value={formData.email} onChange={handleChange} />
           </div>
 
           <div className="field-group">
             <label htmlFor="phone">Phone Number</label>
-            <input id="phone" type="tel" placeholder="Phone number" onChange={handleChange} />
+            {errors.phone && <p className="error-msg">{errors.phone}</p>}
+            <input id="phone" type="tel" placeholder="Phone number" value={formData.phone} onChange={handleChange} />
           </div>
 
           <div className="field-group">
             <label htmlFor="resume" className="upload-label">Upload Resume</label>
+            {errors.resume && <p className="error-msg">{errors.resume}</p>}
             <div className="upload-box" onClick={handleUploadClick}>
               <p>Upload an image or PDF</p>
               <span>Drag & drop or click to choose file</span>
@@ -123,7 +149,7 @@ const Careers = () => {
 
       <div className="apply-form-right">
         <img className="top-logo" src='/PlutoSec-Logo-Transparent1.svg' alt="PlutoSec Logo" />
-        <img className="center-image" src='/applyform_img.svg' alt="Employment Agreement" />
+        <img className="center-image" src='/applyform_img.webp' alt="Employment Agreement" />
         <img className="bottom-logo" src='/PlutoSec-Logo-Transparent1.svg' alt="PlutoSec Logo" />
       </div>
     </div>

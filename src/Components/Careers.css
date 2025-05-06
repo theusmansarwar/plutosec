@@ -127,7 +127,7 @@
     padding: 20px;
     padding-bottom: 0;
     position: relative;
-    border-radius: 15px;
+    border-radius: var(--default-border-radius);
     box-shadow: var(--default-box-shadow);
 
   }
@@ -153,11 +153,16 @@
     bottom: 0;
     right: 0;
     z-index: 1;
+    border-bottom-right-radius: var(--default-border-radius);
   }
   .selected-file-name{
     font-size: var(--default-p-size2);
     color: white;
     margin-top: 5px;
+  }
+  .field-group .error-msg{
+    color: red;
+    font-size: 10px;
   }
   @media (max-width: 900px) {
     .apply-form-container {

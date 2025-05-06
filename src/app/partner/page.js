@@ -18,7 +18,7 @@ import PartnerContact from '@/Components/PartnerContact';
 
 export const metadata = {
   title: "Partner Program | PlutoSec",
-  description: "Discover why our company is the best choice for your needs, with outstanding service and quality.",
+  description: "PlutoSec’s Partner Program boosts your growth with expert support, sales resources, and secure solutions, helping you expand reach and close deals faster.",
 };
 const page = () => {
  

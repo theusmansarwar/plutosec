@@ -28,7 +28,7 @@ const Header = () => {
   };
   return (
     <div className="Header">
-      <img src="/plutologo.svg" alt="Logo" />
+      <img src="/logo2.png" alt="Logo" />
       <div className="menu-icon" onClick={() => setMobileOpen(!mobileOpen)}>
         {mobileOpen ? <FiX /> : <FiMenu />}
       </div>

@@ -157,7 +157,11 @@
   .radio-group input[type="radio"]:checked {
     color: var(--headings-color);
   }
-  
+  .contact-form .error-msg,
+  .form-group .error-msg{
+    color: red;
+    font-size: 10px;
+  }
   .radio-group input[type="radio"]::before {
     content: "";
     display: block;

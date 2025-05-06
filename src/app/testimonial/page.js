@@ -11,7 +11,7 @@ import TestimonialCard from '@/Components/TestimonialCard';
 import Breadcrumb from '@/Components/Breadcrumb';
 export const metadata = {
   title: "Testimonials | PlutoSec",
-  description: "Discover why our company is the best choice for your needs, with outstanding service and quality.",
+  description: "Discover how PlutoSec has helped businesses strengthen their security. Read trusted client testimonials and learn from their experiences",
 };
 const page = () => {
  

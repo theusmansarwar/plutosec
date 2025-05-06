@@ -7,8 +7,12 @@ import { IoIosCall, IoMdMail } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 import { RiFacebookFill } from "react-icons/ri";
 import { AiFillInstagram } from "react-icons/ai";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
+  const [errors, setErrors] = useState({});
+
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -28,7 +32,7 @@ const Contact = () => {
 
   const handleSubmit = async () => {
     const payload = {
-      name: `${formData.firstname} ${formData.lastname}`,
+      name: `${formData.firstname}${formData.lastname}`,
       phone: formData.phone,
       email: formData.email,
       subject: formData.subject,
@@ -37,9 +41,11 @@ const Contact = () => {
   
     try {
       const res = await axios.post("https://plutosec.ca/api/CreateLeads", payload);
-  
+    
       if (res.status == 201) {
         setStatus("success");
+        toast.success(res?.data?.message);
+        setErrors({});
         setFormData({
           firstname: "",
           lastname: "",
@@ -48,17 +54,25 @@ const Contact = () => {
           subject: "",
           message: "",
         });
+      }
+    } catch (err) {
+      if (err.response?.status == 400) {
+        const fieldErrors = {};
+        err.response.data.missingFields.forEach((field) => {
+          fieldErrors[field.name] = field.message;
+        });
+        setErrors(fieldErrors);
       } else {
         setStatus("error");
       }
-    } catch (err) {
-      console.error(err);
-      setStatus("error");
     }
+    
   };
   
   return (
     <div className="contact-container">
+      <ToastContainer position="top-right" autoClose={3000} pauseOnHover={false} />
+
       <div className="contact-info2">
         <div className="head">
           <h2>Contact Information</h2>
@@ -94,25 +108,35 @@ const Contact = () => {
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="firstname">First Name</label>
+            {errors.name && <p className="error-msg">{errors.name}</p>}
             <input id="firstname" type="text" value={formData.firstname} onChange={handleChange} />
+           
           </div>
           <div className="form-group">
+       
             <label htmlFor="lastname">Last Name</label>
+            {errors.name && <p className="error-msg">{errors.name}</p>}
             <input id="lastname" type="text" value={formData.lastname} onChange={handleChange} />
+            
           </div>
         </div>
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="email">Email</label>
+            {errors.email && <p className="error-msg">{errors.email}</p>}
             <input id="email" type="email" value={formData.email} onChange={handleChange} />
+            
           </div>
           <div className="form-group">
             <label htmlFor="phone">Phone Number</label>
+            {errors.phone && <p className="error-msg">{errors.phone}</p>}
             <input id="phone" type="text" value={formData.phone} onChange={handleChange} />
+            
           </div>
         </div>
 
         <p>Select Subject?</p>
+        {errors.subject && <p className="error-msg">{errors.subject}</p>}
         <div className="radio-group">
   {["Penetration Testing", "Cloud Security"].map((subject) => {
     const id = subject.toLowerCase().replace(/\s+/g, '-');
@@ -152,15 +176,17 @@ const Contact = () => {
 </div>
 
 
+
         <div className="form-group">
           <label className="text-area-label" htmlFor="message">Message</label>
+          {errors.query && <p className="error-msg">{errors.query}</p>}
           <textarea id="message" value={formData.message} onChange={handleChange}></textarea>
+          
         </div>
 
         <button className="send-btn" onClick={handleSubmit}>Send Message</button>
 
-        {status === "success" && <p className="success-msg">Your message has been sent!</p>}
-        {status === "error" && <p className="error-msg">Something went wrong. Please try again.</p>}
+ 
       </div>
     </div>
   );

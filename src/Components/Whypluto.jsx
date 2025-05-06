@@ -24,7 +24,7 @@ const Whypluto = () => {
       </div>
 
       <div className="why-area">
-        <div className="left" style={{ backgroundImage: `url(/whyusimg.svg)` }}>
+        <div className="left" style={{ backgroundImage: `url(/whyusimg.webp)` }}>
           <div className="left-in-box">
             <div className="box">
               <h2 className="client-count">500+</h2>

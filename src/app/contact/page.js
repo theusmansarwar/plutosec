@@ -8,7 +8,7 @@ import Link from "next/link";
 import Breadcrumb from '@/Components/Breadcrumb';
 export const metadata = {
   title: "Contact | PlutoSec",
-  description: "Discover why our company is the best choice for your needs, with outstanding service and quality.",
+  description: "Contact PlutoSec for fast, expert cybersecurity support. Get clear guidance, honest advice, and strong protection—starting today.",
 };
 const page = () => {
   return (
