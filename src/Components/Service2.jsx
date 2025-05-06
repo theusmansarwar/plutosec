@@ -11,7 +11,7 @@ const Services2 = () => {
   const services = [
     {
       _id: "1",
-      image: "/Security.svg",
+      image: "/1.png",
       name: "Pentest Services",
       slug: "penetration-testing",
       introduction:
@@ -19,7 +19,7 @@ const Services2 = () => {
     },
     {
       _id: "2",
-      image: "/Security.svg",
+      image: "/2.png",
       name: "Managed Security Services",
       slug: "managed-security",
       introduction:
@@ -27,7 +27,7 @@ const Services2 = () => {
     },
     {
       _id: "3",
-      image: "/Security.svg",
+      image: "/3.png",
       name: "Red Teaming | Blue Teaming",
       slug: "red-teaming-blue-teaming",
       introduction:
@@ -35,7 +35,7 @@ const Services2 = () => {
     },
     {
       _id: "4",
-      image: "/Security.svg",
+      image: "/4.png",
       name: "Cloud Security Solutions",
       slug: "cloud-security-solutions",
       introduction:
@@ -43,7 +43,7 @@ const Services2 = () => {
     },
     {
       _id: "5",
-      image: "/Security.svg",
+      image: "/5.png",
       name: "Extended Detection & Response (XDR)",
       slug: "extended-detection",
       introduction:
@@ -51,7 +51,7 @@ const Services2 = () => {
     },
     {
       _id: "6",
-      image: "/Security.svg",
+      image: "/6.png",
       name: "Vulnerability Assessment Services",
       slug: "vulnerability-assessment",
       introduction:
@@ -59,7 +59,7 @@ const Services2 = () => {
     },
     {
       _id: "7",
-      image: "/Security.svg",
+      image: "/7.png",
       name: "Identity & Access Management",
       slug: "identity-and-access-management",
       introduction:
@@ -67,7 +67,7 @@ const Services2 = () => {
     },
     {
       _id: "8",
-      image: "/Security.svg",
+      image: "/8.png",
       name: "Compliance Consulting",
       slug: "compliance-consulting",
       introduction:
@@ -75,7 +75,7 @@ const Services2 = () => {
     },
     {
       _id: "9",
-      image: "/Security.svg",
+      image: "/9.png",
       name: "DevSecOps",
       slug: "devsecops",
       introduction:
@@ -83,7 +83,7 @@ const Services2 = () => {
     },
     {
       _id: "10",
-      image: "/Security.svg",
+      image: "/10.png",
       name: "Cybersecurity Consultancy",
       slug: "cybersecurity-consultancy",
       introduction:

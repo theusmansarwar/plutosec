@@ -36,7 +36,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Logo & About */}
         <div className="footer-section">
-          <img src="/logo1.png" className="logo" />
+          <img src="/logo2.png" className="logo" />
           <p className="footer-description">
             Defending Digital Assets – Empowering Cybersecurity Experts, and
             Shaping a Secure Future.

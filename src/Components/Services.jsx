@@ -11,7 +11,7 @@ const Services = () => {
   const services = [
     {
       _id: "1",
-      image: "/Security.svg",
+      image: "/1.png",
       name: "Pentest Services",
       slug: "penetration-testing",
       introduction:
@@ -19,7 +19,7 @@ const Services = () => {
     },
     {
       _id: "2",
-      image: "/Security.svg",
+      image: "/2.png",
       name: "Managed Security Services",
       slug: "managed-security",
       introduction:
@@ -27,7 +27,7 @@ const Services = () => {
     },
     {
       _id: "3",
-      image: "/Security.svg",
+      image: "/3.png",
       name: "Red Teaming | Blue Teaming",
       slug: "red-teaming-blue-teaming",
       introduction:
@@ -35,7 +35,7 @@ const Services = () => {
     },
     {
       _id: "4",
-      image: "/Security.svg",
+      image: "/4.png",
       name: "Cloud Security Solutions",
       slug: "cloud-security-solutions",
       introduction:
@@ -43,7 +43,7 @@ const Services = () => {
     },
     {
       _id: "5",
-      image: "/Security.svg",
+      image: "/5.png",
       name: "Extended Detection & Response (XDR)",
       slug: "extended-detection",
       introduction:
@@ -51,7 +51,7 @@ const Services = () => {
     },
     {
       _id: "6",
-      image: "/Security.svg",
+      image: "/6.png",
       name: "Vulnerability Assessment Services",
       slug: "vulnerability-assessment",
       introduction:
