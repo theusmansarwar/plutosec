@@ -52,11 +52,12 @@
     
     color: var(--headings-color);
     margin-bottom: 0.5rem;
+    font-size: 20px;
   }
   
   .service-item2 p {
     color: var(--text-color);
-    font-size: var(--default-p-size);
+    font-size: var(--default-p-size2);
   }
   
   @media (max-width: 900px) {

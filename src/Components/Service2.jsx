@@ -81,7 +81,15 @@ const Services2 = () => {
       introduction:
         "We embed security throughout development, operations, and delivery pipelines. This prevents vulnerabilities from reaching production.",
     },
-  ];
+    {
+      _id: "10",
+      image: "/Security.svg",
+      name: "Cybersecurity Consultancy",
+      slug: "cybersecurity-consultancy",
+      introduction:
+        "PlutoSec’s Cybersecurity Consultancy helps you build a strong and secure digital environment.."
+    }
+      ];
   
   
 

@@ -494,6 +494,61 @@ const SuccessStories = ({ slug }) => {
       ],
     },
   ];
+  const stories10 = [
+    {
+      title: "Real-World Impact",
+      data: [
+        "A healthcare group aligned with HIPAA after detailed policy revision.",
+        "A clinic reduced insider threats after user behavior analysis.",
+        "A hospital created an incident response plan that prevented system downtime.",
+        "A diagnostics center mapped all digital assets for risk control.",
+        "A care facility adopted secure data retention practices.",
+        "A medical lab mitigated device misuse risks through staff policy training.",
+        "A pharmacy network rolled out access control improvements.",
+        "A telehealth provider reduced audit failures with stronger documentation.",
+      ],
+    },
+    {
+      title: "Trusted by Leaders",
+      data: [
+        "A finance company passed its ISO 27001 readiness review.",
+        "A fintech startup automated compliance workflows.",
+        "A bank implemented real-time threat reporting protocols.",
+        "A payment processor improved vendor risk monitoring.",
+        "An insurance group added secure backup and recovery systems.",
+        "A billing platform enforced strict access role policies.",
+        "A digital wallet enables secure API governance.",
+        "A credit firm minimized data leak risks after a gap assessment.",
+      ],
+    },
+    {
+      title: "Secured in Action",
+      data: [
+        "A retailer responded effectively to a phishing attack after simulation training.",
+        "A logistics firm secured API integrations using our governance model.",
+        "An e-commerce business protected personal data through encryption policies.",
+        "A gift delivery app reduced employee password reuse incidents.",
+        "A food service chain adopted secure mobile access strategies.",
+        "A fashion brand added endpoint security controls on staff devices.",
+        "A global marketplace tracked high-risk users using behavior analytics.",
+        "A delivery company improved security documentation for auditors.",
+      ],
+    },
+    {
+      title: "Strength Through Strategy",
+      data: [
+        "A university implemented a full-scale governance framework.",
+        "A government office mapped user access roles across departments.",
+        "A public transport agency secured its cloud environment.",
+        "A city council enforced continuous compliance checks.",
+        "A power company developed policies for operational continuity.",
+        "A municipal department trained staff on advanced threat handling.",
+        "A defense unit improved change control procedures.",
+        "A national agency passed SOC 2 audit after full gap analysis.",
+      ],
+    },
+  ];
+  
   // Define stories arrays (make sure these are already defined with appropriate data)
   let stories = [];
   if (slug === "penetration-testing") {
@@ -514,6 +569,9 @@ const SuccessStories = ({ slug }) => {
     stories = stories8;
   } else if (slug === "vulnerability-assessment") {
     stories = stories9;
+  }
+  else if (slug === "cybersecurity-consultancy") {
+    stories = stories10;
   } else {
     stories = [];
   }

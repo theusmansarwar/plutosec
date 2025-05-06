@@ -568,7 +568,69 @@ const KeyOfferings = ({ slug }) => {
       ],
     },
   ];
-
+  const offerings10 = [
+    {
+      title: "Cyber Risk Assessment",
+      items: [
+        "We evaluate threats to your digital infrastructure.",
+        "We identify weak points in your network and software.",
+        "We review past incidents and current exposures.",
+        "We score risks based on business impact.",
+        "We assess your third-party vendor risks.",
+        "We analyze user behavior and insider threats.",
+        "We track risk trends and future threats.",
+        "We provide a full risk report with priorities.",
+        "We help you build a roadmap to reduce risk.",
+        "We support security budget planning.",
+      ],
+    },
+    {
+      title: "Security Policy Development",
+      items: [
+        "We create clear security guidelines for your team.",
+        "We align policies with global standards (NIST, ISO).",
+        "We design rules for access control and device use.",
+        "We build password and authentication policies.",
+        "We draft safe email and web usage practices.",
+        "We write disaster recovery and backup policies.",
+        "We develop cloud security policies.",
+        "We guide BYOD and remote work policies.",
+        "We review existing policies for gaps.",
+        "We help with policy rollout and training.",
+      ],
+    },
+    {
+      title: "Incident Response Planning",
+      items: [
+        "We build a complete incident response plan.",
+        "We create detection and response workflows.",
+        "We define roles and responsibilities.",
+        "We prepare communication templates for emergencies.",
+        "We simulate cyberattacks to test your response.",
+        "We guide on isolating and analyzing incidents.",
+        "We create playbooks for ransomware and phishing.",
+        "We link the response plan to your backup systems.",
+        "We review recovery time and system integrity.",
+        "We train staff on how to react during attacks.",
+      ],
+    },
+    {
+      title: "Compliance and Governance Consulting",
+      items: [
+        "We map your systems to the required compliance standards.",
+        "We help meet ISO 27001, SOC 2, HIPAA, and PCI-DSS.",
+        "We guide GDPR and local data protection laws.",
+        "We document controls and processes for audits.",
+        "We perform gap assessments for certification.",
+        "We support internal and third-party audits.",
+        "We advise on data retention and privacy policies.",
+        "We assess roles and the separation of duties.",
+        "We ensure continuous improvement in compliance.",
+        "We prepare risk registers and control logs.",
+      ],
+    },
+  ];
+  
 
   let offerings = [];
   if (slug === "penetration-testing") {
@@ -589,6 +651,9 @@ const KeyOfferings = ({ slug }) => {
     offerings = offerings8;
   } else if (slug === "vulnerability-assessment") {
     offerings = offerings9;
+  }
+  else if (slug === "cybersecurity-consultancy") {
+    offerings = offerings10;
   } else {
     offerings = [];
   }

@@ -5,7 +5,7 @@
   justify-content: space-between;
   width: var(--mid-space);
   margin-left: var(--left-space);
-  z-index: 3;
+  z-index: 20;
 }
 .language-select{
    display: flex;

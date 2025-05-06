@@ -52,6 +52,12 @@ const Page = () => {
     ptext =
       "PlutoSec offers Vulnerability Assessment Services to find weak points in your systems before attackers do. We scan networks, devices, and apps to detect security flaws. Our team gives you clear reports and solutions to fix issues. You stay secure and prevent risks before they grow.";
   }
+  else if (slug === "cybersecurity-consultancy") {
+    htext = "Cybersecurity Consultancy";
+    ptext =
+      "PlutoSec’s Cybersecurity Consultancy helps you build a strong and secure digital environment. We guide you through every stage of security planning and decision-making. Our team identifies risks, builds defense strategies, and ensures compliance. You gain expert insights tailored to your business goals."
+
+  }
 
   return (
     <div className={styles.Servicearea}>

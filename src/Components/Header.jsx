@@ -29,7 +29,6 @@ const Header = () => {
   return (
     <div className="Header">
       <img src="/plutologo.svg" alt="Logo" />
-      {/* Menu icon (hamburger) */}
       <div className="menu-icon" onClick={() => setMobileOpen(!mobileOpen)}>
         {mobileOpen ? <FiX /> : <FiMenu />}
       </div>

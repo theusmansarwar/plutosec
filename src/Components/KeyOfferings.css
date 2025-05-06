@@ -111,4 +111,8 @@ top: 3;
       .offerings-content .left {
         width: 100%;
       }
+      .offerings-content .left ul li {
+        line-height: 2;
+        
+         }
   }
