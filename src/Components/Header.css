@@ -59,6 +59,7 @@ ul.nav li:hover {
 }
 .Header img {
   height: 40px;
+  cursor: pointer;
    }
 @media (max-width: 900px) {
   .language-select{

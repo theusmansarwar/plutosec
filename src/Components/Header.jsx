@@ -26,9 +26,13 @@ const Header = () => {
     setMobileOpen(false); 
     router.push(item.path);
   };
+  const handleNavClick2 = () => {
+ 
+    router.push("/");
+  };
   return (
     <div className="Header">
-      <img src="/logo2.png" alt="Logo" />
+      <img src="/logo2.png" alt="Logo" onClick={() => handleNavClick2()} />
       <div className="menu-icon" onClick={() => setMobileOpen(!mobileOpen)}>
         {mobileOpen ? <FiX /> : <FiMenu />}
       </div>
