@@ -6,6 +6,8 @@
   width: var(--mid-space);
   margin-left: var(--left-space);
   z-index: 20;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.247);
 }
 .language-select{
    display: flex;

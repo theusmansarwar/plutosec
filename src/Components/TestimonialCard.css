@@ -52,6 +52,47 @@
   background-repeat: no-repeat;
 }
 
+.pagination-controls {
+  display: flex;
+  align-items: center;
+width: 100%;
+margin-top: 30px;
+gap:10px;
+justify-content: center;
+}
+
+.pagination-controls .move-btn {
+  background: var(--background-color);
+  border: none;
+  color: white;
+font-size: 14px;
+ height: 40px;
+ width: 40px;
+  cursor: pointer;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: var(--background-color);
+}
+
 @media (max-width: 900px) {
   .testimonial-container {
     flex-direction: column-reverse;

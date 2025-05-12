@@ -5,6 +5,7 @@
   margin-left: var(--left-space);
   margin-right: var(--right-space);
   text-align: center;
+    padding-top: 100px;
 }
 .featured {
   display: flex;

@@ -3,8 +3,14 @@
 import React from "react";
 import "./Testimonial.css";
 import { FaArrowRightLong, FaQuoteLeft } from "react-icons/fa6";
+import { useRouter } from "next/navigation";
 
-const testimonials = [
+
+
+
+const Testimonial = () => {
+  const router = useRouter();
+  const testimonials = [
   {
     id: 1,
     image: "/person.jpg",
@@ -30,34 +36,33 @@ const testimonials = [
     name: "Charlotte Tremblay",
   },
 ];
-
-const Testimonial = () => {
-  return (<>
-  
-  
-  <div className="Head-area">
-          <div className="headings">
-            <h1>Testimonials </h1>
-            <img src="/headingimg.svg" />
-          </div>
-          <p className="viewall-text" onClick={() => router.push("/services")}>
-            View All <FaArrowRightLong />
-          </p>
-        </div>   
-    <div className="testimonial-grid-section">
-      <div className="testimonial-grid">
-        {testimonials.map((item) => (
-          <div key={item.id} className="testimonial-card">
-            <img src={item.image} alt={item.name} className="profile-img" />
-            <div className="quote"><FaQuoteLeft /></div>
-            <p className="testimonial-text">{item.quote}</p>
-            <hr className="divider" />
-            <p className="role">{item.role}</p>
-            <p className="name">{item.name}</p>
-          </div>
-        ))}
+  return (
+    <>
+      <div className="Head-area">
+        <div className="headings">
+          <h1>Testimonials </h1>
+          <img src="/headingimg.svg" />
+        </div>
+        <p className="viewall-text" onClick={() => router.push("/testimonial")}>
+          View All <FaArrowRightLong />
+        </p>
       </div>
-    </div>
+      <div className="testimonial-grid-section">
+        <div className="testimonial-grid">
+          {testimonials.map((item) => (
+            <div key={item.id} className="testimonial-card">
+              <img src={item.image} alt={item.name} className="profile-img" />
+              <div className="quote">
+                <FaQuoteLeft />
+              </div>
+              <p className="testimonial-text">{item.quote}</p>
+              <hr className="divider" />
+              <p className="role">{item.role}</p>
+              <p className="name">{item.name}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   );
 };

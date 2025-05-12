@@ -6,41 +6,57 @@ import "./Services.css";
 
 const faqs = [
   {
-    question: "What services does PlutoSec provide?",
+    question: "Is my cloud data safe with PlutoSec?",
     answer:
-      "PlutoSec offers a range of cybersecurity solutions. We provide penetration testing, vulnerability assessments, and managed security services. Our goal is to safeguard your systems, networks, and data against cyber threats.",
+      "Yes, Cloud security solutions use strict access control, smart tools, and 24/7 alerts. We protect your data across all platforms and stop unauthorized access before it leads to breaches or losses.",
   },
   {
-    question: "How can PlutoSec help improve my security?",
+    question: "Can I trust 24/7 protection for my business?",
     answer:
-      "We identify weaknesses in your systems and give actionable steps to fix them. Our team strengthens your defenses and enhances your protection. We ensure your business meets security standards and reduces risk.",
+      "Yes, managed security services monitor and defend your systems in real time. Threats are detected and stopped quickly. You stay safe without worrying about missed alerts or slow response during critical times.",
   },
   {
-    question: "What industries does PlutoSec serve?",
+    question: "How do you find system weaknesses effectively?",
     answer:
-      "PlutoSec serves many industries. We work with businesses in healthcare, finance, manufacturing, and more. We tailor our solutions to meet the specific security needs of each sector.",
+      "We simulate real-world cyberattacks using penetration testing. This shows hidden risks in your applications and networks. You can fix these issues early and build stronger defenses against threats before they cause damage.",
   },
   {
-    question: "Is PlutoSec suitable for small businesses?",
+    question: "How does red and blue team testing work?",
     answer:
-      "Yes, PlutoSec fits businesses of all sizes. We offer scalable solutions for small businesses and large enterprises. Our team customizes services to meet your needs and budget.",
+      "We use red teaming to attack and blue teaming to defend. This shows how secure your systems are. You see real gaps and improve your defense strategy with clear, guided actions.",
   },
   {
-    question: "How do I get started with PlutoSec?",
+    question: "What is Extended Detection and Response (XDR)?",
     answer:
-      "Contact us through our website. Share your concerns, and we’ll create a plan to protect your systems. We will guide you through the process and ensure the best security measures.",
+      "XDR is an advanced solution that watches your endpoints, cloud, and networks. It spots threats quickly and reacts fast. You stay protected across all layers with real-time visibility and response.",
   },
   {
-    question: "Why should I trust PlutoSec for my cybersecurity?",
+    question: "Why are regular system scans important?",
     answer:
-      "PlutoSec is experienced and reliable. We use advanced tools and techniques to protect your business. Our team is committed to keeping your systems secure and preventing threats.",
+      "Vulnerability assessments help you find security issues early. We scan your systems and guide your fixes. This reduces risk and keeps your software safe before any attacker can take advantage.",
   },
   {
-    question: "What is the cost of PlutoSec services?",
+    question: "Can I control who accesses my system?",
     answer:
-      "The cost depends on your specific security needs. Contact us for a detailed consultation. We will provide a transparent pricing plan based on your requirements.",
+      "Identity and access management ensure that only the right users can log in. This prevents data leaks, stops account abuse, and keeps your digital assets under full control at all times.",
+  },
+  {
+    question: "How can I meet security standards easily?",
+    answer:
+      "Compliance consulting helps you follow required security rules. We guide your process, improve your setup, and support audit readiness. You avoid delays, fines and stay aligned with trusted standards.",
+  },
+  {
+    question: "How does DevSecOps improve my development process?",
+    answer:
+      "We add security to your development pipeline. You catch issues early and avoid problems later. This makes your apps safer and keeps your releases clean, fast, and ready for users.",
+  },
+  {
+    question: "What support do I get from your consultants?",
+    answer:
+      "Cybersecurity consultancy gives you expert help to review, improve, and protect your systems. We offer smart, direct advice so you can strengthen your digital setup and stay ready against modern cyber threats.",
   },
 ];
+
 
 
 const Faq = () => {

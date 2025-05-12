@@ -95,7 +95,7 @@ const handleCaptchaChange = (token) => {
       <div className="contact-info2">
         <div className="head">
           <h2>Contact Information</h2>
-          <p>Say something to start a chat!</p>
+          <p>Start a conversation with us, and we'll assist you right away!</p>
         </div>
         <div className="info">
           <div className="info-item">
