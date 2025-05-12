@@ -3,12 +3,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 99%;
   padding-left: var(--left-space);
   padding-right: var(--left-space);
   z-index: 20;
   position: fixed;
    background: rgba(18, 18, 18, 0.488); 
+  backdrop-filter: blur(8px);
+
 }
 .language-select{
    display: flex;
@@ -46,7 +48,7 @@ ul.nav {
   width: 60%;
   justify-content: space-between;
   transition: all 0.3s ease;
-  background-color: black;
+ 
 }
 ul.nav li {
   padding: 15px;

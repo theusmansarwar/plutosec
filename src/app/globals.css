@@ -28,6 +28,7 @@
 }
 body{
   font-family: 'Montserrat', sans-serif;
+  scrollbar-color: var(--background-color) #090909;
 
 }
 textarea{

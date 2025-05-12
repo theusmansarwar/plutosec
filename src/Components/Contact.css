@@ -47,6 +47,11 @@
     color: var(--headings-color);
     font-size: 18px;
   }
+  .info-item a {
+    color: var(--headings-color);
+    font-size: var(--default-p-size);
+    text-decoration: none;
+  }
   .contact-info2 .social-icons {
     display: flex;
     align-items: center;

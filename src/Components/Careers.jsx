@@ -136,6 +136,7 @@ const Careers = () => {
             )}
             <input
               id="resume"
+               accept=".doc,.docx,.pdf"
               type="file"
               style={{ display: "none" }}
               ref={fileInputRef}
