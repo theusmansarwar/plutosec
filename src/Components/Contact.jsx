@@ -37,10 +37,7 @@ const handleCaptchaChange = (token) => {
   };
 
  const handleSubmit = async () => {
-  if (!captchaToken) {
-    toast.error("Please complete the CAPTCHA.");
-    return;
-  }
+ 
 
   const payload = {
     name: formData.firstname,
@@ -252,6 +249,7 @@ const handleCaptchaChange = (token) => {
             onChange={handleChange}
           ></textarea>
         </div>
+          {errors.captchaToken && <p className="error-msg">{errors.captchaToken}</p>}
      <ReCAPTCHA
   ref={recaptchaRef}
   sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}

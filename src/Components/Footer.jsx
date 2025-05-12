@@ -14,7 +14,6 @@ import { AiFillInstagram } from "react-icons/ai";
 const Footer = () => {
   const router = useRouter(); // Use the router for client-side navigation
 
-
   const menuItems = [
     { label: "Services", path: "/services" },
     { label: "Career", path: "/careers" },
@@ -104,13 +103,21 @@ const Footer = () => {
           <button>Subscribe</button>
           <div className="contact-info">
             <p>
-              <CiMail /> contact@plutosec.ca
+              <CiMail />{" "}
+              <a href="mailto:contact@plutosec.ca">contact@plutosec.ca</a>
             </p>
             <p>
-              <IoCallOutline /> +1 (905) 367-6038
+              <IoCallOutline /> <a href="tel:+19053676038">+1 (905) 367-6038</a>
             </p>
             <p>
-              <IoLocationOutline /> 335 Yonge St, Toronto, ON M5B 2L3
+              <IoLocationOutline />{" "}
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=335+Yonge+St,+Toronto,+ON+M5B+2L3"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                335 Yonge St, Toronto, ON M5B 2L3
+              </a>
             </p>
           </div>
         </div>

@@ -124,6 +124,15 @@
    font-size: 16px;
    margin-right: 5px;
   }
+  .footer-section .contact-info p a {
+   text-decoration: none;
+   color:var(--text-color);
+
+  }
+   .footer-section .contact-info p a:hover {
+   color:var(--headings-color);
+   
+  }
   
   .footer-bottom {
     margin-top: 30px;
