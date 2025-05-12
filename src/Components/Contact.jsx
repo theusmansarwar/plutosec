@@ -199,7 +199,7 @@ const handleCaptchaChange = (token) => {
         <p>Select Subject?</p>
         {errors.subject && <p className="error-msg">{errors.subject}</p>}
         <div className="radio-group">
-          {["Penetration Testing", "Cloud Security"].map((subject) => {
+          {["Penetration Testing", "Cloud Security","Network Security"].map((subject) => {
             const id = subject.toLowerCase().replace(/\s+/g, "-");
             return (
               <label htmlFor={id} key={id}>
@@ -218,7 +218,7 @@ const handleCaptchaChange = (token) => {
         </div>
 
         <div className="radio-group">
-          {["Network Security", "Managed Security", "General Inquiry"].map(
+          {[ "Managed Security", "General Inquiry"].map(
             (subject) => {
               const id = subject.toLowerCase().replace(/\s+/g, "-");
               return (

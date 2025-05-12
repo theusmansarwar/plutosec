@@ -198,7 +198,7 @@
     margin-top: 15px;
   }
   textarea {
-    background: transparent;
+    background: rgba(20, 20, 20, 0.567);
     border: none;
     border-bottom: 1px solid gray;
     outline: none;

@@ -1,13 +1,14 @@
 .Header {
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: var(--mid-space);
-  margin-left: var(--left-space);
+  width: 100%;
+  padding-left: var(--left-space);
+  padding-right: var(--left-space);
   z-index: 20;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.247);
+   background: rgba(18, 18, 18, 0.488); 
 }
 .language-select{
    display: flex;
@@ -45,6 +46,7 @@ ul.nav {
   width: 60%;
   justify-content: space-between;
   transition: all 0.3s ease;
+  background-color: black;
 }
 ul.nav li {
   padding: 15px;
