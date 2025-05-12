@@ -13,7 +13,6 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
   const [errors, setErrors] = useState({});
-
   const recaptchaRef = useRef(null);
   const [formData, setFormData] = useState({
     firstname: "",
@@ -33,64 +32,55 @@ const Contact = () => {
   };
 
   const handleSubmit = async () => {
-  const token = await recaptchaRef.current.executeAsync();
-  recaptchaRef.current.reset();
+    const token = await recaptchaRef.current.executeAsync();
+    recaptchaRef.current.reset();
 
-  // Verify token on your backend
-  const verifyRes = await fetch("/api/verify-recaptcha", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ token }),
-  });
+    if (!token) {
+      toast.error("Please complete the CAPTCHA.");
+      return;
+    }
 
-  const verifyData = await verifyRes.json();
+    const payload = {
+      name: formData.firstname,
+      lastname: formData.lastname,
+      phone: formData.phone,
+      email: formData.email,
+      subject: formData.subject,
+      query: formData.message,
+      captchaToken: token,
+    };
 
-  if (!verifyData.success) {
-    toast.error("reCAPTCHA verification failed.");
-    return;
-  }
+    try {
+      const res = await axios.post(
+        `${process.env.NEXT_PUBLIC_BASE_URI}/CreateLeads`,
+        payload
+      );
 
-  const payload = {
-    name: formData.firstname,
-    lastname: formData.lastname,
-    phone: formData.phone,
-    email: formData.email,
-    subject: formData.subject,
-    query: formData.message,
+      if (res.status === 201) {
+        setStatus("success");
+        toast.success(res?.data?.message);
+        setErrors({});
+        setFormData({
+          firstname: "",
+          lastname: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+      }
+    } catch (err) {
+      if (err.response?.status === 400) {
+        const fieldErrors = {};
+        err.response.data.missingFields.forEach((field) => {
+          fieldErrors[field.name] = field.message;
+        });
+        setErrors(fieldErrors);
+      } else {
+        setStatus("error");
+      }
+    }
   };
-
-  try {
-    const res = await axios.post(
-      `${process.env.NEXT_PUBLIC_BASE_URI}/CreateLeads`,
-      payload
-    );
-
-    if (res.status == 201) {
-      setStatus("success");
-      toast.success(res?.data?.message);
-      setErrors({});
-      setFormData({
-        firstname: "",
-        lastname: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      });
-    }
-  } catch (err) {
-    if (err.response?.status == 400) {
-      const fieldErrors = {};
-      err.response.data.missingFields.forEach((field) => {
-        fieldErrors[field.name] = field.message;
-      });
-      setErrors(fieldErrors);
-    } else {
-      setStatus("error");
-    }
-  }
-};
-
 
   return (
     <div className="contact-container">
