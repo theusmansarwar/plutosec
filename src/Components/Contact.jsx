@@ -14,6 +14,11 @@ import ReCAPTCHA from "react-google-recaptcha";
 const Contact = () => {
   const [errors, setErrors] = useState({});
   const recaptchaRef = useRef(null);
+  const [captchaToken, setCaptchaToken] = useState(null);
+
+const handleCaptchaChange = (token) => {
+  setCaptchaToken(token);
+};
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -31,56 +36,56 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [key]: value }));
   };
 
-  const handleSubmit = async () => {
-    const token = await recaptchaRef.current.executeAsync();
-    recaptchaRef.current.reset();
+ const handleSubmit = async () => {
+  if (!captchaToken) {
+    toast.error("Please complete the CAPTCHA.");
+    return;
+  }
 
-    if (!token) {
-      toast.error("Please complete the CAPTCHA.");
-      return;
-    }
-
-    const payload = {
-      name: formData.firstname,
-      lastname: formData.lastname,
-      phone: formData.phone,
-      email: formData.email,
-      subject: formData.subject,
-      query: formData.message,
-      captchaToken: token,
-    };
-
-    try {
-      const res = await axios.post(
-        `${process.env.NEXT_PUBLIC_BASE_URI}/CreateLeads`,
-        payload
-      );
-
-      if (res.status === 201) {
-        setStatus("success");
-        toast.success(res?.data?.message);
-        setErrors({});
-        setFormData({
-          firstname: "",
-          lastname: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: "",
-        });
-      }
-    } catch (err) {
-      if (err.response?.status === 400) {
-        const fieldErrors = {};
-        err.response.data.missingFields.forEach((field) => {
-          fieldErrors[field.name] = field.message;
-        });
-        setErrors(fieldErrors);
-      } else {
-        setStatus("error");
-      }
-    }
+  const payload = {
+    name: formData.firstname,
+    lastname: formData.lastname,
+    phone: formData.phone,
+    email: formData.email,
+    subject: formData.subject,
+    query: formData.message,
+    captchaToken: captchaToken,
   };
+
+  try {
+    const res = await axios.post(
+      `${process.env.NEXT_PUBLIC_BASE_URI}/CreateLeads`,
+      payload
+    );
+
+    if (res.status === 201) {
+      setStatus("success");
+      toast.success(res?.data?.message);
+      setErrors({});
+      setFormData({
+        firstname: "",
+        lastname: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      });
+      setCaptchaToken(null);
+      recaptchaRef.current.reset();
+    }
+  } catch (err) {
+    if (err.response?.status === 400) {
+      const fieldErrors = {};
+      err.response.data.missingFields.forEach((field) => {
+        fieldErrors[field.name] = field.message;
+      });
+      setErrors(fieldErrors);
+    } else {
+      setStatus("error");
+    }
+  }
+};
+
 
   return (
     <div className="contact-container">
@@ -247,11 +252,11 @@ const Contact = () => {
             onChange={handleChange}
           ></textarea>
         </div>
-        <ReCAPTCHA
-          ref={recaptchaRef}
-          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-        
-        />
+     <ReCAPTCHA
+  ref={recaptchaRef}
+  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+  onChange={handleCaptchaChange}
+/>
         <button className="send-btn" onClick={handleSubmit}>
           Send Message
         </button>
