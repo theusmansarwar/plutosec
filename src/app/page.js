@@ -38,7 +38,7 @@ export default function Home() {
     <h1>Protect your data now with strong cybersecurity services</h1>
       <p>PlutoSec is a leading cybersecurity company in Canada, specializing in advanced penetration testing by certified experts. We offer detailed security assessments to help enterprises and government organizations identify vulnerabilities and enhance cyber resilience.</p>
       <div className={styles['btn-section']}>
-        <div className={styles['filled-btn']} onClick={() => router.push("/contact")}>Get Started</div>
+        <div className={styles['filled-btn']} onClick={() => router.push("/services")}>Get Started</div>
         <div className={styles['outline-btn']} onClick={() => router.push("/contact")}>Contact Us</div>
       </div></div>
       <div className={styles.right} > 

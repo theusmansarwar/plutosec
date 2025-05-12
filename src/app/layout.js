@@ -1,10 +1,11 @@
 import { LanguageProvider } from "@/Context/LanguageContext";
-import HtmlWrapper from "@/Components/HtmlWrapper"; // new file
+import HtmlWrapper from "@/Components/HtmlWrapper";
 import Header from "@/Components/Header";
 import Footer from "@/Components/Footer";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Script from "next/script";
+import ScrollProgressBar from "@/Components/ScrollProgressBar";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -14,9 +15,10 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: "PlutoSec",
-  description: "PlutoSec offers expert penetration testing in Canada, helping businesses and governments boost security and fix vulnerabilities.",
+  description:
+    "PlutoSec offers expert penetration testing in Canada, helping businesses and governments boost security and fix vulnerabilities.",
   icons: {
-    icon: "/plutofav.png", 
+    icon: "/plutofav.png",
   },
 };
 
@@ -24,23 +26,22 @@ export default function RootLayout({ children }) {
   return (
     <LanguageProvider>
       <HtmlWrapper>
-        <head>
-          <meta name="google-site-verification" content="6lxBCbEUwWnkkyGfpvEJvaP_LBDcQ8IOtyc2LEqDeKM" />
-          <link rel="icon" href="/plutofav.png" />
+        <body className={montserrat.variable}>
           <Script
             type="module"
             src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
             strategy="afterInteractive"
           />
-           
-        </head>
-        <body>
+          
+
           <div className="bg-wrapper">
             <div className="circle-container">
               <div className="circle"></div>
               <div className="circle"></div>
             </div>
             <div className="content">
+           
+             <ScrollProgressBar />
               <Header />
               {children}
               <Footer />
@@ -50,4 +51,4 @@ export default function RootLayout({ children }) {
       </HtmlWrapper>
     </LanguageProvider>
   );
-}
+} 

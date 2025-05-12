@@ -118,7 +118,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <hr />
-        <p>Copyright @PlutoSec - 2025</p>
+        <p>Copyright © 2021 to 2025</p>
       </div>
     </footer>
   );
