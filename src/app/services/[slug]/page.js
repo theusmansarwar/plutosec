@@ -5,7 +5,6 @@ import { useParams } from "next/navigation";
 import styles from "./page.module.css";
 import "../../globals.css";
 import Breadcrumb from "@/Components/Breadcrumb";
-import Popular from "@/Components/Popular";
 import KeyOfferings from "@/Components/KeyOfferings";
 import SuccessStories from "@/Components/SuccessStories";
 

@@ -14,7 +14,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "PlutoSec",
+  title: "Canada’s Leading Cybersecurity & Penetration Testing Services | PlutoSec ",
   description:
     "PlutoSec offers expert penetration testing in Canada, helping businesses and governments boost security and fix vulnerabilities.",
   icons: {
