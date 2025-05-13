@@ -27,20 +27,17 @@ export default function RootLayout({ children }) {
     <LanguageProvider>
       <HtmlWrapper>
         <body className={montserrat.variable}>
-          <Script
+          <Script 
             type="module"
             src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
             strategy="afterInteractive"
           />
-          
-
           <div className="bg-wrapper">
             <div className="circle-container">
               <div className="circle"></div>
               <div className="circle"></div>
             </div>
             <div className="content">
-           
              <ScrollProgressBar />
               <Header />
               {children}

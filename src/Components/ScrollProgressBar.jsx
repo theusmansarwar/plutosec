@@ -21,7 +21,7 @@ const ScrollProgressBar = () => {
         position: "fixed",
         top: 0,
         left: 0,
-        height: "4px",
+        height: "1.5px",
         width: `${scrollWidth}%`,
         backgroundColor: `var(--background-color)`,
         zIndex: 9999,
