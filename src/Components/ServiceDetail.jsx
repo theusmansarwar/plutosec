@@ -2,6 +2,8 @@
 import React from "react";
 import KeyOfferings from "@/Components/KeyOfferings";
 import SuccessStories from "@/Components/SuccessStories";
+import '../app/globals.css';
+import './Services.css'
 
 const ServiceDetail = ({slug }) => {
   return (
