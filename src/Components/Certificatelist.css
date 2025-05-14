@@ -2,8 +2,8 @@
    
     width: 100%;
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     align-items: center;
  
 }
@@ -33,7 +33,7 @@ width: 50%;
 
     .marquee-image{
         height: 80px;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
 

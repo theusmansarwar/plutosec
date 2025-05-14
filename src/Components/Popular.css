@@ -6,7 +6,7 @@
   width: 100%;
   background: var(--gradient-one);
   color: var(--text-color);
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   box-shadow: var(--default-box-shadow);
 }
 

@@ -15,7 +15,7 @@ align-items: center;
   }
   .why-choose-us .left-container .left-text h1 {
     color: var(--headings-color);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
    
   }
   .why-choose-us .left-container .left-text p {
@@ -86,7 +86,7 @@ align-items: center;
     .why-choose-us .right-container {
       width: 100%;
      
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
     .why-choose-us .right-container .right-image {
       display: none;

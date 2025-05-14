@@ -1,6 +1,6 @@
 .why-us {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .why-us .left {
   text-align: left;
@@ -13,7 +13,7 @@
   width: 50%;
 }
 .why-us .left p {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: var(--default-p-size);
 }
 .why-us .right img {

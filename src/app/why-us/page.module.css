@@ -7,15 +7,15 @@
 .ContactFormArea .htext {
   text-align: center;
   color: var(--headings-color);
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 48px;
 }
 .ContactFormArea .ptext {
   text-align: center;
   color: var(--text-color);
 
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-size: var(--default-p-size);
 }
 .bgSection {

@@ -2,15 +2,15 @@
     width: var(--mid-space);
     margin-left: var(--left-space);
     margin-right: var(--right-space);
-    margin-bottom: 50px;
+    margin-bottom: 20px;
       padding-top: 100px;
   }
   .aboutpage .htext {
     
     text-align: center;
     color: var(--headings-color);
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 48px;
   }
   .aboutus p {
@@ -20,19 +20,19 @@
     text-align: justify;
     color: var(--text-color);
   
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: var(--default-p-size);
   }
   .aboutus h2 {
     color: var(--headings-color);
-    margin-top: 30px;
+    margin-top: 20px;
     width: var(--mid-space);
     margin-left: var(--left-space);
     margin-right: var(--right-space);
   }
   .aboutus ul {
     color: var(--text-color);
-    margin-top: 10px;
+    margin-top: 20px;
     width: var(--mid-space);
     margin-left: var(--left-space);
     margin-right: var(--right-space);
@@ -41,7 +41,7 @@
   }
   .aboutus ul li {
     color: var(--text-color);
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 20px;
   }
   .aboutus ul li strong {

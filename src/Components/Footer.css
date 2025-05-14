@@ -59,7 +59,7 @@
   }
   
   .footer-section h4 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 1.1rem;
     color: var(--headings-color);
   }
@@ -80,7 +80,7 @@
   }
   .footer-section input {
     padding: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 100%;
     max-width: 220px;
     border-color: var(--headings-color);
@@ -90,7 +90,7 @@
   }
   
   .footer-section button {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 5px;
     padding: 8px;
    
@@ -135,7 +135,7 @@
   }
   
   .footer-bottom {
-    margin-top: 30px;
+    margin-top: 20px;
     color: var(--headings-color);
     padding-bottom: 20px;
     text-align: center;
@@ -143,14 +143,14 @@
   
   .footer-bottom hr {
     border: 1px solid #444;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   
 
   @media (max-width: 900px) {
     .footer-container {
       flex-direction: column;
-      margin-top: 30px;
+      margin-top: 20px;
       }
     .footer-section {
         margin-top: 20px;
