@@ -3,7 +3,7 @@ import React from "react";
 import KeyOfferings from "@/Components/KeyOfferings";
 import SuccessStories from "@/Components/SuccessStories";
 
-const ServiceDetail = ({ htext, ptext, slug }) => {
+const ServiceDetail = ({slug }) => {
   return (
     <div >
       
