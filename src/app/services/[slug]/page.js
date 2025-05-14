@@ -83,7 +83,7 @@ export async function generateMetadata(params) {
 /* ---------------------------------------------------------------
  * Page component (server side)
  * ------------------------------------------------------------- */
-export async function generateMetadata({ params }) {
+export async function page({ params }) {
   const { slug } = params;
   const { htext, ptext } = getContentBySlug(slug);
 
