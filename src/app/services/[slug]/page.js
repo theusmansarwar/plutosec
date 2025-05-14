@@ -1,16 +1,13 @@
-"use client";
-
+/* app/service/[slug]/page.jsx — Server Component */
 import React from "react";
-import { useParams } from "next/navigation";
-import styles from "./page.module.css";
-import "../../globals.css";
+import ServiceDetail from "@/components/ServiceDetail"; // client component
+import styles from './page.module.css';
 import Breadcrumb from "@/Components/Breadcrumb";
-import KeyOfferings from "@/Components/KeyOfferings";
-import SuccessStories from "@/Components/SuccessStories";
 
-const Page = () => {
-  const { slug } = useParams();
-
+/** ----------------------------------------------------------------
+ * Map each slug to its heading & paragraph text
+ * ---------------------------------------------------------------- */
+const getContentBySlug = (slug) => {
   let htext = "";
   let ptext = "";
 
@@ -50,13 +47,40 @@ const Page = () => {
     htext = "Vulnerability Assessment Services";
     ptext =
       "PlutoSec offers Vulnerability Assessment Services to find weak points in your systems before attackers do. We scan networks, devices, and apps to detect security flaws. Our team gives you clear reports and solutions to fix issues. You stay secure and prevent risks before they grow.";
-  }
-  else if (slug === "cybersecurity-consultancy") {
+  } else if (slug === "cybersecurity-consultancy") {
     htext = "Cybersecurity Consultancy";
     ptext =
-      "PlutoSec’s Cybersecurity Consultancy helps you build a strong and secure digital environment. We guide you through every stage of security planning and decision-making. Our team identifies risks, builds defense strategies, and ensures compliance. You gain expert insights tailored to your business goals."
-
+      "PlutoSec’s Cybersecurity Consultancy helps you build a strong and secure digital environment. We guide you through every stage of security planning and decision-making. Our team identifies risks, builds defense strategies, and ensures compliance. You gain expert insights tailored to your business goals.";
+  } else {
+    htext = "Service Not Found";
+    ptext = "This PlutoSec service is currently unavailable or does not exist.";
   }
+
+  // ✅ Missing return added here
+  return { htext, ptext };
+};
+
+
+/* ---------------------------------------------------------------
+ * Dynamic <title> and <meta description>
+ * ------------------------------------------------------------- */
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+  const { htext, ptext } = getContentBySlug(slug);
+
+  return {
+    title: `${htext} | PlutoSec`,
+    description: ptext,
+    icons: { icon: "/plutofav.png" },
+  };
+}
+
+/* ---------------------------------------------------------------
+ * Page component (server side)
+ * ------------------------------------------------------------- */
+export default function Page({ params }) {
+  const { slug } = params;
+  const { htext, ptext } = getContentBySlug(slug);
 
   return (
     <div className={styles.Servicearea}>
@@ -68,23 +92,7 @@ const Page = () => {
 
       <h1 className={styles.htext}>{htext}</h1>
       <p className={styles.ptext}>{ptext}</p>
-
-      <div className="headings">
-        <h1>Key Offerings</h1>
-        <img src="/headingimg.svg" />
-      </div>
-
-      <KeyOfferings slug={slug} />
-
-      <div className="headings">
-        <h1>Success Stories</h1>
-        <img src="/headingimg.svg" />
-      </div>
-
-      <SuccessStories slug={slug} />
-      {/* <Popular /> */}
+      <ServiceDetail slug={slug} />
     </div>
   );
-};
-
-export default Page;
+}
