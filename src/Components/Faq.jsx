@@ -6,57 +6,56 @@ import "./Services.css";
 
 const faqs = [
   {
-    question: "Is my cloud data safe with PlutoSec?",
+    question: "What Are Penetration Services?",
     answer:
-      "Yes, Cloud security solutions use strict access control, smart tools, and 24/7 alerts. We protect your data across all platforms and stop unauthorized access before it leads to breaches or losses.",
+      "Penetration testing services simulate real-world cyberattacks to identify vulnerabilities in your system and improve overall security. These tests help you understand where your defenses might fail.",
   },
   {
-    question: "Can I trust 24/7 protection for my business?",
+    question: "How Can Vulnerability Assessments Benefit My Business?",
     answer:
-      "Yes, managed security services monitor and defend your systems in real time. Threats are detected and stopped quickly. You stay safe without worrying about missed alerts or slow response during critical times.",
+      "Vulnerability assessments scan your systems to identify weaknesses before attackers can exploit them. They allow you to prioritize fixes and strengthen your security posture.",
   },
   {
-    question: "How do you find system weaknesses effectively?",
+    question: "What is Managed Security Monitoring?",
     answer:
-      "We simulate real-world cyberattacks using penetration testing. This shows hidden risks in your applications and networks. You can fix these issues early and build stronger defenses against threats before they cause damage.",
+      "Managed security monitoring provides continuous oversight of your IT infrastructure. This service detects potential threats and ensures quick responses to mitigate risks in real-time.",
   },
   {
-    question: "How does red and blue team testing work?",
+    question: "Why is Cloud Security Important for My Organization?",
     answer:
-      "We use red teaming to attack and blue teaming to defend. This shows how secure your systems are. You see real gaps and improve your defense strategy with clear, guided actions.",
+      "Cloud security ensures your data stored in the cloud is protected from unauthorized access. It focuses on safeguarding your cloud applications and services from cyber threats and vulnerabilities.",
   },
   {
-    question: "What is Extended Detection and Response (XDR)?",
+    question: "How Does Red Teaming Improve My Security?",
     answer:
-      "XDR is an advanced solution that watches your endpoints, cloud, and networks. It spots threats quickly and reacts fast. You stay protected across all layers with real-time visibility and response.",
+      "Red teaming involves simulating advanced attacks to test your security systems. It provides insights into how well your organization responds to cyber threats and helps uncover security gaps.",
   },
   {
-    question: "Why are regular system scans important?",
+    question: "What is Identity & Access Management (IAM)?",
     answer:
-      "Vulnerability assessments help you find security issues early. We scan your systems and guide your fixes. This reduces risk and keeps your software safe before any attacker can take advantage.",
+      "IAM controls who has access to your systems and data. It ensures that only authorized individuals can access sensitive information, reducing the risk of unauthorized access and data breaches.",
   },
   {
-    question: "Can I control who accesses my system?",
+    question: "How Can XDR Improve My Security Infrastructure?",
     answer:
-      "Identity and access management ensure that only the right users can log in. This prevents data leaks, stops account abuse, and keeps your digital assets under full control at all times.",
+      "XDR (Extended Detection & Response) offers integrated protection across endpoints, networks, and cloud environments. It detects threats and responds to them immediately, improving overall threat management.",
   },
   {
-    question: "How can I meet security standards easily?",
+    question: "What Is Compliance Consulting?",
     answer:
-      "Compliance consulting helps you follow required security rules. We guide your process, improve your setup, and support audit readiness. You avoid delays, fines and stay aligned with trusted standards.",
+      "Compliance consulting helps you meet security standards and regulations. It ensures your systems align with guidelines, reducing legal and operational risks.",
   },
   {
-    question: "How does DevSecOps improve my development process?",
+    question: "What is DevSecOps?",
     answer:
-      "We add security to your development pipeline. You catch issues early and avoid problems later. This makes your apps safer and keeps your releases clean, fast, and ready for users.",
+      "DevSecOps integrates security into the development process. It helps prevent vulnerabilities from reaching production by addressing security early on.",
   },
   {
-    question: "What support do I get from your consultants?",
+    question: "Why Should I Consider Cyber Security Consultancy Services?",
     answer:
-      "Cybersecurity consultancy gives you expert help to review, improve, and protect your systems. We offer smart, direct advice so you can strengthen your digital setup and stay ready against modern cyber threats.",
+      "Cybersecurity consultancy services help you identify, assess, and improve your security strategy. They provide expert guidance on how to build a stronger, more resilient digital environment.",
   },
 ];
-
 
 
 const Faq = () => {

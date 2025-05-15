@@ -11,6 +11,8 @@ import Testimonial from '@/Components/Testimonial';
 import Terminal from '@/Components/Terminal';
 import Certificatelist from '@/Components/Certificateslist';
 import { useRouter } from "next/navigation";
+import Services2 from '@/Components/Service2';
+import Contact2 from '@/Components/Contact2';
 
 export default function Home() {
   const router = useRouter();
@@ -55,12 +57,13 @@ export default function Home() {
    <Services/>
    <Certificatelist/>
    <Whyus/>
-   {/* <Blogs/> */}
+   <Blogs/>
+     <Testimonial/>
    <div className="headings">
           <h1>Contact Us</h1>
           <img src="/headingimg.svg" />
         </div>
-   <Contact/>
+   <Contact2/>
 
     </div>
   );

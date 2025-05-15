@@ -1,73 +1,71 @@
+'use client';
 
-import React from "react";
-import "./Blogs.css";
-import { FaArrowRightLong } from "react-icons/fa6";
-
-const blogPosts = [
-  {
-    id: 1,
-    date: "27",
-    month: "MAY",
-    author: "@samurai2099",
-    title: "15 Disadvantages Of Freedom And How You Can Workaround It.",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    tags: ["#meditation", "#mentalpeace"],
-  },
-  {
-    id: 2,
-    date: "10",
-    month: "APR",
-    author: "@zenwriter",
-    title: "The Art of Slowing Down in a Fast World.",
-    content:
-      "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus.",
-    tags: ["#mindfulness", "#lifestyle"],
-  },
-];
-
-const truncateContent = (text, maxLength) => {
-  if (text.length <= maxLength) return text;
-
-  const trimmed = text.slice(0, maxLength);
-  const lastSpace = trimmed.lastIndexOf(" ");
-  const visibleText = trimmed.slice(0, lastSpace);
-
-  return (
-    <>
-      {visibleText}
-      <span style={{ color: "#8a8a8a" }}> read more</span>
-    </>
-  );
-};
+import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation'; // If using app/ router
+import { FaArrowRightLong } from 'react-icons/fa6';
+import './Blogs.css';
+import { fetchallBloglist } from '@/DAL/fetch';
 
 const Blogs = () => {
+  const router = useRouter();
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const response = await fetchallBloglist(1,3);
+
+    
+        setBlogs(response?.blogs);
+       
+    } catch (error) {
+      console.error("Error fetching blogs:", error);
+    }
+  };
+
+  const truncateContent = (text, maxLength) => {
+    if (text.length <= maxLength) return text;
+
+    const trimmed = text.slice(0, maxLength);
+    const lastSpace = trimmed.lastIndexOf(' ');
+    const visibleText = trimmed.slice(0, lastSpace);
+
+    return (
+      <>
+        {visibleText}
+        <span style={{ color: '#8a8a8a' }}>... read more</span>
+      </>
+    );
+  };
+
   return (
     <div className="Blogs">
       <div className="Head-area">
         <div className="headings">
           <h1>Latest Blogs</h1>
-          <img src="/headingimg.svg" />
+          <img src="/headingimg.svg" alt="Heading" />
         </div>
-        <p className="viewall-text" onClick={() => router.push("/services")}>
+        <p className="viewall-text" onClick={() => router.push("/blogs")}>
           View All <FaArrowRightLong />
         </p>
       </div>
-      {blogPosts.map((post) => (
-        <div className="blog-card" key={post.id}>
+
+      {blogs?.map((post) => (
+        <div className="blog-card" key={post._id}>
           <div className="blog-date">
-            <h2>{post.date}</h2>
-            <p>{post.month}</p>
-            <span>{post.author}</span>
+            <h2>{new Date(post?.publishedDate).getDate()}</h2>
+            <p>{new Date(post?.publishedDate).toLocaleString('default', { month: 'short' }).toUpperCase()}</p>
+           
           </div>
 
           <div className="blog-content">
             <h3>{post.title}</h3>
-            <p>{truncateContent(post.content, 150)}</p>
+            <p>{truncateContent(post?.description, 200)}</p>
             <div className="tags">
-              {post.tags.map((tag, index) => (
-                <button key={index}>{tag}</button>
-              ))}
+              <button>{post?.category?.name}</button>
             </div>
           </div>
         </div>

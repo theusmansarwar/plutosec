@@ -10,7 +10,7 @@
     display: flex;
     background: var(--gradient-one);
     color: var(--text-color);
-    padding: 20px;
+    padding: 30px;
     border-radius: var(--default-border-radius);
     gap: 20px;
    width: 100%;
@@ -34,13 +34,13 @@
   }
   
   .blog-date p {
-    font-size:var(--default-p-size2);
+    font-size:var(--default-p-size);
     margin: 5px 0;
     font-weight: bold;
   }
   
   .blog-date span {
-    font-size: var(--default-p-size2);
+    font-size: var(--default-p-size);
     color: var(--headings-color);
     writing-mode: vertical-rl;
     transform: rotate(180deg);

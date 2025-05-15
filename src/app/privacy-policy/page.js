@@ -97,7 +97,7 @@ const page = () => {
   <p>If you have any questions about this Privacy Policy, please reach out to us. We are here to help and answer your concerns.</p>
   <p>
     Email: <a href="mailto:contact@plutosec.ca">contact@plutosec.ca</a><br/>
-    Website: <a href="https://www.plutosec.com" target="_blank">www.plutosec.com</a><br/>
+    Website: <a href="https://www.plutosec.ca" target="_blank">www.plutosec.ca</a><br/>
     PlutoSec Privacy Team
   </p>
 

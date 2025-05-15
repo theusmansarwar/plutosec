@@ -6,6 +6,7 @@ import "../globals.css";
 import Faq from '@/Components/Faq';
 import Link from "next/link";
 import Breadcrumb from '@/Components/Breadcrumb';
+import Contact2 from '@/Components/Contact2';
 export const metadata = {
   title: "Contact | PlutoSec",
   description: "Contact PlutoSec for fast, expert cybersecurity support. Get clear guidance, honest advice, and strong protection—starting today.",
@@ -23,7 +24,7 @@ const page = () => {
     <h1 className={styles.htext}>Contact Us</h1>
     <p className={styles.ptext}>You can contact PlutoSec when you need fast and expert support. Our team helps you understand the next steps and answers your questions without delay. We guide you with honest advice and strong solutions. Start the conversation today and protect what matters most.</p>
     
-    <Contact/>
+    <Contact2/>
     <Faq/>
     </div>
 

@@ -10,6 +10,7 @@
 .marquee-container .left{
 width: 50%;
 text-align: left;
+color: var(--text-color);
 }
 .marquee-container .right{
 width: 50%;

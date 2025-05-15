@@ -149,9 +149,7 @@ const Careers = () => {
       </div>
 
       <div className="apply-form-right">
-        <img className="top-logo" src='/PlutoSec-Logo-Transparent1.svg' alt="PlutoSec Logo" />
-        <img className="center-image" src='/applyform_img.webp' alt="Employment Agreement" />
-        <img className="bottom-logo" src='/PlutoSec-Logo-Transparent1.svg' alt="PlutoSec Logo" />
+        <img className="center-image" src='/Career.png' alt="Employment Agreement" />
       </div>
     </div>
   );

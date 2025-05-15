@@ -3,6 +3,7 @@
 import React from "react";
 import "./Service2.css";
 
+import { GoArrowRight } from "react-icons/go";
 import { useRouter } from "next/navigation";
 
 const Services2 = () => {
@@ -100,13 +101,16 @@ const Services2 = () => {
         <div className="service-area-section2">
           <div className="service-grid2">
             {services.map((service) => (
-              <div className="service-item2" key={service._id} 
-              onClick={() => router.push(`/services/${service.slug}`)}>
+              <div className="service-item" key={service._id} 
+              // onClick={() => router.push(`/services/${service.slug}`)}
+              >
 
                 <img src={service.image} alt={service.name} />
                 <h2>{service.name}</h2>
                 <p>{service.introduction}</p>
-               
+                
+                
+        <div className="outline-btn" onClick={() => router.push(`/services/${service.slug}`)}>Learn More</div>
               </div>
             ))}
           </div>

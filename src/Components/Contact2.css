@@ -1,0 +1,204 @@
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-one);
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+/* Map Section */
+.map-container {
+  flex: 1;
+  width: 50%;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+
+/* Contact Form */
+.contact-form2 {
+  flex: 1;
+  width: 50%;
+  padding-left: 30px;
+  
+}
+
+.contact-form2 h1 {
+  color: var(--background-color);
+  
+}
+
+.contact-form2 form {
+  display: flex;
+  flex-direction: column;
+}
+.react-international-phone-input-container {
+  border: 1px solid var(--background-color) !important;
+  border-radius: 5px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+   margin-top: 15px !important;
+}
+.react-international-phone-country-selector-button {
+  margin-top: 0px !important;
+  height: 50px !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+  border: 1px solid var(--background-color) !important;
+}
+.react-international-phone-input {
+  height: 50px !important;
+  font-size: var(--default-p-size) !important;
+  margin: 0% !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+  border-radius: 5px;
+ 
+  color: var(--text-color) !important;
+}
+.react-international-phone-country-selector-dropdown{
+    background-color: rgba(26, 26, 26) !important;
+    color: var(--text-color) !important;
+}
+.react-international-phone-country-selector-dropdown li:hover{
+    background-color: var(--background-color) !important;
+       color: black !important;
+}
+
+.react-international-phone-country-selector-dropdown__list-item--focused {
+     background-color: var(--background-color) !important;
+    color: black !important;
+}
+
+.radio-group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+  gap: 10px;/* Center items horizontally */
+  align-items: center;
+}
+
+.radio-group-grid .radio-option-contact2 {
+  display: flex;
+  gap: 10px;
+  color: var(--background-color);
+  font-size: var(--default-p-size);
+  align-items: center;
+    margin: 0%;
+  padding: 0%;
+   cursor: pointer;
+
+}
+.radio-wrapper{
+    cursor: pointer;
+}
+
+.radio-option:hover {
+  background-color: #e9ecef;
+}
+.radio-element{
+ color: var(--background-color);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+.radio-element input{
+ 
+    cursor: pointer;
+}
+
+.radio-label-text {
+  user-select: none;
+}
+
+.fromgrouprow {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.fromgrouprow .formgroupform2 {
+  width: 50%;
+}
+.contact-form2 p{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.fromgrouprow .formgroupform2 input,
+.contact-form2 textarea {
+  width: 100%;
+  padding: 16px;
+  margin-top: 15px;
+  border: 1px solid var(--background-color);
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+
+.contact-form2 input:focus,
+.contact-form2 textarea:focus {
+  outline: none;
+  border: 1px solid var(--shadow-low3);
+  caret-color: white;
+}
+.error-message {
+  color: red;
+}
+
+.contact-form2 textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-form2 button {
+  background-color: var(--background-color);
+
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: var(--default-p-size);
+  border: 1px solid var(--background-color);
+}
+
+.contact-form2 button:hover {
+  background-color: transparent;
+  color: var(--background-color);
+}
+.recaptch-div{
+    width: 100%;
+}
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .contact-form2 {
+    flex: 1;
+    width: 100%;
+    padding: 0%;
+  }
+  .map-container {
+    flex: 1;
+    width: 100%;
+    height: 500px;
+  }
+  .recaptch-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fromgrouprow {
+ flex-direction: column;
+}
+.fromgrouprow .formgroupform2 {
+  width: 100%;
+}
+.contact-form2 h1 {
+ font-size: 24px;
+  
+}
+}

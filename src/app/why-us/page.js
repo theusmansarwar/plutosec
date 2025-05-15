@@ -13,6 +13,7 @@ import MissionFlipCard2 from '@/Components/MissionFlipCard2';
 import WhyChoose from '@/Components/WhyChoose';
 import ValuesFlipCardList from '@/Components/ValuesFlipCard';
 import Breadcrumb from '@/Components/Breadcrumb';
+import Blogs from '@/Components/Blogs';
 
 export const metadata = {
   title: "Why Choose Us | PlutoSec",
@@ -36,6 +37,7 @@ const page = () => {
    
     <ValuesFlipCardList/>
    <MissionFlipCard2/>
+   <Blogs/>
     </div>
 
 

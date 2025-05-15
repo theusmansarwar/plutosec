@@ -47,7 +47,6 @@ const OurPartnersCard = () => {
               {partner.description.map((text, idx) => (
                 <p key={idx}>{text}</p>
               ))}
-              <button className="learn-more-btn">Learn More</button>
             </div>
           </div>
         ))}

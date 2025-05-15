@@ -7,9 +7,9 @@ import { useRouter } from "next/navigation";
 
 
 const clientImages = [
-  "/person.jpg",
-  "/person.jpg",
-  "/person.jpg",
+  "/person1.jpg",
+  "/person2.jpg",
+  "/person3.jpg",
   "/person.jpg",
 ];
 const Whypluto = () => {

@@ -4,6 +4,8 @@ import React from "react";
 import styles from "./page.module.css";
 import Breadcrumb from "@/Components/Breadcrumb";
 import ServiceDetail from "@/Components/ServiceDetail";
+import Testimonial from "@/Components/Testimonial";
+import Blogs from "@/Components/Blogs";
 
 /** ----------------------------------------------------------------
  * Map each slug to its heading & paragraph text
@@ -111,6 +113,8 @@ export default async function Page({ params }) {
       <p className={styles.ptext}>{ptext}</p>
 
       <ServiceDetail slug={slug} />
+        <Testimonial/>
+        <Blogs/>
     </div>
   );
 }

@@ -14,8 +14,7 @@
 --default-border:1px solid var(--headings-color);
 --text-color:white;
 --font-family-base: var(--font-montserrat);
---default-p-size:18px;
---default-p-size2:18px;
+--default-p-size:16px;
 --default-border-radius:6px;
 --gradient-one: linear-gradient(to bottom right, #e7e7e725, #000000);
 /* --gradient-one: #0e0e0e; */
@@ -137,8 +136,38 @@ h1{
 
 
 }
+.first-btn,.second-btn{
+  background-color: var(--background-color);
+  position: fixed;
+padding: 10px;
+z-index: 2000;
+border-bottom-left-radius: var(--default-border-radius);
+border-top-left-radius: var(--default-border-radius);
+display: flex;
+align-items: center;
+gap: 5px;
+font-size: 18px;
+cursor: pointer;
+}
+.first-btn:hover,.second-btn:hover{
+  background-color: var(--shadow-low3);
+ 
+}
+.first-btn span,.second-btn span{
+ font-size: 12px;
+}
 
-
+.first-btn{
+ bottom: 40px;
+ right: 15px;
+}
+.second-btn{
+bottom: 90px;
+right: 15px;
+}
+.linkss{
+  color: black;
+}
 @media (max-width: 1280px) {
   .circle:first-child {
    display: none;
@@ -153,12 +182,18 @@ h1{
    margin-top: 15vh;
    
    }
+   .first-btn,.second-btn{
+ border-radius: 50%;
+}
+   .first-btn span,.second-btn span{
+  display: none;
+}
 }
 
 @media (max-width: 900px) {
   :root {
   --default-p-size:14px;
-  --default-p-size2:12px;
+  --default-p-size:12px;
   }
   .breadcrumb {
     padding: 10px 0;

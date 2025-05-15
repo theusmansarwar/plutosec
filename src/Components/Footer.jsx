@@ -35,7 +35,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Logo & About */}
         <div className="footer-section">
-          <img src="/logo2.png" className="logo" />
+          <img src="/logo4.png" className="logo" />
           <p className="footer-description">
             Defending Digital Assets – Empowering Cybersecurity Experts, and
             Shaping a Secure Future.
@@ -125,7 +125,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <hr />
-        <p>Copyright © 2021 - 2025</p>
+        <p>Copyright © 2021-2025 Plutosec.ca All right reserved</p>
       </div>
     </footer>
   );

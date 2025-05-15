@@ -39,15 +39,15 @@
 
   text-align: left;
 }
-.featured p {
+.featured .left {
   font-size: var(--default-p-size);
   color: var(--text-color);
   line-height: 1.5;
   text-align: left;
 }
-.Page p {
+ .featured .left p {
   font-size: var(--default-p-size);
-  color: var(--text-color);
+  
   line-height: 1.5;
 }
 .btn-section {
@@ -58,7 +58,7 @@
 
 .filled-btn,
 .outline-btn {
-  line-height: 1;
+  line-height: 1.5;
   font-size: 16px;
   font-weight: 500;
   border-radius: var(--default-border-radius);

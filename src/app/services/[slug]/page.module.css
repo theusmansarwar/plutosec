@@ -61,7 +61,7 @@ font-size: var(--default-p-size)
 }
 .contactcard .btn
 {
-  line-height: 1;
+  line-height: 1.5;
   font-size: var(--default-p-size);
   font-weight: 500;
   border-radius: var(--default-border-radius);
@@ -91,6 +91,10 @@ font-size: var(--default-p-size)
      
       width: 100%;
     
+    }
+    .Servicearea{
+      padding-top: 10px;
+
     }
     .Servicearea .htext{
      

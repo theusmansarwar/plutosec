@@ -58,5 +58,8 @@ font-size: var(--default-p-size)
     
       
     }
+    .ContactFormArea{
+padding-top: 10px;
+    }
   }
   

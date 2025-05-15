@@ -10,6 +10,7 @@ import Testimonial from '@/Components/Testimonial';
 import Whypluto from '@/Components/Whypluto';
 import Link from "next/link";
 import Breadcrumb from '@/Components/Breadcrumb';
+import Blogs from '@/Components/Blogs';
 export const metadata = {
   title: "Services | PlutoSec",
   description: "Get expert cybersecurity solutions to detect threats, fix vulnerabilities, and protect your digital assets with trusted, advanced services.",
@@ -31,7 +32,7 @@ const page = () => {
     <Services2/>
     <Whypluto/>
     <Testimonial/>
-    {/* <Popular/> */}
+   <Blogs/>
     </div>
 
 

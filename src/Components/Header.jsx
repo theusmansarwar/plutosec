@@ -42,7 +42,7 @@ const Header = () => {
   const menuItems = [
     { label: 'Home', path: '/' },
     { label: 'Services', path: '/services' },
-    { label: 'Why Plutosec', path: '/why-us' },
+    { label: 'Why Us', path: '/why-us' },
     { label: 'Career', path: '/careers' },
     { label: 'Contact Us', path: '/contact' },
   ];
@@ -68,7 +68,7 @@ const Header = () => {
 
   return (
     <div className={`Header ${showHeader ? 'show' : 'hide'}`}>
-      <img src="/logo2.png" alt="Logo" onClick={handleNavClick2} />
+      <img src="/logo4.png" alt="Logo" onClick={handleNavClick2} />
       <div className="menu-icon" onClick={() => setMobileOpen(!mobileOpen)}>
         {mobileOpen ? <FiX /> : <FiMenu />}
       </div>

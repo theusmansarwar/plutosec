@@ -15,6 +15,7 @@
 .why-us .left p {
   margin-bottom: 20px;
   font-size: var(--default-p-size);
+  color: var(--text-color);
 }
 .why-us .right img {
   height: 270px;

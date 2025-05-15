@@ -1,7 +1,7 @@
 .split-container {
   display: flex;
   gap: 30px;
-  padding: 20px;
+  padding: 30px;
   border-radius: var(--default-border-radius);
   width: 100%;
   background: var(--gradient-one);

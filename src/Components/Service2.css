@@ -17,22 +17,32 @@
   
   .service-grid2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     width: 100%;
   }
   
   .service-item2 {
-    background:var(--gradient-one);
-    padding: 1rem;
+      background:var(--gradient-one);
+    padding: 10px;
     border-radius:var(--default-border-radius);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     
     box-shadow: var(--default-box-shadow);
-
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+justify-content: space-between;
     gap: 10px;
     cursor: pointer;
+  }
+  .service-item2 svg{
+   background-color: var(--headings-color);
+    font-size: 56px;
+    border-radius: 50%;
+    padding: 10px;
   }
   
   .service-item2:hover {
@@ -53,11 +63,13 @@
     color: var(--headings-color);
     margin-bottom: 0.5rem;
     font-size: 20px;
+    padding: 0px 30px;
   }
   
   .service-item2 p {
     color: var(--text-color);
-    font-size: var(--default-p-size2);
+    font-size: var(--default-p-size);
+      padding: 0px 30px;
   }
   
   @media (max-width: 900px) {

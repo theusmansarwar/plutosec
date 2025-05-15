@@ -30,7 +30,7 @@
   }
   
   .footer-description {
-    font-size: var(--default-p-size2);
+    font-size: var(--default-p-size);
 
   }
   
@@ -72,7 +72,7 @@
   .footer-section ul li {
     margin-bottom: 8px;
     cursor: pointer;
-    font-size: var(--default-p-size2);
+    font-size: var(--default-p-size);
     width: fit-content;
   }
   .footer-section ul li:hover {
@@ -94,7 +94,7 @@
     margin-left: 5px;
     padding: 8px;
    
-    line-height: 1;
+    line-height: 1.5
     font-size: 16px;
     font-weight: 500;
     border-radius: var(--default-border-radius);
@@ -111,7 +111,7 @@
   
   .footer-section .contact-info p {
     margin: 6px 0;
-    font-size: var(--default-p-size2);
+    font-size: var(--default-p-size);
     display: flex;
     align-items: center;
     cursor: pointer;

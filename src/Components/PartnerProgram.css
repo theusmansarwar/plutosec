@@ -62,7 +62,7 @@ border-radius:var(--default-border-radius);
 
   }
   .contactcard{
-    background-color: var(--gradient-one);
+    background: var(--gradient-one);
     height: 160px;
     width: 30%;
     box-shadow: var(--default-box-shadow);
@@ -73,6 +73,7 @@ border-radius:var(--default-border-radius);
     align-items: center;
     justify-content: center;
     gap: 20px;
+    align-self: center;
   
   }
   .contactcard p{
@@ -82,7 +83,7 @@ border-radius:var(--default-border-radius);
   .contactcard .btn
   {
   
-    line-height: 1;
+    line-height: 1.5;
     font-size: var(--default-p-size);
     font-weight: 500;
     border-radius: var(--default-border-radius);

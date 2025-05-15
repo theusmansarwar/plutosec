@@ -1,5 +1,6 @@
 import React from "react";
 import "./WhyChoose.css";
+import './Services.css'
 const WhyChoose = () => {
   return (
     <div className="why-choose-us">

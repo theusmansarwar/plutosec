@@ -44,7 +44,7 @@
     margin-bottom: 16px;
   }
   .apply-form-left .field-group label {
-    font-size: 14px;
+    font-size: var(--default-p-size);
     margin-bottom: 6px;
     color: #fff;
   }
@@ -76,7 +76,7 @@
     flex: 1;
   }
   .apply-form-left .upload-label {
-    font-size: 14px;
+    font-size: var(--default-p-size);
     margin-bottom: 8px;
     display: block;
   }
@@ -95,7 +95,7 @@
   }
   .apply-form-left .upload-box p {
     margin: 0;
-    font-size: 14px;
+    font-size: var(--default-p-size);
   }
   .apply-form-left .upload-box span {
     font-size: 12px;
@@ -124,7 +124,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
     padding-bottom: 0;
     position: relative;
     border-radius: var(--default-border-radius);
@@ -156,7 +156,7 @@
     border-bottom-right-radius: var(--default-border-radius);
   }
   .selected-file-name{
-    font-size: var(--default-p-size2);
+    font-size: var(--default-p-size);
     color: white;
     margin-top: 5px;
   }
@@ -172,7 +172,7 @@
     }
     .apply-form-left {
       width: 100%;
-      padding: 20px;
+      padding: 30px;
     }
     .apply-form-right {
       width: 100%;
@@ -203,7 +203,7 @@
     }
     .apply-form-left .form-fields input,
     .apply-form-left .submit-btn {
-      font-size: 14px;
+      font-size: var(--default-p-size);
     }
     .apply-form-left .name-row {
       flex-direction: column;

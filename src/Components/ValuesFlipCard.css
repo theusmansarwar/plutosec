@@ -37,7 +37,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
     box-sizing: border-box;
     box-shadow: var(--default-box-shadow);
   }
@@ -59,7 +59,7 @@
   /* Ordered List Styling */
   .values-flip-card .card-text {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: var(--default-p-size);
     text-align: left;
     list-style-position: inside;
     display: flex;

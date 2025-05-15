@@ -6,7 +6,7 @@
   }
 .partners-card {
   background: var(--gradient-one);
-    border-radius: 10px;
+    border-radius: var(--default-border-radius);
     border: 1px solid var(--background-color);
     overflow: hidden;
     box-shadow: var(--default-box-shadow);
@@ -24,17 +24,17 @@
  
   }
   .partners-card .card-body {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
   }
   .partners-card .card-body p {
-    font-size: 14px;
+    font-size: var(--default-p-size);
     margin-bottom: 15px;
     color: var(--text-color)
   }
   .partners-card .learn-more-btn {
     align-self: flex-end;
-    line-height: 1;
+    line-height: 1.5;
     font-size: var(--default-p-size);
     font-weight: 500;
     border-radius: var(--default-border-radius);

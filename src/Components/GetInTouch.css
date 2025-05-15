@@ -55,7 +55,7 @@
     font-weight: bold;
   }
   .get-in-touch .right-container .experince span {
-    font-size: var(--default-p-size2);
+    font-size: var(--default-p-size);
     color: var(--text-color);
   }
   .get-in-touch .right-container .right-image {
@@ -76,7 +76,7 @@
   }
   .get-in-touch .left-container .btn {
     align-self: flex-start;
-    line-height: 1;
+    line-height: 1.5
     font-size: var(--default-p-size);
     font-weight: 500;
     border-radius: var(--default-border-radius);
@@ -149,7 +149,7 @@
         font-weight: bold;
       }
       .get-in-touch .right-container .experince span {
-        font-size: var(--default-p-size2);
+        font-size: var(--default-p-size);
         color: rgb(64, 62, 62);
       }
   }
