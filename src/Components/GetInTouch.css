@@ -76,7 +76,7 @@
   }
   .get-in-touch .left-container .btn {
     align-self: flex-start;
-    line-height: 1.5
+    line-height: 1.5;
     font-size: var(--default-p-size);
     font-weight: 500;
     border-radius: var(--default-border-radius);
