@@ -132,6 +132,7 @@
   border: 1px solid var(--background-color);
   background-color: transparent;
   border-radius: 5px;
+  color: var(--text-color);
 }
 
 
