@@ -3,6 +3,7 @@
     width: 100%;
     color: var(--headings-color);
     padding-bottom: 50px;
+    height: fit-content;
   }
 
   .apply-form-left {
