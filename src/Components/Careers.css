@@ -8,7 +8,7 @@
 
   .apply-form-left {
     width: 60%;
-    height: 700px;
+    height: fit-content;
     flex: 1;
     padding: 50px;
     padding-top: 0%;
