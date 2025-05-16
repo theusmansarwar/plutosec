@@ -10,6 +10,8 @@ import ScrollProgressBar from "@/Components/ScrollProgressBar";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { LuMessageSquareQuote } from "react-icons/lu";
 import Link from "next/link";
+import { countView } from "@/DAL/create";
+import ViewCounter from "@/Components/ViewCounter";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -27,6 +29,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
+ 
+
   return (
     <html lang="en" className={montserrat.variable}>
       <head>
@@ -56,6 +61,7 @@ export default function RootLayout({ children }) {
                     <MdOutlineMailOutline /> <span>Email Us</span>
                   </div>
                 </a>
+                <ViewCounter/>
                 <Header />
                 {children}
                 <Footer />

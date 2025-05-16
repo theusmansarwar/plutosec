@@ -11,6 +11,8 @@ import Certificatelist from '@/Components/Certificateslist';
 import { useRouter } from "next/navigation";
 import '../app/globals.css'
 import Contact2 from '@/Components/Contact2';
+import ReviewsCarousel from '@/Components/ReviewsCarousel';
+import ElfsightWidget from '@/Components/ElfsightWidget';
 
 export default function Home() {
   const router = useRouter();
@@ -41,11 +43,12 @@ export default function Home() {
     
 
 
-      
-
+    
+{/* <ElfsightWidget/> */}
    <Services/>
    <Certificatelist/>
    <Whyus/>
+    <ReviewsCarousel/> 
    <Blogs/>
      <Testimonial/>
    <div className="headings">
