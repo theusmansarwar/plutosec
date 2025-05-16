@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: column;
 }
-.react-international-phone-input-container {
+.formgroupform2 .react-international-phone-input-container {
   border: 1px solid var(--background-color) !important;
   border-radius: 5px !important;
   display: flex !important;
@@ -43,13 +43,13 @@
   justify-content: center !important;
    margin-top: 15px !important;
 }
-.react-international-phone-country-selector-button {
+.formgroupform2 .react-international-phone-country-selector-button {
   margin-top: 0px !important;
   height: 50px !important;
   background-color: rgba(255, 255, 255, 0) !important;
   border: 1px solid var(--background-color) !important;
 }
-.react-international-phone-input {
+.formgroupform2 .react-international-phone-input {
   height: 50px !important;
   font-size: var(--default-p-size) !important;
   margin: 0% !important;
