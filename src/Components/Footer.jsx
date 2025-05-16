@@ -17,6 +17,7 @@ const Footer = () => {
   const menuItems = [
     { label: "Services", path: "/services" },
     { label: "Career", path: "/careers" },
+    { label: "Industries", path: "/industries" },
     { label: "Testimonials", path: "/testimonial" },
     { label: "Contact Us", path: "/contact" },
     { label: "Partner Program", path: "/partner" },
@@ -75,7 +76,7 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Company</h4>
           <ul>
-            {menuItems.slice(0, 4).map((item) => (
+            {menuItems.slice(0, 5).map((item) => (
               <li key={item.label} onClick={() => handleNavClick(item)}>
                 {item.label}
               </li>
@@ -87,7 +88,7 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Others</h4>
           <ul>
-            {menuItems.slice(4).map((item) => (
+            {menuItems.slice(5).map((item) => (
               <li key={item.label} onClick={() => handleNavClick(item)}>
                 {item.label}
               </li>

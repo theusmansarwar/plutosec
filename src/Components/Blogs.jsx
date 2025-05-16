@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation'; // If using app/ router
 import { FaArrowRightLong } from 'react-icons/fa6';
 import './Blogs.css';
+import './Services.css'
 import { fetchallBloglist } from '@/DAL/fetch';
 
 const Blogs = () => {
@@ -63,7 +64,7 @@ const Blogs = () => {
 
           <div className="blog-content">
             <h3>{post.title}</h3>
-            <p>{truncateContent(post?.description, 200)}</p>
+            <p>{truncateContent(post?.description, 250)}</p>
             <div className="tags">
               <button>{post?.category?.name}</button>
             </div>

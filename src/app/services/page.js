@@ -1,10 +1,7 @@
 
-import Contact from '@/Components/Contact'
 import React from 'react'
 import styles from './page.module.css';
 import "../globals.css";
-import Faq from '@/Components/Faq';
-import Popular from '@/Components/Popular';
 import Services2 from '@/Components/Service2';
 import Testimonial from '@/Components/Testimonial';
 import Whypluto from '@/Components/Whypluto';

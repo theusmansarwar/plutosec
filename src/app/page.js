@@ -5,13 +5,11 @@ import styles from './page.module.css';
 import Services from '@/Components/Services';
 import Whyus from '@/Components/Whyus';
 import Blogs from '@/Components/Blogs';
-import Contact from '@/Components/Contact';
-import Popular from '@/Components/Popular';
 import Testimonial from '@/Components/Testimonial';
 import Terminal from '@/Components/Terminal';
 import Certificatelist from '@/Components/Certificateslist';
 import { useRouter } from "next/navigation";
-import Services2 from '@/Components/Service2';
+import '../app/globals.css'
 import Contact2 from '@/Components/Contact2';
 
 export default function Home() {
@@ -25,16 +23,7 @@ export default function Home() {
 
   return (
     <div className={styles.Page}>
-      {/* <div className={styles['model-area']}>
-        <model-viewer
-          src="/models/plutohd.glb"
-          alt="3D model"
-          auto-rotate
-          shadow-intensity="0"
-          style={{ width: '100%', height: '100%' }}
-        ></model-viewer>
-      </div> */}
-
+  
 <div className={styles.featured}>
   <div className={styles.left} >  
     <h1>Protect your data now with strong cybersecurity services</h1>

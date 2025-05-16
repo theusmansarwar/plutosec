@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./page.module.css";
 import "../globals.css";
-import Careers from "@/Components/Careers";
-import Link from "next/link";
 import Breadcrumb from "@/Components/Breadcrumb";
 export const metadata = {
   title: "Careers | PlutoSec",

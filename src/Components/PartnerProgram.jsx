@@ -1,5 +1,6 @@
 import React from "react";
 import "./PartnerProgram.css";
+import './Services.css'
 
 const PartnerProgram = () => {
   return (
@@ -17,7 +18,7 @@ const PartnerProgram = () => {
             on collaboration and shared success. Together, we help businesses
             stay secure in a rapidly evolving digital world.{" "}
           </p>
-          <button className="btn">Learn More</button>
+      
         </div>
       </div>
       <div className="right-container">

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState, useRef } from "react";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -10,7 +10,7 @@ import "./Contact2.css";
 import { CreateLeads } from "@/DAL/create";
 const Contact2 = () => {
   const [formData, setFormData] = useState({
-    firstname: "",
+    name: "",
     lastname: "",
     email: "",
     phone: "",
@@ -40,7 +40,7 @@ const Contact2 = () => {
     e.preventDefault();
 
     const payload = {
-      name: formData.firstname,
+      name: formData.name,
       lastname: formData.lastname,
       phone: formData.phone,
       email: formData.email,
@@ -57,7 +57,7 @@ const Contact2 = () => {
         toast.success(res?.message || "Form submitted successfully");
         setErrors({});
         setFormData({
-          firstname: "",
+          name: "",
           lastname: "",
           email: "",
           phone: "",
@@ -67,8 +67,17 @@ const Contact2 = () => {
         setCaptchaToken(null);
         recaptchaRef.current.reset();
       }
+      if (res?.status === 400) {
+        const fieldErrors = {};
+        res.missingFields.forEach((field) => {
+          fieldErrors[field.name] = field.message;
+        });
+        setErrors(fieldErrors);
+      } else {
+        setStatus("error");
+      }
     } catch (err) {
-      if (err.response?.status === 400 && err.response.data?.missingFields) {
+      if (err.response?.status == 400 && err.response.data?.missingFields) {
         const fieldErrors = {};
         err.response.data.missingFields.forEach((field) => {
           fieldErrors[field.name] = field.message;
@@ -105,14 +114,12 @@ const Contact2 = () => {
             <div className="formgroupform2">
               <input
                 type="text"
-                name="firstname"
+                name="name"
                 placeholder="First Name"
-                value={formData.firstname}
+                value={formData.name}
                 onChange={handleChange}
               />
-              {errors.firstname && (
-                <span className="error-message">{errors.firstname}</span>
-              )}
+              {errors.name && <span className="error-msg">{errors.name}</span>}
             </div>
             <div className="formgroupform2">
               <input
@@ -123,7 +130,7 @@ const Contact2 = () => {
                 onChange={handleChange}
               />
               {errors.lastname && (
-                <span className="error-message">{errors.lastname}</span>
+                <span className="error-msg">{errors.lastname}</span>
               )}
             </div>
           </div>
@@ -137,7 +144,7 @@ const Contact2 = () => {
                 countryCodeEditable={false}
               />
               {errors.phone && (
-                <span className="error-message">{errors.phone}</span>
+                <span className="error-msg">{errors.phone}</span>
               )}
             </div>
 
@@ -150,68 +157,73 @@ const Contact2 = () => {
                 onChange={handleChange}
               />
               {errors.email && (
-                <span className="error-message">{errors.email}</span>
+                <span className="error-msg">{errors.email}</span>
               )}
             </div>
           </div>
+          <div className="radio-group-form">
+            <p>
+              Select Subject?{" "}
+              {errors.subject && (
+                <span className="error-msg">{errors.subject}</span>
+              )}
+            </p>
 
-          <p>Select Subject?</p>
-          {errors.subject && <p className="error-msg">{errors.subject}</p>}
-
-          <div className="radio-group-grid">
-         {[
-  "Penetration Testing",
-  "Cloud Security",
-  "Network Security",
-  "Managed Security",
-  "Cyber Consultation",
-  "General Inquiry",
-].map((subject) => {
-  const id = subject.toLowerCase().replace(/\s+/g, "-");
-  return (
-    <div className="radio-element" key={id}>
-      <input
-        id={id}
-        type="checkbox"
-        name="subject"
-        value={subject}
-        checked={formData.subject === subject}
-        onChange={handleChange}
-      />
-      <label htmlFor={id} className="radio-wrapper">
-        {subject}
-      </label>
-    </div>
-  );
-})}
-
-                  
-               
+            <div className="radio-group-grid">
+              {[
+                "Penetration Testing",
+                "Cloud Security",
+                "Network Security",
+                "Managed Security",
+                "Cyber Consultation",
+                "General Inquiry",
+              ].map((subject) => {
+                const id = subject.toLowerCase().replace(/\s+/g, "-");
+                return (
+                  <div className="radio-element" key={id}>
+                    <input
+                      id={id}
+                      type="checkbox"
+                      name="subject"
+                      value={subject}
+                      checked={formData.subject === subject}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor={id} className="radio-wrapper">
+                      {subject}
+                    </label>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-
           <textarea
             name="message"
             placeholder="Query"
             value={formData.message}
             onChange={handleChange}
           ></textarea>
-          {errors.message && (
-            <span className="error-message">{errors.message}</span>
+          {errors.query && (
+            <span className="error-msg">{errors.query}</span>
           )}
 
-<div className="recaptch-div">
-          <ReCAPTCHA
-            ref={recaptchaRef}
-            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-            onChange={handleCaptchaChange}
-            theme="dark"
-          />
+          <div className="recaptch-div">
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+              onChange={handleCaptchaChange}
+              theme="dark"
+            />
+             {errors.captchaToken && (
+            <span className="error-msg">{errors.captchaToken}</span>
+          )}
           </div>
+
 
           <button type="submit">Submit</button>
         </form>
       </div>
-       <ToastContainer
+      <ToastContainer
         position="top-right"
         autoClose={3000}
         pauseOnHover={false}

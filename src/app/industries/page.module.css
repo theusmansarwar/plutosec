@@ -1,0 +1,65 @@
+.ContactFormArea{
+    width: var(--mid-space);
+    margin-left: var(--left-space);
+    margin-right: var(--right-space);
+      padding-top: 100px;
+}
+.ContactFormArea .htext{
+  text-align: center;
+  color: var(--headings-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 48px;
+
+  
+}
+.ContactFormArea .ptext{
+text-align: center;
+color: var(--text-color);
+
+margin-bottom: 20px;
+font-size: var(--default-p-size)
+
+
+}
+.bgSection {
+  border-radius: var(--default-border-radius);
+  background-image: url("/contactbg.svg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--default-box-shadow);
+  border: var(--default-border);
+}
+.bgSection1 {
+
+  height: 250px;
+  width: 100%;
+  border-radius: var(--default-border-radius);
+  background-color: rgba(0, 0, 0, 0.623);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+  /* Media query: For screens smaller than 768px */
+  @media (max-width: 768px) {
+    .bgSection {
+      height: 150px;
+      margin-top: 70px;
+    }
+    .bgSection1 {
+      height: 150px;
+ 
+    }
+    .ContactFormArea .htext{
+     
+      font-size: 32px;
+    
+      
+    }
+    .ContactFormArea{
+      padding-top:10px ;
+    }
+  }
+  

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import "./Whypluto.css";
-import { FaArrowRightLong } from "react-icons/fa6";
+
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -68,7 +68,7 @@ const Whypluto = () => {
             your data and systems so you can focus on your growth. Trust us to
             keep your organization safe from potential threats.
           </p>
-          <button className="send-btn"  onClick={() => router.push("/why-us")}>Learn more</button>
+         
         </div>
       </div>
     </div>

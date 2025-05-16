@@ -1,13 +1,7 @@
 
-import Contact from '@/Components/Contact'
 import React from 'react'
 import styles from './page.module.css';
 import "../globals.css";
-import Faq from '@/Components/Faq';
-import Link from "next/link";
-import GetInTouch from '@/Components/GetInTouch';
-import Popular from '@/Components/Popular';
-import TestimonialCard from '@/Components/TestimonialCard';
 import PartnerProgram from '@/Components/PartnerProgram';
 import Testimonial from '@/Components/Testimonial';
 import MissionFlipCard from '@/Components/MissionFlipCard';

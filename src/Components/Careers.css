@@ -110,6 +110,7 @@
     border-radius: 8px;
     font-size: 16px;
     color: #000;
+      border: 2px solid var(--background-color);
     cursor: pointer;
   }
   .apply-form-left .submit-btn:hover {
@@ -119,7 +120,7 @@
   }
   .apply-form-right {
     width: 40%;
-    height: 700px;
+    height: 740px;
     flex: 1;
     background: linear-gradient(to bottom right, #187f8fc8, #000000);
     display: flex;
@@ -159,12 +160,53 @@
   .selected-file-name{
     font-size: var(--default-p-size);
     color: white;
-    margin-top: 5px;
+    margin-top: 15px;
+  }
+  .selected-file-name strong{
+     color: var(--background-color);
   }
   .field-group .error-msg{
     color: red;
     font-size: 10px;
   }
+.react-international-phone-input-container {
+  border-radius: 0px !important;
+  border-bottom: 1px solid gray !important;
+ 
+}
+
+.react-international-phone-country-selector-button {
+  margin-top: 0px !important;
+  height: 50px !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+  border: 0 solid var(--background-color) !important;
+  
+}
+.react-international-phone-input {
+  height: 50px !important;
+  font-size: var(--default-p-size) !important;
+  margin: 0% !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+  border: 0 solid var(--background-color) !important;
+ 
+  color: var(--text-color) !important;
+}
+.react-international-phone-country-selector-dropdown{
+    background-color: rgba(26, 26, 26) !important;
+    color: var(--text-color) !important;
+}
+.react-international-phone-country-selector-dropdown li:hover{
+    background-color: var(--background-color) !important;
+       color: black !important;
+}
+
+.react-international-phone-country-selector-dropdown__list-item--focused {
+     background-color: var(--background-color) !important;
+    color: black !important;
+}
+
+
+
   @media (max-width: 900px) {
     .apply-form-container {
       flex-direction: column-reverse;

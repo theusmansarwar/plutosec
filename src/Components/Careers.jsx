@@ -5,14 +5,16 @@ import axios from "axios";
 import "./Careers.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { PhoneInput } from "react-international-phone";
+import "react-international-phone/style.css";
 
 const Careers = () => {
   const fileInputRef = useRef(null);
   const [selectedFileName, setSelectedFileName] = useState("");
   const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    name: "",
+  
     email: "",
     phone: "",
     jobTitle: "",
@@ -32,12 +34,16 @@ const Careers = () => {
     setFormData(prev => ({ ...prev, [e.target.id]: e.target.value }));
   };
 
+  const handlePhoneChange = (value) => {
+    setFormData((prev) => ({ ...prev, phone: value }));
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const name = `${formData.firstName} ${formData.lastName}`.trim();
+    
     const form = new FormData();
-    form.append("name", name);
+    form.append("name", formData.name);
     form.append("email", formData.email);
     form.append("phone", formData.phone);
     form.append("jobTitle", formData.jobTitle);
@@ -47,18 +53,21 @@ const Careers = () => {
     }
 
     try {
-      const res = await axios.post("https://plutosec.ca/api/applications/CreateApplication", form, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      });
+      const res = await axios.post(
+        "https://plutosec.ca/api/applications/CreateApplication",
+        form,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
 
-      if (res.status == 201) {
+      if (res.status === 201) {
         toast.success(res?.data?.message || "Application submitted successfully!");
         setErrors({});
         setFormData({
-          firstName: "",
-          lastName: "",
+         name:"",
           email: "",
           phone: "",
           jobTitle: "",
@@ -67,7 +76,7 @@ const Careers = () => {
         if (fileInputRef.current) fileInputRef.current.value = null;
       }
     } catch (err) {
-      if (err.response?.status == 400 && err.response.data?.missingFields) {
+      if (err.response?.status === 400 && err.response.data?.missingFields) {
         const fieldErrors = {};
         err.response.data.missingFields.forEach((field) => {
           fieldErrors[field.name] = field.message;
@@ -93,17 +102,12 @@ const Careers = () => {
           </p>
         </div>
         <form className="form-fields" onSubmit={handleSubmit}>
-          <div className="name-row">
+       
             <div className="field-group">
-              <label htmlFor="firstName">First Name</label>
+              <label htmlFor="name">Name</label>
               {errors.name && <p className="error-msg">{errors.name}</p>}
-              <input id="firstName" type="text" placeholder="First name" value={formData.firstName} onChange={handleChange} />
-            </div>
-            <div className="field-group">
-              <label htmlFor="lastName">Last Name</label>
-              {errors.name && <p className="error-msg">{errors.name}</p>}
-              <input id="lastName" type="text" placeholder="Last name" value={formData.lastName} onChange={handleChange} />
-            </div>
+              <input id="name" type="text" placeholder="Name" value={formData.name} onChange={handleChange} />
+           
           </div>
 
           <div className="field-group">
@@ -121,22 +125,27 @@ const Careers = () => {
           <div className="field-group">
             <label htmlFor="phone">Phone Number</label>
             {errors.phone && <p className="error-msg">{errors.phone}</p>}
-            <input id="phone" type="tel" placeholder="Phone number" value={formData.phone} onChange={handleChange} />
+            <PhoneInput
+              name="phone"
+              value={formData.phone}
+              onChange={handlePhoneChange}
+              countryCodeEditable={false}
+            />
           </div>
 
           <div className="field-group">
             <label htmlFor="resume" className="upload-label">Upload Resume</label>
             {errors.resume && <p className="error-msg">{errors.resume}</p>}
             <div className="upload-box" onClick={handleUploadClick}>
-              <p>Upload an image or PDF</p>
-              <span>Drag & drop or click to choose file</span>
+              <p>Upload Doc or PDF</p>
+              <span> Click here to choose file</span>
             </div>
             {selectedFileName && (
-              <p className="selected-file-name">Selected File: {selectedFileName}</p>
+              <p className="selected-file-name">Selected File: <strong>{selectedFileName}</strong></p>
             )}
             <input
               id="resume"
-               accept=".doc,.docx,.pdf"
+              accept=".doc,.docx,.pdf"
               type="file"
               style={{ display: "none" }}
               ref={fileInputRef}

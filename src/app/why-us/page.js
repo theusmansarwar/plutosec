@@ -1,14 +1,6 @@
-
-
-import Contact from '@/Components/Contact'
 import React from 'react'
 import styles from './page.module.css';
 import "../globals.css";
-import Faq from '@/Components/Faq';
-import Link from "next/link";
-import GetInTouch from '@/Components/GetInTouch';
-import Popular from '@/Components/Popular';
-import TestimonialCard from '@/Components/TestimonialCard';
 import MissionFlipCard2 from '@/Components/MissionFlipCard2';
 import WhyChoose from '@/Components/WhyChoose';
 import ValuesFlipCardList from '@/Components/ValuesFlipCard';

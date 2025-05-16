@@ -95,29 +95,29 @@ const Services2 = () => {
   
 
   return (
-    <div className="services2-section">
-      <div className="service2-section">
-
-        <div className="service-area-section2">
-          <div className="service-grid2">
-            {services.map((service) => (
-              <div className="service-item" key={service._id} 
-              // onClick={() => router.push(`/services/${service.slug}`)}
-              >
-
-                <img src={service.image} alt={service.name} />
-                <h2>{service.name}</h2>
-                <p>{service.introduction}</p>
+  <div className="services2-section">
+        <div className="service2-section">  
+          <div className="service-area-section">
+            <div className="service-grid">
+              {services.map((service) => (
+                <div className="service-item" key={service._id} 
+                // onClick={() => router.push(`/services/${service.slug}`)}
+                >
+  
+                  <img src={service.image} alt={service.name} />
                 
-                
-        <div className="outline-btn" onClick={() => router.push(`/services/${service.slug}`)}>Learn More</div>
-              </div>
-            ))}
+                  <h2>{service.name}</h2>
+                  <p>{service.introduction}</p>
+                  
+          <div className="outline-btn" onClick={() => router.push(`/services/${service.slug}`)}>Learn More</div>
+                  </div>
+           
+              ))}
+            </div>
           </div>
         </div>
+       
       </div>
-     
-    </div>
   );
 };
 

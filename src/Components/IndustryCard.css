@@ -1,11 +1,11 @@
-/* services2.css */
+/* industriess.css */
 
-.services2-section {
+.industries-section {
 
   margin-bottom: 20px;
 }
 
-.service-section {
+.industries-section {
   width: 100%;
   margin: 0 auto;
 }
@@ -91,19 +91,19 @@ padding: 0%;
   line-height: 1.5;
   margin: 0%;
 }
-.service-area-section {
+.industries-area-section {
   display: flex;
   justify-content: center;
 }
 
-.service-grid {
+.industries-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 2rem;
   width: 100%;
 }
 
-.service-item {
+.industries-item {
       background:var(--gradient-one);
     padding: 30px;
     border-radius:var(--default-border-radius);
@@ -120,25 +120,25 @@ justify-content: space-between;
     cursor: pointer;
 }
 
-.service-item:hover {
+.industries-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
-.service-item img {
+.industries-item img {
   width: 75px;
   height: 75px;
   color: var(--headings-color);
   
 }
 
-.service-item  h2 {
+.industries-item  h2 {
   font-size: 1.25rem;
   color: var(--headings-color);
   margin-bottom: 0.5rem;
 }
 
-.service-item  p {
+.industries-item  p {
   color: var(--text-color);
   font-size: var(--default-p-size);
 }
@@ -205,7 +205,7 @@ justify-content: space-between;
        display: none;
       }
       
-      .service-grid {
+      .industries-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;

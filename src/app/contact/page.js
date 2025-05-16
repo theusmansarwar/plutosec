@@ -1,10 +1,8 @@
 
-import Contact from '@/Components/Contact'
 import React from 'react'
 import styles from './page.module.css';
 import "../globals.css";
 import Faq from '@/Components/Faq';
-import Link from "next/link";
 import Breadcrumb from '@/Components/Breadcrumb';
 import Contact2 from '@/Components/Contact2';
 export const metadata = {
