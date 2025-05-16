@@ -199,7 +199,7 @@ const Contact2 = () => {
           </div>
           <textarea
             name="message"
-            placeholder="Please type your inquiry and our team will get back to you"
+            placeholder="Please type your inquiry and our team will get back to you..."
             value={formData.message}
             onChange={handleChange}
           ></textarea>
