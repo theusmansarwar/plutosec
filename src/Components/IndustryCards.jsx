@@ -67,7 +67,7 @@ const industries = [
             <div className="industries-grid">
               {industries.map((industries) => (
                 <div className="industries-item" key={industries._id} 
-                // onClick={() => router.push(`/industries/${industries.slug}`)}
+                onClick={() => router.push(`/industries/${industries.slug}`)}
                 >
   
                  <h2>{industries.name}</h2>

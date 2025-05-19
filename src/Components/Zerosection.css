@@ -1,0 +1,124 @@
+.zero-section {
+
+  color: white;
+  margin-bottom: var(--default-space);
+  margin: 30px 0px;
+}
+
+.zero-section .hr2 {
+  background-color: white;
+  width: 80%;
+  margin-top: 20px;
+  height: 2px;
+  z-index: 10;
+}
+.zero-section .cards-section {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-top: 30px;
+}
+.zero-section .cards-section .cards-area {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.zero-section .cards-section .cards-area .hr {
+    width: 80%;
+  }
+.zero-section .cards-section .cards-area .top {
+  width: 100%;
+  height: 100px;
+  border-radius: var(--default-border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.zero-section .cards-section .cards-area .top img{
+    height: 40px; 
+    width: auto;
+    max-width: 100%;
+
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+}
+.dots-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot.active {
+  width: 30px;
+  border-radius: 50px;
+  background-color: white;
+}
+.arrowss {
+  display: flex;
+  gap: 20px;
+}
+.arrowss .arrow {
+  cursor: pointer;
+  font-size: var(--default-p-size);
+  color: rgb(255, 255, 255);
+}
+.dot-dark {
+  width: 12px;
+  height: 12px;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot-dark.active {
+  width: 30px;
+  border-radius: 50px;
+  background-color: var(--background-color);
+}
+.arrowss-dark {
+  display: flex;
+  gap: 20px;
+}
+.arrowss-dark .arrow {
+  cursor: pointer;
+  font-size: var(--default-p-size);
+  color: var(--background-color);
+}
+@media (max-width: 768px)
+{
+  .zero-section {
+    height: fit-content;
+    margin-bottom: var(--default-space);
+  }
+  .zero-section {
+    padding-top:var(--default-space) ;
+    padding-bottom: var(--default-space);
+  }
+  .zero-section .cards-section {
+flex-direction: column;
+  }
+  .zero-section .cards-section .cards-area {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .zero-section .cards-section .cards-area .top {
+    width: 100%;
+    height: 70px;
+  }
+  .zero-section .cards-section .cards-area .top img{
+      height: 40px;
+  }
+}

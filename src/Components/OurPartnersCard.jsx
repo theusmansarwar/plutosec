@@ -1,22 +1,37 @@
 import React from "react";
 import "./OurPartnersCard.css";
 
-// Partner Data Array
 const partnerData = [
   {
-    logo: "/tsplus-logo.svg", // make sure this path is correct or use an import if you want
+    logo: "/comptia.png",
     description: [
-      "TS Plus gives you powerful tools to manage projects and automate tasks. You can boost productivity and keep your team focused. The platform supports smooth collaboration and helps you complete work faster. It connects well with your existing tools. You also get features that fit any team size.",
-    "PlutoSec adds a layer of strong cybersecurity to TS Plus. Your data stays safe from online threats. The combined solution supports your business goals. You get efficiency with full protection. You also get peace of mind."],
+      "Our link with CompTIA boosts our technical strength with worldwide certifications. This partnership keeps our team updated on industry standards. We provide trusted and certified cybersecurity solutions. It also helps us build trust with clients through recognized expertise.",
+      "PlutoSec leverages CompTIA’s global credibility to maintain a skilled and knowledgeable workforce. With certified professionals, we deliver advanced security strategies that align with international best practices."
+    ]
+  },
+  {
+    logo: "/datto.png",
+    description: [
+      "Working with Datto lets us offer secure backup, disaster recovery, and business continuity services. This partnership protects client data from cyberattacks, system crashes, and unexpected issues. Together, we ensure data stays safe even in worst-case scenarios.",
+      "PlutoSec strengthens this collaboration by adding proactive threat detection and response. The result is a complete, resilient data protection strategy for businesses of all sizes."
+    ]
+  },
+  {
+    logo: "/tsplus-logo.svg",
+    description: [
+      "TSplus helps us deliver secure remote access and application delivery. Clients get safe and scalable connections without risking data safety or performance quality. This partnership expands our ability to serve businesses with remote workforce needs.",
+      "PlutoSec ensures TSplus deployments are fortified against evolving cyber threats. We help clients enjoy smooth, secure access with maximum reliability and minimal risk."
+    ]
   },
   {
     logo: "/pecb-logo.svg",
     description: [
-      "PECB offers certifications in information security, compliance, and quality management. You can meet global standards like ISO and stay ahead in your field. The programs help you grow professionally and build trust in your organization. Each course brings practical knowledge. You can apply it in real business environments.",
-      "PlutoSec brings deep cybersecurity strength to the partnership. You get more value from every training. Your team becomes ready to face digital risks. The collaboration helps you build trust and protect your operations."
-       ],
-  },
+      "Our collaboration with PECB lets us apply global rules in cybersecurity compliance, risk checks, and auditing. This partnership ensures clients meet industry regulations with confidence and clarity. It strengthens our approach to maintaining high standards across all projects.",
+      "PlutoSec aligns its security services with PECB standards, ensuring clients benefit from up-to-date practices. We support compliance journeys with actionable insights and technical expertise."
+    ]
+  }
 ];
+
 
 const OurPartnersCard = () => {
   return (

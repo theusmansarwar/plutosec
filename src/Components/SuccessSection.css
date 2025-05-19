@@ -1,0 +1,122 @@
+
+.success-section .header {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.success-section .heading-img{
+margin: 30px;
+display: flex;
+align-self: center;
+justify-self: center;
+}
+.success-section .header-left {
+  height: fit-content;
+}
+.success-section .header-left h1{
+  color: var(--background-color);
+
+}
+.success-section .header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.success-section .header-right img {
+  height: auto;
+  width: 70%;
+ display: flex;
+ justify-self: flex-end;
+}
+.success-cards-section {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+.success-cards-section .top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.success-cards-section .bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.info-card {
+  color: white;
+  padding: 30px;
+  border-radius: 6px;
+  border: 1px solid var(--background-color);
+  width: 100%; 
+  background: var(--gradient-one);
+  box-shadow: var( --default-box-shadow);
+}
+.info-card .info-title {
+  color: var(--background-color);
+  text-align: center;
+  margin-bottom: 15px;
+}
+.info-card .info-list {
+  list-style-type: disc;
+  padding-left: 10px;
+   font-size: var(--default-p-size);
+}
+.number-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 10px 0;
+  border-radius: 6px;
+  border: 1px solid var(--background-color);
+  width: 100%;
+  background: var(--gradient-one); 
+  box-shadow: var( --default-box-shadow);
+  /* full width in grid */
+}
+.number-card strong {
+  font-size: 48px;
+  color: var(--background-color);
+}
+.number-card span {
+  font-size: var(--default-p-size);
+}
+@media (max-width: 900px) {
+  .success-section .header {
+    grid-template-columns: 2fr; 
+    gap: 20px;
+  }
+  .success-section .header-left,
+  .success-section .header-right {
+    width: 100%;
+  }
+  .success-section .header-right img {
+    width: 100%;
+    height: auto;
+  }
+  .success-cards-section .top,
+  .success-cards-section .bottom {
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .success-section .header {
+    grid-template-columns: 1fr;  
+    gap: 20px;
+  }
+  .success-section .header-left,
+  .success-section .header-right {
+    width: 100%;
+  }
+  .success-section .header-right img {
+    width: 100%;
+    height: auto;
+  }
+  .success-cards-section .top,
+  .success-cards-section .bottom {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
