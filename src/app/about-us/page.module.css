@@ -3,6 +3,7 @@
   margin-left: var(--left-space);
   margin-right: var(--right-space);
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 .aboutpage .htext {
   text-align: center;
@@ -30,14 +31,15 @@
 }
 .aboutus ul {
   color: var(--text-color);
-  margin-top: 20px;
+  margin-top: 5px;
   width: var(--mid-space);
   margin-left: var(--left-space);
   margin-right: var(--right-space);
 }
 .aboutus ul li {
   color: var(--text-color);
-  margin-top: 20px;
+  font-size: var(--default-p-size);
+  margin-top: 0px;
 }
 .aboutus ul li strong {
   color: var(--headings-color);
@@ -72,5 +74,6 @@
   }
   .aboutpage .htext {
     font-size: 32px;
+    margin-bottom: 0%;
   }
 }

@@ -2,7 +2,7 @@
   width: var(--mid-space);
   margin-left: var(--left-space);
   margin-right: var(--right-space);
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .careerpage .htext {
   text-align: center;
@@ -47,9 +47,13 @@
         height: 150px;
    
       }
+      .careerpage{
+        padding-top: 0%;
+      }
       .careerpage .htext{
      
         font-size: 32px;
+        margin-bottom: 0%;
       
         
       }

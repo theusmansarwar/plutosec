@@ -2,7 +2,7 @@
     width: var(--mid-space);
     margin-left: var(--left-space);
     margin-right: var(--right-space);
-      padding-top: 100px;
+      padding-top: 50px;
 }
 .Servicearea .htext{
   text-align: center;
@@ -93,12 +93,13 @@ font-size: var(--default-p-size)
     
     }
     .Servicearea{
-      padding-top: 10px;
+      padding-top: 0px;
 
     }
     .Servicearea .htext{
      
       font-size: 32px;
+      margin-bottom: 0%;
     
     }
   }

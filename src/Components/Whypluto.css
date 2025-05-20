@@ -42,7 +42,7 @@ height: fit-content;
 }
 .why-area .right p{
   color: var(--text-color);
-  font-size: var(--default-color);
+  font-size: var(--default-p-size);
   margin-bottom: 20px;
   line-height: 1.5;
     
@@ -108,4 +108,20 @@ height: fit-content;
      
            
        }
+        .client-count {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.1rem;
+  }
+     .why-area .left .left-in-box .box{
+    width: 150px;
+    height: 120px;
+   
+
+   }
+   .avatar {
+    width: 30px;
+    height: 30px;
+   
+  }
 }

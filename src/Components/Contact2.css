@@ -5,6 +5,8 @@
   background: var(--gradient-one);
   padding: 30px;
   flex-wrap: wrap;
+  border-radius: var(--default-border-radius);
+  margin-bottom: 30px;
 }
 
 /* Map Section */

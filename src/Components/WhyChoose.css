@@ -17,7 +17,7 @@ align-items: center;
   .why-choose-us .left-container .left-text p {
     font-size: var(--default-p-size);
     color: var(--text-color);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
     .why-choose-us .left-container .left-text .headings {
    display: flex;

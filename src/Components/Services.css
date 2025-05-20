@@ -3,11 +3,13 @@
 .services-section {
 
   margin-bottom: 20px;
+ 
 }
 
 .service-section {
   width: 100%;
-  margin: 0 auto;
+  
+
 }
 .Head-area{
   display: flex;
@@ -33,7 +35,7 @@
   width: 100%;
   align-items: flex-start;
   margin-bottom: 20px;
-  margin-top: 20px;
+
   
 }
 .heading-area .left {
@@ -82,6 +84,7 @@ padding: 0%;
   display: flex;
   align-items: center;
   height: 80px;
+ 
 }
 .headings img {
   height: 10px;
@@ -150,7 +153,7 @@ justify-content: space-between;
   border-radius: var(--default-border-radius);
   cursor: pointer;
   transition: all 0.3s ease;
-  padding: 10px 15px;
+  padding: 5px 10px;
   width: fit-content;
 }
 
@@ -179,7 +182,7 @@ justify-content: space-between;
     .heading-area {
         align-items: center;
         flex-direction: column;
-        
+        margin-top: 20px;
       }
      
       .heading-area .left {
@@ -200,6 +203,8 @@ justify-content: space-between;
       .upper-section h1 {
         width: 100%;
         text-align: left;
+          font-size: 28px;
+        
       }
       .upper-section img {
        display: none;
@@ -214,6 +219,7 @@ justify-content: space-between;
       .headings h1 {
         text-align: left;
         width: 100%;
+        font-size: 28px;
       }
       .headings p {
         text-align: left;

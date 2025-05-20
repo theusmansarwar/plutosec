@@ -3,7 +3,7 @@
     margin-left: var(--left-space);
     margin-right: var(--right-space);
     margin-bottom: 20px;
-      padding-top: 100px;
+      padding-top: 50px;
   }
   .aboutpage .htext {
     
@@ -77,10 +77,14 @@
           height: 150px;
      
         }
+        .aboutpage {
+
+      padding-top: 0px;
+  }
         .aboutpage .htext{
        
           font-size: 32px;
-        
+        margin-bottom: 0%;
           
         }
   }

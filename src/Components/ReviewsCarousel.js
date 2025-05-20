@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import "./Services.css";
+import '../app/globals.css'
 import { FaArrowRightLong } from "react-icons/fa6";
 const ReviewsCarousel = () => {
   useEffect(() => {

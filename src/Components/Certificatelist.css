@@ -12,6 +12,10 @@ width: 50%;
 text-align: left;
 color: var(--text-color);
 }
+.marquee-container .left p{
+font-size: var(--default-p-size);
+color: var(--text-color);
+}
 .marquee-container .right{
 width: 50%;
 }
@@ -21,7 +25,7 @@ width: 50%;
 @media (max-width: 900px) {
     .marquee-container{
    flex-direction: column;
-   margin-top: 0px;
+   margin-top: 70px;
      
     }
     .marquee-container .left{

@@ -2,7 +2,7 @@
     width: var(--mid-space);
     margin-left: var(--left-space);
     margin-right: var(--right-space);
-      padding-top: 100px;
+      padding-top: 50px;
 }
 .ContactFormArea .htext{
   text-align: center;
@@ -55,11 +55,11 @@ font-size: var(--default-p-size)
     .ContactFormArea .htext{
      
       font-size: 32px;
-    
+    margin-bottom: 0%;
       
     }
     .ContactFormArea{
-      padding-top:10px ;
+      padding-top:0px ;
     }
   }
   
