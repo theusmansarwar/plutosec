@@ -9,40 +9,24 @@ const SuccessSection = () => {
       description:
         "Every security challenge tells a story. PlutoSec builds strong protection through clear strategies that work in real environments. Our experience with NEGUP Solution proves that serious threats can shift into lasting resilience through the right balance of innovation, precision, and smart execution.",
       problems: [
-        "No centralized threat detection system",
-        "Frequent phishing email attacks",
-        "Weak firewall and network security",
-        "No endpoint protection across devices",
-        "Unsecured cloud data access",
-        "Lack of employee security awareness",
-        "Vulnerability to ransomware threats",
-        "No real-time intrusion alerts",
-        "Outdated antivirus and software tools",
-        "Absence of a disaster recovery plan"
+         "The company lacked a system to detect threats across its network.",
+" Phishing emails hit employees often and cause problems.",
+" The firewall was weak and could not secure internal systems well.",
+" Devices did not have endpoint protection installed.",
+" Cloud data was open without strong security controls.",
+" Employees did not know basic cybersecurity rules.",
+" The network faced ransomware risks without safeguards.",
+ "No alerts warned of intrusions in real time.",
+ "Antivirus tools were outdated and weak.",
+ "The company had no disaster recovery plan.",
       ],
       solutions: [
-        "Deployed SIEM for centralized threat analysis",
-        "Implemented AI-based email filtering",
-        "Installed advanced firewalls with layered security",
-        "Rolled out endpoint detection and response (EDR)",
-        "Secured cloud platforms with access control",
-        "Conducted staff cyber awareness training",
-        "Introduced ransomware prevention protocols",
-        "Enabled real-time breach alert system",
-        "Upgraded to the latest cybersecurity tools",
-        "Designed a custom disaster recovery strategy"
+      "PlutoSec set up a SIEM tool for central threat monitoring", "AI filters blocked phishing emails before they reached staff", "Advanced firewalls added strong layers of security", "Endpoint detection and response tools covered all devices", "Cloud platforms have strict access controls", "Staff learned cybersecurity through training", "Ransomware defenses were put in place", "Real-time alerts sped up breach response", "All tools received upgrades to the latest secure versions", "A custom disaster recovery plan secured business continuity"
+
       ],
       outcomes: [
-        "24/7 visibility into potential cyber threats",
-        "98% reduction in phishing-related incidents",
-        "Strong perimeter defense across the network",
-        "Full device-level protection company-wide",
-        "Controlled and encrypted cloud file sharing",
-        "Staff became the first line of cyber defense",
-        "Zero ransomware incidents post-implementation",
-        "Fast threat response time under 3 minutes",
-        "The system is always up-to-date and patched",
-        "Business continuity is secured through backups"
+       "The company gained full visibility of threats at all times", "Phishing incidents fell by 98%", "Network defenses stopped outside attacks well", "All devices got reliable protection", "Cloud file sharing became secure with encryption", "Employees became key defenders against risks", "Ransomware attacks stopped completely", "Breach response time fell below three minutes", "Systems stayed updated with patches and fixes", "Backups and recovery plans kept the business running smoothly"
+
       ],
       cardData: [
         { title: "14", description: "Days Completion" },
@@ -56,40 +40,16 @@ const SuccessSection = () => {
       description:
         "Cyber threats hit without warning. Utho relied on PlutoSec to build real-time protection that keeps their infrastructure safe around the clock. Our custom strategy improved server security, locked customer data, and defended the cloud system from deep attacks and hidden threats.",
       problems: [
-        "Frequent brute force attacks on cloud servers",
-        "No DDoS mitigation in place",
-        "Limited visibility into backend infrastructure threats",
-        "Weak authentication on admin panels",
-        "Unencrypted data transmissions",
-        "Inconsistent server patching schedules",
-        "No central log monitoring system",
-        "Risk of malware injection via plugins",
-        "Unverified third-party API access",
-        "Lack of server backup validation"
+        "Brute force attacks targeted Utho’s cloud servers almost every day", "The system had no defense in place to stop DDoS attacks", "Threats inside the backend infrastructure stayed hidden due to low visibility", "Admin panels used weak authentication that attackers could bypass", "Data moved across the network without encryption", "Server updates did not follow a proper schedule", "Logs from different systems were not tracked in one place", "Plugins carried malware that posed serious risks", "Third-party APIs were used without proper checks", "Server backups were not tested for reliability"
+
       ],
       solutions: [
-        "Applied server hardening protocols across the infrastructure",
-        "Integrated DDoS protection and IP filtering",
-        "Deployed infrastructure threat intelligence tools",
-        "Enforced multi-factor authentication for admin access",
-        "Secured all data with SSL/TLS encryption",
-        "Automated patching and update workflows",
-        "Deployed centralized log management (SIEM)",
-        "Scanned and isolated malicious scripts/plugins",
-        "Set up API gateway controls and rate-limiting",
-        "Validated backups with integrity checks regularly"
+    "PlutoSec applied hardening protocols to protect all servers", "DDoS protection and IP filtering were added to stop network floods", "Tools were deployed to detect hidden infrastructure threats", "Multi-factor authentication was enabled for admin-level access", "SSL and TLS encryption secure all data during transmission", "Server patching was automated to avoid delays", "A central SIEM platform was added to track all logs", "Scans were run to catch and remove malicious plugins", "API access was secured with gateway rules and limits", "All backups were tested using regular integrity checks"
+
       ],
       outcomes: [
-        "100% server uptime maintained under threat",
-        "Blocked over 5,000 brute force attempts monthly",
-        "Enhanced infrastructure visibility in real-time",
-        "Secured admin control with MFA enforcement",
-        "Protected client data through encrypted channels",
-        "Zero breaches due to outdated patches",
-        "Real-time alerting minimized response delays",
-        "Malicious plugin activity dropped to zero",
-        "API abuse attempts identified and blocked",
-        "Reliable, secure backup recovery guaranteed"
+      "Server uptime remained at 100% even during active threats", "Over 5,000 brute force attacks were blocked every month", "Admins could see all infrastructure activity in real time", "Admin access became secure with strong MFA controls", "Data moved through a safe that encrypted channels without leaks", "Security patches were always up to date after automation", "Real-time alerts helped the team react without delay", "All plugin-based attacks were stopped completely", "Harmful API requests were detected and blocked instantly", "Backup systems worked smoothly and restored data without issues"
+
       ],
       cardData: [
         { title: "21", description: "Days Completion" },
@@ -103,40 +63,16 @@ const SuccessSection = () => {
       description:
         "Healthcare systems require more than care and need strong protection. ParaMed chose PlutoSec to guard their digital world. We provide solutions that keep patient data safe, meet all regulations, and secure medical operations. All this happened without stopping the daily care they deliver.",
       problems: [
-        "Patient records stored on vulnerable systems",
-        "No encryption on data in transit",
-        "Risk of HIPAA non-compliance fines",
-        "Unsecured remote access for medical staff",
-        "Outdated software on internal systems",
-        "Limited visibility into third-party data access",
-        "Inadequate role-based access control",
-        "No centralized incident response system",
-        "High risk from phishing targeting medical staff",
-        "Lack of real-time threat detection tools"
+     "Patient records sat on weak systems, which risked data exposure", "Data is moved without encryption, which makes it easy to intercept", "ParaMed faced a heavy HIPAA compliance fines risk", "Remote access lacked security, which allowed unauthorized entry", "Old software raises the chances of cyberattacks", "Third-party vendors accessed data without control", "Role-based access control gave too much access", "No central incident response system caused slow reactions", "Medical staff faced frequent phishing attacks",
+
       ],
       solutions: [
-        "Migrated patient data to a secure cloud platform",
-        "Applied end-to-end encryption for data in transit",
-        "Audited systems for full HIPAA compliance",
-        "Implemented secure VPN for remote staff access",
-        "Deployed patch management across all endpoints",
-        "Controlled third-party integrations with access logs",
-        "Introduced RBAC across all medical systems",
-        "Installed automated incident response workflows",
-        // "Conducted a phishing simulation and staff training",
-        // "Integrated real-time threat intelligence dashboard"
+       "Patient data moved to a secure cloud platform", "Full encryption is applied to all data transfers", "Systems are audited for full HIPAA compliance", "Remote staff used secure VPN access", "Patch management kept software up to date", "Third-party access is logged and tightly controlled", "Role-based access limits data views strictly", "Automated incident response installed", "Staff trained to recognize and report phishing", "Real-time threat dashboards showed alerts immediately"
+
       ],
       outcomes: [
-        "Patient data is secured and monitored 24/7",
-        "Passed compliance audit with zero violations",
-        "Eliminated unauthorized remote data access",
-        "Reduced phishing success rate by 93%",
-        "Staff trained to identify and report threats",
-        "Third-party access became fully traceable",
-        "Improved system uptime and faster response",
-        "Threats are now detected in under 5 seconds",
-        "Medical staff work safely from any location",
-        "Built patient trust through strong data protection"
+       "Patient data remains secure and monitored 24/7", "ParaMed passed compliance audits with zero violations", "Remote access risks dropped to zero", "Phishing attacks reduced by 93%", "Staff became strong first defenders against threats", "Third-party data access is fully tracked and controlled", "System uptime improved, and response times shortened", "Threats are detected in under five seconds", "Medical staff work safely from any location", "Patient trust grew due to solid data protection"
+
       ],
       cardData: [
         { title: "93%", description: "Phishing Drop" },
