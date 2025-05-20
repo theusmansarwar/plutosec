@@ -16,7 +16,7 @@ const page = () => {
           <Breadcrumb />
         </div>
       </div>
-      <h1 className={styles.htext}>About Us – PlutoSec</h1>
+      <h1 className={styles.htext}>About Us</h1>
 
       <section id="about-us" className={styles.aboutus}>
         <p>

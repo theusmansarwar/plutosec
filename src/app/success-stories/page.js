@@ -23,7 +23,7 @@ export const metadata = {
 export default function Page() {
   // Optional: If you want to hardcode content, do it here:
   const htext = "Success Stories That Speak For Themselves";
-  const ptext = "Discover how PlutoSec helps businesses overcome cybersecurity challenges with real, measurable results.";
+  const ptext = "Discover how PlutoSec helps your business stay safe before threats take over. Every day hackers look for easy targets. One small gap is all they need. You might not even know when they get in. That’s where we come in. We act like real attackers and test everything. You see what they see. You find the weak spots early. Then you fix them fast. That means no surprises and no panic. Your business keeps running strong.";
 
   return (
     <div className={styles.Servicearea}>

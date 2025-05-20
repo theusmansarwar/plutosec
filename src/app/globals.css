@@ -54,8 +54,6 @@ textarea {
   background: rgba(18, 18, 18, 0.488);
   backdrop-filter: blur(8px);
 }
-
-/* Wrapper that allows page scrolling */
 .bg-wrapper {
   width: 100%;
   min-height: 100vh;
@@ -72,7 +70,7 @@ textarea {
   position: relative;
   width: 100%;
   height: auto;
-  margin-top: 50px; /* to push content below fixed header */
+  margin-top: 50px;
 }
 
 ul {
@@ -208,6 +206,7 @@ h1 {
   .first-btn,
   .second-btn {
     border-radius: 50%;
+    font-size: 28px;
   }
 
   .first-btn span,
@@ -227,5 +226,12 @@ h1 {
     font-weight: 700;
     text-align: center;
   }
- 
+ .content {
+
+  margin-top: 20px;
+}
+.first-btn {
+  bottom: 30px;
+  right: 0;
+}
 }
