@@ -19,14 +19,39 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
+const title = "Canada’s Leading Cybersecurity & Penetration Testing Services | PlutoSec";
+const description = "PlutoSec offers expert penetration testing in Canada, helping businesses and governments boost security and fix vulnerabilities.";
+const url = "https://plutosec.ca"; // Replace with your actual URL
+const image = "/plutofav.png"; // Or another Open Graph-friendly image
+
 export const metadata = {
-  title: "Canada’s Leading Cybersecurity & Penetration Testing Services | PlutoSec",
-  description:
-    "PlutoSec offers expert penetration testing in Canada, helping businesses and governments boost security and fix vulnerabilities.",
+  title,
+  description,
   icons: {
     icon: "/plutofav.png",
   },
+  openGraph: {
+    title,
+    description,
+    url,
+    type: "article",
+    images: [
+      {
+        url: image,
+        width: 1200,
+        height: 630,
+        alt: title,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [image],
+  },
 };
+
 
 export default function RootLayout({ children }) {
   
