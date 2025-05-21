@@ -1,6 +1,4 @@
-'use client';
 
-import { useEffect } from 'react';
 import styles from './page.module.css';
 import Services from '@/Components/Services';
 import Whyus from '@/Components/Whyus';
@@ -12,16 +10,14 @@ import { useRouter } from "next/navigation";
 import '../app/globals.css'
 import Contact2 from '@/Components/Contact2';
 import ReviewsCarousel from '@/Components/ReviewsCarousel';
-import ElfsightWidget from '@/Components/ElfsightWidget';
-
+export const metadata = {
+ title: "Canada’s Leading Cybersecurity & Penetration Testing Services | PlutoSec",
+  description:
+    "PlutoSec offers expert penetration testing in Canada, helping businesses and governments boost security and fix vulnerabilities.",
+  };
 export default function Home() {
   const router = useRouter();
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.type = 'module';
-    script.src = 'https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js';
-    document.head.appendChild(script);
-  }, []);
+
 
   return (
     <div className={styles.Page}>

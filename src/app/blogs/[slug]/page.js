@@ -1,15 +1,13 @@
-// /app/services/[slug]/page.js
-
 import React from "react";
 import styles from "./page.module.css";
 import Breadcrumb from "@/Components/Breadcrumb";
-import BlogDetail from "@/Components/BlogDetail"; // <-- Move blog logic to client component
+import BlogDetail from "@/Components/BlogDetail";
 import { baseUrl } from "@/Config/Config";
 import { fetchBlogBySlug } from "@/DAL/fetch";
 
 export async function generateMetadata({ params }) {
-  const slug = params.slug; // No need to await params
-  const res = await fetchBlogBySlug(slug); // Fetch your blog data
+  const slug = params.slug; 
+  const res = await fetchBlogBySlug(slug); 
   const blog = res?.blog;
 
   const title = blog?.title || slug.replace(/-/g, " ");
@@ -17,8 +15,7 @@ export async function generateMetadata({ params }) {
     blog?.metaDescription ||
     `Details about ${slug.replace(/-/g, " ")} on PlutoSec.`;
   const image = baseUrl + blog?.thumbnail ;
-  const url = `https://plutosec.ca/blog/${slug}`; // Replace with your real domain
-
+  const url = `https://plutosec.ca/blog/${slug}`; 
   return {
     title: `${title} | PlutoSec`,
     description: description,

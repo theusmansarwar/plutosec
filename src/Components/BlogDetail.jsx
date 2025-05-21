@@ -8,6 +8,7 @@ import "./BlogDetail.css"; // ✅ import regular CSS
 import { fetchBlogBySlug } from "@/DAL/fetch";
 import { baseUrl } from "@/Config/Config";
 import { formatDate } from "@/utils/Formatedate";
+import SubscribeBlock from "./SubscribeBlock";
 
 export default function BlogDetail({ slug }) {
   const [blog, setBlog] = useState(null);
@@ -65,11 +66,15 @@ export default function BlogDetail({ slug }) {
               <span>{formatDate(blog.publishedDate)}</span>
               <span>{blog.category?.name}</span>
             </p>
+            <div className="Top-Blog-section">
             <img
               src={baseUrl + blog.thumbnail}
               alt={blog.title}
               className="blog-image"
             />
+            <div className="sub-block">  <SubscribeBlock /></div>
+           
+            </div>
             <div
               className="description"
               dangerouslySetInnerHTML={{ __html: sanitizedContent }}
