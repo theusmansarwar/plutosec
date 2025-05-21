@@ -10,12 +10,11 @@ export const fetchallBloglist = async ( page, rowsPerPages) => {
   };
   return invokeApi(reqObj);
 };
-export const fetchBlogById = async (id) => {
+export const fetchBlogBySlug = async (id) => {
   const reqObj = {
-    path: `/blog/viewbyid/${id}`,
+    path: `/blog/view/${id}`,
     method: "GET",
     headers: {
-      Authorization: `Bearer ${localStorage.getItem("Token")}`,
     },
 
     body: {},
