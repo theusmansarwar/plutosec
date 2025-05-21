@@ -14,6 +14,7 @@ export const metadata = {
  title: "Canada’s Leading Cybersecurity & Penetration Testing Services | PlutoSec",
   description:
     "PlutoSec offers expert penetration testing in Canada, helping businesses and governments boost security and fix vulnerabilities.",
+   icons: { icon: "/plutofav.png" },
   };
 export default function Home() {
  
