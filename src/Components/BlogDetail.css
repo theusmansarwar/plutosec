@@ -85,4 +85,8 @@ display: none;
 .blog-title{
    font-size: 24px;
 }
+.blog-wrapper {
+  width: 100%;
+
+}
 }
