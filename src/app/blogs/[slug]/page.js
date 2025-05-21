@@ -6,7 +6,7 @@ import { baseUrl } from "@/Config/Config";
 import { fetchBlogBySlug } from "@/DAL/fetch";
 
 export async function generateMetadata({ params }) {
-  const slug = params.slug; 
+  const slug = (await params).slug
   const res = await fetchBlogBySlug(slug); 
   const blog = res?.blog;
 
@@ -44,6 +44,7 @@ export async function generateMetadata({ params }) {
     },
   };
 }
+
 
 
 export default async function Page({ params }) {

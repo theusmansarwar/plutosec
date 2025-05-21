@@ -9,6 +9,8 @@ import { fetchBlogBySlug } from "@/DAL/fetch";
 import { baseUrl } from "@/Config/Config";
 import { formatDate } from "@/utils/Formatedate";
 import SubscribeBlock from "./SubscribeBlock";
+import Comments from "./Comments";
+import AuthorShare from "./AuthorShare";
 
 export default function BlogDetail({ slug }) {
   const [blog, setBlog] = useState(null);
@@ -61,7 +63,7 @@ export default function BlogDetail({ slug }) {
           <p className="error">{error}</p>
         ) : (
           <>
-            <h1>{blog.title}</h1>
+            <h1 className="blog-title"> {blog.title}</h1>
             <p className="category-text">
               <span>{formatDate(blog.publishedDate)}</span>
               <span>{blog.category?.name}</span>
@@ -79,7 +81,8 @@ export default function BlogDetail({ slug }) {
               className="description"
               dangerouslySetInnerHTML={{ __html: sanitizedContent }}
             />
-       
+       <Comments blogId={blog?._id} comments={blog?.comments}/>
+        <AuthorShare author={blog?.author} />
           </>
         )}
       </div>

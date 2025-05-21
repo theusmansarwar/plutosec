@@ -21,3 +21,15 @@ export const fetchBlogBySlug = async (id) => {
   };
   return invokeApi(reqObj);
 };
+export const getComments = async (data) => {
+  const reqObj = {
+    path: `/comment/approved-comment`,
+    method: "GET",
+    headers: {
+    
+    },
+
+    postData: {data},
+  };
+  return invokeApi(reqObj);
+};

@@ -1,0 +1,138 @@
+
+.comment-container {
+ 
+    display: flex;
+    justify-content: space-between;
+ width: 100%;
+ margin: 30px 0px;
+    background: var(--grey-color);
+   
+  }
+  
+
+  .comment-form {
+    display: flex;
+    flex-direction: column;
+  
+    width: 48%;
+  }
+  
+  .comment-form input,
+  .comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    background-color: transparent;
+    color: var(--text-color);
+  }
+  
+  .comment-form textarea {
+    height: 80px;
+    resize: none;
+     color: var(--text-color);
+  }
+ .comment-form input:focus,
+.comment-formtextarea:focus {
+  outline: none;
+  border: 1px solid var(--shadow-low3);
+  caret-color: white;
+}
+  .comment-form button {
+    background-color: var(--background-color);
+width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: var(--default-p-size);
+  border: 1px solid var(--background-color);
+}
+
+.comment-form button:hover {
+  background-color: transparent;
+  color: var(--background-color);
+}
+  
+  /* Display comment list */
+  .comment-list {
+    width: 48%;
+    
+
+  }
+  .comment-area-list{
+    width: 96%;
+    height: 250px;
+    padding: 3%;
+    overflow-y: scroll;
+    background:var(--gradient-one);
+    box-shadow: var(--default-box-shadow);
+    border-radius: var(--default-border-radius);
+  }
+  
+  .comment-list h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Individual comment */
+  .comment {
+    background: rgb(0, 0, 0);
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border-left: 4px solid var(--background-color);
+ 
+  }
+  
+  .comment p {
+    font-size: 14px;
+    margin: 2px 0;
+  }
+  
+  .comment small {
+    color: var(--background-color);
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* No comments message */
+  .no-comments {
+    color: #777;
+    font-style: italic;
+    text-align: center;
+  }
+  .error-message{
+    color: red;
+    font-size: 10px;
+    line-height: 1;
+    margin: 0%;
+    padding: 0%;
+  }
+  @media (max-width: 768px) {
+    .comment-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px auto;
+        padding: 20px;
+        background: var(--grey-color);
+       
+      }
+
+
+      .comment-form {
+      
+        width: 97%;
+      }
+      .comment-list {
+        width: 100%;
+    
+      }
+  }
