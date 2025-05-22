@@ -60,7 +60,7 @@ export default async function Page({ params }) {
       <h1 className={styles.htext}></h1>
       <p className={styles.ptext}></p>
 
-      <BlogDetail slug={slug} /> {/* Client-side fetching */}
+      <BlogDetail slug={slug} /> 
     </div>
   );
 }

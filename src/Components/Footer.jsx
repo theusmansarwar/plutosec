@@ -37,11 +37,11 @@ const Footer = () => {
   };
   const menuItems = [
     { label: "Services", path: "/services" },
-    { label: "Career", path: "/careers" },
+    { label: "Blogs", path: "/blogs" },
     { label: "Industries", path: "/industries" },
     { label: "Testimonials", path: "/testimonial" },
+      { label: "Career", path: "/careers" },
     { label: "Contact Us", path: "/contact" },
-    { label: "Blogs", path: "/blogs" },
     { label: "Success Stories", path: "/success-stories" },
     { label: "Partner Program", path: "/partner" },
     { label: "Why Us", path: "/why-us" },
@@ -56,11 +56,7 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-        <ToastContainer
-              position="top-right"
-              autoClose={3000}
-              pauseOnHover={false}
-            />
+     
       <div className="footer-container">
         {/* Logo & About */}
         <div className="footer-section">

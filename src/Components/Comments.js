@@ -121,11 +121,7 @@ const Comments = ({ blogId, comments = [] }) => {
           )}
         </div>
       </div>
-       <ToastContainer
-        position="top-right"
-        autoClose={3000}
-        pauseOnHover={false}
-      />
+    
     </div>
   );
 };

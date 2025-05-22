@@ -57,7 +57,7 @@ text-align: center;
   justify-content: left;
 }
 .followus-section  .checkbox-container p {
-  font-size: var(--default-p-size);
+  font-size: 12px;
    margin: 0%;
    padding: 0%;
 }

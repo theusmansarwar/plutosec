@@ -42,9 +42,9 @@ const Header = () => {
   const menuItems = [
     { label: 'Home', path: '/' },
     { label: 'Services', path: '/services' },
+    { label: 'Industries', path: '/industries' },
     { label: 'Why Us', path: '/why-us' },
     { label: 'Careers', path: '/careers' },
-    { label: 'Industries', path: '/industries' },
     { label: 'Contact Us', path: '/contact' },
   ];
 

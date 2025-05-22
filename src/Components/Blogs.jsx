@@ -41,7 +41,7 @@ const Blogs = () => {
     return (
       <>
         {visibleText}
-        <span style={{ color: '#8a8a8a' }}>... read more</span>
+        <span style={{ color: 'var(--shadow-low3)' }}> ...read more</span>
       </>
     );
   };

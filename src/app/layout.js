@@ -12,7 +12,7 @@ import { LuMessageSquareQuote } from "react-icons/lu";
 import Link from "next/link";
 import { countView } from "@/DAL/create";
 import ViewCounter from "@/Components/ViewCounter";
-
+import { ToastContainer } from "react-toastify";
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -86,6 +86,12 @@ export default function RootLayout({ children }) {
                     <MdOutlineMailOutline /> <span>Email Us</span>
                   </div>
                 </a>
+                  <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          pauseOnHover={false}
+          newestOnTop
+        />
                 <ViewCounter/>
                 <Header />
                 {children}

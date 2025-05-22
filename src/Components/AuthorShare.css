@@ -32,7 +32,7 @@
 
 .author-details p {
   font-size: 12px;
-  color: #666;
+  color: var(--background-color);
   margin: 0;
 }
 
@@ -45,7 +45,7 @@
 
 .share-text {
   font-size: 12px;
-  color: #666;
+  color: var(--background-color);
   margin-right: 10px;
 }
 
@@ -57,7 +57,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
+  padding: 10px;
+  border-radius: var(--default-border-radius);
+  cursor: pointer;
+  
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .facebook {
   background: #1877f2;
@@ -67,7 +71,11 @@
     display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
+  padding: 10px;
+  border-radius: var(--default-border-radius);
+  cursor: pointer;
+  
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .twitter {
   background: black;
@@ -77,7 +85,11 @@
     display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
+  padding: 10px;
+  border-radius: var(--default-border-radius);
+  cursor: pointer;
+  
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .copy-link {
   background: #f0f0f0;
@@ -89,8 +101,20 @@ border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
+  padding: 10px;
+  border-radius: var(--default-border-radius);
+  cursor: pointer;
+  
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.linkedin:hover,
+ .facebook:hover,
+ .twitter:hover,
+ .copy-link:hover{
+  box-shadow: var(--default-box-shadow);
+   transform: translateY(2px);
+   
+ }
 
 @media (max-width: 768px) {
   .author-share-container {
