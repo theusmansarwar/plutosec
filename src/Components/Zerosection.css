@@ -8,7 +8,8 @@
 .zero-section .hr2 {
   background-color: white;
   width: 80%;
-  margin-top: 20px;
+  margin-top: 20px ;
+  margin-bottom: 10px;
   height: 2px;
   z-index: 10;
 }
@@ -63,7 +64,7 @@
 .dot.active {
   width: 30px;
   border-radius: 50px;
-  background-color: white;
+  background-color:  var(--background-color);;
 }
 .arrowss {
   display: flex;
@@ -72,7 +73,7 @@
 .arrowss .arrow {
   cursor: pointer;
   font-size: var(--default-p-size);
-  color: rgb(255, 255, 255);
+  color: var(--background-color);
 }
 .dot-dark {
   width: 12px;

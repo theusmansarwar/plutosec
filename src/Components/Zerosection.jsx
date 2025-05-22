@@ -50,7 +50,7 @@ const cards = [
           {visibleCards.map((card) => (
             <div className='cards-area' key={card.id}>
               <div className="top">
-                <Image src={card.logo} alt={card.title} width={100} height={60} />
+                <img src={card.logo} alt={card.title} />
               </div>
               <div className='hr2' />
               <p>{card.title}</p>
