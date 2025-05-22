@@ -2,17 +2,30 @@
   display: grid;
  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
+  margin-bottom: 30px;
 }
 .blog-post-card {
   color: #fff;
   overflow: hidden;
+  cursor: pointer;
+  border-radius: var(--default-border-radius);
+  background:var(--gradient-one);
+   box-shadow: var(--default-box-shadow);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.blog-post-card:hover {
+  background-color: #cccccc14;
+ box-shadow: none;
+  transform: translateY(-5px);
+  
+ 
 }
 .blog-post-card .post-image {
   width: 100%;
 height: 300px;
 }
 .blog-post-card .post-content {
- padding-top: 10px;
+ padding: 10px;
 }
 .blog-post-card .post-title {
   color: #00D0FF;

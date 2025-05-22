@@ -2,6 +2,7 @@ import React from 'react'
 import './blogskeleton.css'
 const Bloader = () => {
     return (
+      
       <div className="skeleton-blog">
         <div className="skeleton-title"></div>
         <div className="skeleton-meta"></div>
