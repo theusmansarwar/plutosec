@@ -2,13 +2,12 @@
 
 import React, { useEffect, useState } from "react";
 import { IoPersonCircleSharp } from "react-icons/io5";
-import Link from "next/link";
 import { MdOutlineHorizontalRule } from "react-icons/md";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { useRouter } from "next/navigation";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
-import "./BlogCard.css"; // If using global CSS. Otherwise, use module CSS.
+import "./BlogCard.css";
 import { fetchallBloglist } from "@/DAL/fetch";
 import { baseUrl } from "@/Config/Config";
 import { formatDate } from "@/utils/Formatedate";

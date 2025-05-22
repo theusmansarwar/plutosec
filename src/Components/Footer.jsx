@@ -3,23 +3,45 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import "./Footer.css";
-import { RiFacebookFill, RiTwitterXLine } from "react-icons/ri";
+import './Comments.css'
+import { RiFacebookFill } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
-import { FaInstagram } from "react-icons/fa6";
+import { RiTiktokFill,RiTwitterXFill  } from "react-icons/ri";
 import { AiFillInstagram } from "react-icons/ai";
-
+import { Subscribe } from "@/DAL/create";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Footer = () => {
   const router = useRouter(); // Use the router for client-side navigation
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
+  const handleSubscribe = async () => {
+    setLoading(true);
+    setError(null);
+
+    const response = await Subscribe({ email: email });
+
+    if (response.status === 201) {
+      setEmail("");
+      setLoading(false);
+      toast.success(response?.message || "Subscribed successfully");
+    } else {
+      setError(response.message || "Subscription failed.");
+      setLoading(false);
+    }
+  };
   const menuItems = [
     { label: "Services", path: "/services" },
     { label: "Career", path: "/careers" },
     { label: "Industries", path: "/industries" },
     { label: "Testimonials", path: "/testimonial" },
     { label: "Contact Us", path: "/contact" },
+    { label: "Blogs", path: "/blogs" },
     { label: "Success Stories", path: "/success-stories" },
     { label: "Partner Program", path: "/partner" },
     { label: "Why Us", path: "/why-us" },
@@ -34,6 +56,11 @@ const Footer = () => {
 
   return (
     <footer className="footer">
+        <ToastContainer
+              position="top-right"
+              autoClose={3000}
+              pauseOnHover={false}
+            />
       <div className="footer-container">
         {/* Logo & About */}
         <div className="footer-section">
@@ -70,6 +97,24 @@ const Footer = () => {
                 <AiFillInstagram />
               </div>
             </a>
+             <a
+              href="https://www.tiktok.com/@plutosec.cyber.sec"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="icon">
+                <RiTiktokFill />
+              </div>
+            </a>
+             <a
+              href="https://x.com/Pluto_Sec"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="icon">
+                <RiTwitterXFill  />
+              </div>
+            </a>
           </div>
         </div>
 
@@ -77,7 +122,7 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Company</h4>
           <ul>
-            {menuItems.slice(0, 5).map((item) => (
+            {menuItems.slice(0, 6).map((item) => (
               <li key={item.label} onClick={() => handleNavClick(item)}>
                 {item.label}
               </li>
@@ -89,7 +134,7 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Others</h4>
           <ul>
-            {menuItems.slice(5).map((item) => (
+            {menuItems.slice(6).map((item) => (
               <li key={item.label} onClick={() => handleNavClick(item)}>
                 {item.label}
               </li>
@@ -101,8 +146,18 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Join a Newsletter</h4>
           <p>Your Email</p>
-          <input type="email" placeholder="Enter Your Email" />
-          <button>Subscribe</button>
+              {error && <p className="error-message">{error}</p>}
+          <input
+            type="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          
+          <button onClick={handleSubscribe}>
+            {loading ? "Subscribing..." : "Subscribe"}
+          </button>
+      
           <div className="contact-info">
             <p>
               <CiMail />{" "}

@@ -32,4 +32,16 @@ export const commentAdd = async (data) => {
   };
   return invokeApi(reqObj);
 };
+export const Subscribe = async (data) => {
+  
+  const reqObj = {
+    path: "/newsletter/add",
+    method: "POST",
+    headers: {
+  
+    },
+    postData: data,
+  };
+  return invokeApi(reqObj);
+};
 

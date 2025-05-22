@@ -10,6 +10,7 @@ import '../app/globals.css'
 import Contact2 from '@/Components/Contact2';
 import ReviewsCarousel from '@/Components/ReviewsCarousel';
 import Featured from '@/Components/Featured';
+import HCard from '@/Components/Skeletonloaders/HCard';
 
 const title = "Canada’s Leading Cybersecurity & Penetration Testing Services | PlutoSec";
 const description = "PlutoSec offers expert penetration testing in Canada, helping businesses and governments boost security and fix vulnerabilities.";
