@@ -74,7 +74,7 @@ const services2 = [
   },
   {
     _id: "4",
-    image: "/16.png",
+    image: "/19.png",
     name: "Finance-Driven Insights",
     introduction:
       "We support finance events and industry panels. You benefit from knowledge shaped by real-time trends and trusted cybersecurity leadership in finance. You gain access to top insights across the financial landscape. This helps you stay alert to future risks and industry shifts.",
@@ -394,7 +394,7 @@ const services9 = [
   },
   {
     _id: "5",
-    image: "/16.png",
+    image: "/19.png",
     name: "Cloud Security Solutions",
     introduction:
       "Protect banking data stored in the cloud. Our solutions secure your cloud environment against breaches and unauthorized access. You keep customer data safe no matter where it's stored. You prevent leaks from weak permissions.",
@@ -406,24 +406,24 @@ const services9 = [
 
   const getServicesBySlug = (slug) => {
     switch (slug) {
-      case "retail-ecommerce":
+      case "penetration-testing-for-retail-ecommerce":
         return services1;
-      case "finance":
+      case "penetration-testing-for-finance":
         return services2;
-      case "education":
+      case "penetration-testing-for-education":
         return services3;
-      case "government":
+      case "penetration-testing-for-government":
         return services4;
-      case "technology":
+      case "penetration-testing-for-technology":
         return services5;
-     case "health-care":
+     case "penetration-testing-for-health-care":
         return services6;
     
-         case "utilities-energy":
+         case "penetration-testing-for-utilities-energy":
         return services7;
-         case "oil-gas":
+         case "penetration-testing-for-oil-gas":
         return services8;
-     case "banking":
+     case "penetration-testing-for-banking":
         return services9;
     
       default:

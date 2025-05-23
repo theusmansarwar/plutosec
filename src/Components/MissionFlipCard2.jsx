@@ -29,7 +29,7 @@ const MissionFlipCard2 = () => {
               <div className="left">
               <div className="headings">
               <h1>Our Mission</h1>
-              <img src="/headingimg.svg" />
+              <img src="/headingimg.svg"  alt="headingimg"/>
             </div>
                 <p className="description-heading">
                 PlutoSec protects businesses with advanced cybersecurity solutions. We deliver services that keep your digital assets secure and your operations running smoothly. Our goal is to make your business resilient in an ever-changing cyber landscape. We help you build trust, enhance security, and grow confidently.

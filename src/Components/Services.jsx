@@ -92,7 +92,7 @@ const Services = () => {
           <div className="left">
           <div className="headings">
           <h1>Our Cybersecurity Services</h1>
-          <img src="/headingimg.svg" />
+          <img src="/headingimg.svg"  alt="headingimg"/>
         </div>
             <p>
             PlutoSec offers a range of cybersecurity solutions to protect your organization from evolving threats. Our services are designed to strengthen your security across multiple platforms.

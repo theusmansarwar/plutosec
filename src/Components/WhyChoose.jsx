@@ -9,7 +9,7 @@ const WhyChoose = () => {
           <div className="left-text">
           <div className="headings">
               <h1>Who we are?</h1>
-              <img src="/headingimg.svg" />
+              <img src="/headingimg.svg"  alt="headingimg"/>
             </div>
             <p>
             We are cybersecurity professionals who defend your data. Our team works with purpose and speed. You get smart support from people who understand threats.

@@ -11,14 +11,14 @@ const ServiceDetail = ({slug }) => {
       
       <div className="headings">
         <h1>Key Offerings</h1>
-        <img src="/headingimg.svg" />
+        <img src="/headingimg.svg"  alt="headingimg"/>
       </div>
 
       <KeyOfferings slug={slug} />
 
       <div className="headings">
         <h1>Success Stories</h1>
-        <img src="/headingimg.svg" />
+        <img src="/headingimg.svg"  alt="headingimg"/>
       </div>
 
       <SuccessStories slug={slug} />

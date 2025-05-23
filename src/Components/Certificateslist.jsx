@@ -25,7 +25,7 @@ const Certificatelist = () => {
 
         <div className="headings">
           <h1>Certifications</h1>
-          <img src="/headingimg.svg" />
+          <img src="/headingimg.svg" alt="headingimg"/>
         </div>
         <p>
           PlutoSec leads cybersecurity in Canada and is trusted by businesses in

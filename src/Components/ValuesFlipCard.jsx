@@ -57,7 +57,7 @@ const cardsData = [
               <div className="left">
               <div className="headings">
               <h1>Our Values</h1>
-              <img src="/headingimg.svg" />
+              <img src="/headingimg.svg"  alt="headingimg"/>
             </div>
                 <p className="description-heading">
                 Strong values build strong security. PlutoSec stands on trust, speed, and clear action. You get support that never slows down. We act with purpose and always put your safety first. These values guide every step we take. That’s how we protect what matters to you.

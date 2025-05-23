@@ -41,7 +41,7 @@ const Testimonial = () => {
       <div className="Head-area">
         <div className="headings">
           <h1>Testimonials </h1>
-          <img src="/headingimg.svg" />
+          <img src="/headingimg.svg"  alt="headingimg"/>
         </div>
         <p className="viewall-text" onClick={() => router.push("/testimonial")}>
           View All <FaArrowRightLong />

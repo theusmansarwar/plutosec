@@ -50,7 +50,7 @@
       .careerpage{
         padding-top: 0%;
       }
-      .careerpage .htext{
+      .careerpage .htext{  line-height: 1;
      
         font-size: 32px;
         margin-bottom: 0%;

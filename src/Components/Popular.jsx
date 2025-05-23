@@ -43,7 +43,7 @@ const Popular = () => {
       <div className="Head-area">
         <div className="headings">
           <h1>Popular </h1>
-          <img src="/headingimg.svg" />
+          <img src="/headingimg.svg"  alt="headingimg"/>
         </div>
         <p className="viewall-text" onClick={() => router.push("/services")}>
           View All <FaArrowRightLong />

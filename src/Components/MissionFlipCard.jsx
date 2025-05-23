@@ -29,7 +29,7 @@ const MissionFlipCard = () => {
               <div className="left">
               <div className="headings">
               <h1>Our Cybersecurity Services</h1>
-              <img src="/headingimg.svg" />
+              <img src="/headingimg.svg"  alt="headingimg"/>
             </div>
                 <p className="description-heading">
                 You get real value when you join us. We help you grow and succeed. You gain access to expert tools and strong support. Our team stays by your side to guide you through every step. You also get trusted resources that make your work easier.

@@ -1,3 +1,5 @@
+import { getblogSlugs } from "@/DAL/fetch";
+
 const services = [
   { slug: "penetration-testing" },
   { slug: "managed-security" },
@@ -23,6 +25,9 @@ const industries = [
   "banking",
 ];
 
+// Make sure you import or define getblogSlugs somewhere
+// const getblogSlugs = require('./your-api-file').getblogSlugs;
+
 export async function GET() {
   const baseUrl = "https://plutosec.ca";
 
@@ -41,23 +46,35 @@ export async function GET() {
     "about-us",
   ];
 
-  const serviceRoutes = services.map((s) => `services/${s.slug}`);
-  const industryRoutes = industries.map((i) => `industries/${i}`);
+  const serviceRoutes = services.map(s => `services/${s.slug}`);
+  const industryRoutes = industries.map(i => `industries/penetration-testing-for-${i}`);
 
-  const allRoutes = [...staticRoutes, ...serviceRoutes, ...industryRoutes];
+  let blogRoutes = [];
+  try {
+    const res = await getblogSlugs();
+    if (res && res.slugs && Array.isArray(res.slugs)) {
+      blogRoutes = res.slugs.map(blog => `blogs/${blog.slug}`);
+    }
+  } catch (error) {
+    console.error("Error fetching blog slugs:", error);
+  }
+
+  const allRoutes = [...staticRoutes, ...serviceRoutes, ...industryRoutes, ...blogRoutes];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${allRoutes
-    .map(
-      (route) => `
+    .map(route => `
     <url>
       <loc>${baseUrl}/${route}</loc>
       <lastmod>${new Date().toISOString()}</lastmod>
       <changefreq>weekly</changefreq>
-      <priority>${route.startsWith("services/") || route.startsWith("industries/") ? "0.7" : "0.9"}</priority>
-    </url>`
-    )
+      <priority>${
+        route.startsWith("services/") || route.startsWith("industries/") || route.startsWith("blogs/")
+          ? "0.7"
+          : "0.9"
+      }</priority>
+    </url>`)
     .join("")}
 </urlset>`;
 

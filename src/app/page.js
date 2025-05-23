@@ -67,7 +67,7 @@ export default function Home() {
      <Testimonial/>
    <div className="headings">
           <h1>Contact Us</h1>
-          <img src="/headingimg.svg" />
+          <img src="/headingimg.svg" alt="headingimg"/>
         </div>
    <Contact2/>
 

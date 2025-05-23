@@ -116,7 +116,7 @@ const ReviewsCarousel = () => {
      <div className="Head-area">
         <div className="headings">
           <h1>What Our Clients Say</h1>
-          <img src="/headingimg.svg" />
+          <img src="/headingimg.svg"  alt="headingimg"/>
         </div>
        
       </div>

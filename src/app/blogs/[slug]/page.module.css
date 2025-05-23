@@ -4,7 +4,7 @@
     margin-right: var(--right-space);
       padding-top: 50px;
 }
-.Servicearea .htext{
+.Servicearea .htext{  line-height: 1;
   text-align: center;
   color: var(--headings-color);
   margin-top: 20px;
@@ -96,7 +96,7 @@ font-size: var(--default-p-size)
       padding-top: 0px;
 
     }
-    .Servicearea .htext{
+    .Servicearea .htext{  line-height: 1;
      
       font-size: 32px;
       margin-bottom: 0%;

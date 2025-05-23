@@ -70,7 +70,7 @@ const Faq = () => {
       
                <div className="headings">
                <h1>Frequently Asked Questions</h1>
-               <img src="/headingimg.svg" />
+               <img src="/headingimg.svg" alt="headingimg"/>
              </div>
                
             

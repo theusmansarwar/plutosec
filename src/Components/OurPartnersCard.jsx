@@ -40,7 +40,7 @@ const OurPartnersCard = () => {
         <div className="left">
           <div className="headings">
             <h1>Our Best Partners</h1>
-            <img src="/headingimg.svg" />
+            <img src="/headingimg.svg"  alt="headingimg"/>
           </div>
           <p className="description-heading">
           Our partners share our mission to build a safer digital world. They bring value, trust, and expertise. Together, we deliver stronger security solutions to every client.

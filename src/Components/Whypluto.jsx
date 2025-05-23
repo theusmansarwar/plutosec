@@ -19,7 +19,7 @@ const Whypluto = () => {
       <div className="Head-area">
         <div className="headings">
           <h1>Why you Should Choose PlutoSec </h1>
-          <img src="/headingimg.svg" />
+          <img src="/headingimg.svg"  alt="headingimg"/>
         </div>
       </div>
 

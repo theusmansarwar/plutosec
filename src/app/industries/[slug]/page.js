@@ -13,7 +13,7 @@ import Services3 from "@/Components/Service3";
 
 function getContentBySlug(slug) {
   switch (slug) {
-    case "retail-ecommerce":
+    case "penetration-testing-for-retail-ecommerce":
       return {
         htext: "Retail / E-commerce Sector",
         ptext:
@@ -22,7 +22,7 @@ function getContentBySlug(slug) {
 The e-commerce and retail industry faces 32.4% of all cyberattacks. You cannot ignore the risk. Your payment platforms, apps, and inventory systems stay exposed without proper testing.
 We help you spot threats before damage occurs. Our methods protect you from phishing, ransomware, and malware. You also meet PCI DSS standards. Customers trust you more when their data stays safe.`,
       };
-    case "finance":
+    case "penetration-testing-for-finance":
       return {
         htext: "Finance",
         ptext:
@@ -31,7 +31,7 @@ We help you spot threats before damage occurs. Our methods protect you from phis
 Finance stands as the second most targeted sector in cybercrime. Data shows a steady rise in attacks over the past three years. You cannot leave systems exposed. A single breach can impact services and break client trust.
 You must protect operations and maintain compliance. Work with penetration testers who understand OSFI and PIPEDA standards. Our team also covers SOC2, ISO 27000, NIST SP800-115, PCI DSS 11.3, and CREST. You meet every requirement with confidence and avoid fines or delays.`,
       };
-    case "government":
+    case "penetration-testing-for-government":
       return {
         htext: "Government Systems",
         ptext:
@@ -41,7 +41,7 @@ Cyberattacks target government networks more than any other. Over 38% of global 
 You must identify weaknesses in every area if you are a ministry, public vendor, or third-party service provider. Regulatory audits demand full compliance.
 We help you meet these standards. Our team runs expert-led penetration tests that match evolving policies. You stay protected and aligned with all government cybersecurity requirements.`,
       };
-    case "education":
+    case "penetration-testing-for-education":
       return {
         htext: "Education",
         ptext:
@@ -50,7 +50,7 @@ We help you meet these standards. Our team runs expert-led penetration tests tha
 Education remains one of the most vulnerable industries to cyber threats. Attackers exploit weak controls and outdated systems. It ranks lowest in overall cybersecurity strength out of 17 industries. You must act fast to fix the exposure before attackers take advantage.
 A penetration testing partner helps you detect threats early and meet compliance standards. Strong testing practices give you visibility into weak points. You gain the tools to secure digital learning platforms and on-campus infrastructure. Every report helps you comply with policies and gives you a clear path to remediation.`,
       };
-    case "technology":
+    case "penetration-testing-for-technology":
       return {
         htext: "Tech Companies",
         ptext:
@@ -59,7 +59,7 @@ A penetration testing partner helps you detect threats early and meet compliance
 Significant cyber threats target the technology sector due to the sensitive data that tech firms and their vendors manage. Creating a detailed cybersecurity roadmap is vital. Manual penetration testing makes up over 95% of our approach. This method protects you from operational downtime, reputational harm, and financial losses.
 The tech industry faces high risks of data breaches. Our CREST-certified, SOC 2 Type II-accredited team of OSCP-certified ethical hackers offers comprehensive services. You receive strong protection to improve your security posture.`,
       };
-    case "health-care":
+    case "penetration-testing-for-health-care":
       return {
         htext: "Healthcare",
         ptext:
@@ -69,7 +69,7 @@ Most healthcare teams discover a breach months after it starts. That delay gives
 You must stay ready. Our cybersecurity services protect your systems and help you meet compliance rules like SOC 2 and ISO 27000. You avoid risks and reduce impact. Patient data stays safe. Operations continue without disruption.
 Cybersecurity is now a core part of every healthcare setup. You need strong defenses to protect patients and support your team.`,
       };
-    case "utilities-energy":
+    case "penetration-testing-for-utilities-energy":
       return {
         htext: "Utilities & Energy",
         ptext:
@@ -79,7 +79,7 @@ Utilities and energy systems run critical services. That makes you a prime targe
 You must know how a real attack works. We will show you that. Our penetration testing reveals system gaps. You see how attackers move. You learn where alerts fail. You fix weak spots before they cause damage.
 Our team meets NERC CIP standards. You stay secure across wireless setups, IoT devices, and all data channels. You reduce risk and keep operations running without threat.`,
       };
-    case "oil-gas":
+    case "penetration-testing-for-oil-gas":
       return {
         htext: "Oil & Gas Companies",
         ptext:
@@ -88,7 +88,7 @@ Our team meets NERC CIP standards. You stay secure across wireless setups, IoT d
 Stop breaches before they happen. Secure public systems, sensitive records, and government infrastructure. Cyberattacks target government networks more than any other sector. Over 38% of attacks worldwide hit government systems. The United States and Canada face the highest risk.
 You must find weaknesses everywhere if you are a ministry, public vendor, or third-party service provider. Regulatory audits require full compliance. We help you meet these rules. Our team performs expert penetration tests. They keep up with changing policies.`,
       };
-    case "banking":
+    case "penetration-testing-for-banking":
       return {
         htext: "Banking",
         ptext:

@@ -5,12 +5,9 @@ import Header from "@/Components/Header";
 import Footer from "@/Components/Footer";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
-import Script from "next/script";
-import ScrollProgressBar from "@/Components/ScrollProgressBar";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { LuMessageSquareQuote } from "react-icons/lu";
 import Link from "next/link";
-import { countView } from "@/DAL/create";
 import ViewCounter from "@/Components/ViewCounter";
 import { ToastContainer } from "react-toastify";
 const montserrat = Montserrat({
@@ -60,11 +57,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={montserrat.variable}>
       <head>
-        <Script
-          type="module"
-          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-          strategy="afterInteractive"
-        />
+       
       </head>
       <body>
         <LanguageProvider>
