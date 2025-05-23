@@ -65,53 +65,52 @@ const scriptLines = [
 const Terminal = () => {
   const [displayLines, setDisplayLines] = useState([]);
   const terminalRef = useRef(null);
-  const lineRef = useRef([]);
   const indexRef = useRef(0);
-  const typingIntervalRef = useRef(null); // clearInterval safety
-useEffect(() => {
-  setDisplayLines([]);
-  lineRef.current = [];
-  indexRef.current = 0;
+  const frameRef = useRef(null);
 
-  const typeLine = () => {
-    const currentIndex = indexRef.current;
-    if (currentIndex >= scriptLines.length) {
-      const cursor = document.createElement("span");
-      cursor.className = "cursor";
-      terminalRef.current?.appendChild(cursor);
-      return;
-    }
-
-    const currentLine = scriptLines[currentIndex];
-    if (!currentLine) return;
-
+  useEffect(() => {
     let charIndex = 0;
-    let buffer = "";
+    let currentLine = scriptLines[indexRef.current] || "";
+    let currentDisplay = "";
 
-    typingIntervalRef.current = setInterval(() => {
+    const typeChar = () => {
+      if (indexRef.current >= scriptLines.length) {
+        const cursor = document.createElement("span");
+        cursor.className = "cursor";
+        terminalRef.current?.appendChild(cursor);
+        return;
+      }
+
       if (charIndex < currentLine.length) {
-        buffer += currentLine[charIndex++];
+        currentDisplay += currentLine[charIndex++];
+        setDisplayLines((prev) => [
+          ...prev.slice(0, indexRef.current),
+          currentDisplay,
+        ]);
+        frameRef.current = requestAnimationFrame(typeChar);
       } else {
-        clearInterval(typingIntervalRef.current);
-        lineRef.current.push(buffer);
-        setDisplayLines([...lineRef.current]);
-        indexRef.current += 1;
-        setTimeout(typeLine, 30);
+        indexRef.current++;
+        charIndex = 0;
+        currentDisplay = "";
+        currentLine = scriptLines[indexRef.current] || "";
+        setTimeout(() => {
+          frameRef.current = requestAnimationFrame(typeChar);
+        }, 30);
       }
 
       if (terminalRef.current) {
         terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
       }
-    }, 10); // Faster typing
-  };
+    };
 
-  typeLine();
+    frameRef.current = requestAnimationFrame(typeChar);
 
-  return () => {
-    clearInterval(typingIntervalRef.current);
-  };
-}, []);
- // Still runs once, but safely resets everything
+    return () => {
+      cancelAnimationFrame(frameRef.current);
+      const cursor = terminalRef.current?.querySelector(".cursor");
+      if (cursor) cursor.remove();
+    };
+  }, []);
 
   return (
     <div className="terminal-window">
