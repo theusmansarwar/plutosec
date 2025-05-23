@@ -16,6 +16,18 @@
 
   
 }
+.Servicearea .htext2{
+  text-align: center;
+  color: var(--headings-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 48px;
+      width: 68%;
+    margin-left: 16%;
+    margin-right: 16%;
+
+  
+}
 .Servicearea .ptext{
 text-align: center;
 color: var(--text-color);
@@ -102,9 +114,16 @@ font-size: var(--default-p-size);
 
     }
     .Servicearea .htext{
-     
+     line-height: 1;
       font-size: 32px;
     margin-bottom: 0%;
+       width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    }
+     .Servicearea .htext2{
+      line-height: 1;
+      font-size: 32px;
        width: 100%;
     margin-left: 0%;
     margin-right: 0%;

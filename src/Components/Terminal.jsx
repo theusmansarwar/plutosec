@@ -68,51 +68,50 @@ const Terminal = () => {
   const lineRef = useRef([]);
   const indexRef = useRef(0);
   const typingIntervalRef = useRef(null); // clearInterval safety
+useEffect(() => {
+  setDisplayLines([]);
+  lineRef.current = [];
+  indexRef.current = 0;
 
-  useEffect(() => {
-    // Reset all refs and state
-    setDisplayLines([]);
-    lineRef.current = [];
-    indexRef.current = 0;
+  const typeLine = () => {
+    const currentIndex = indexRef.current;
+    if (currentIndex >= scriptLines.length) {
+      const cursor = document.createElement("span");
+      cursor.className = "cursor";
+      terminalRef.current?.appendChild(cursor);
+      return;
+    }
 
-    const typeLine = () => {
-      const currentIndex = indexRef.current;
-      if (currentIndex >= scriptLines.length) {
-        const cursor = document.createElement("span");
-        cursor.className = "cursor";
-        terminalRef.current?.appendChild(cursor);
-        return;
+    const currentLine = scriptLines[currentIndex];
+    if (!currentLine) return;
+
+    let charIndex = 0;
+    let buffer = "";
+
+    typingIntervalRef.current = setInterval(() => {
+      if (charIndex < currentLine.length) {
+        buffer += currentLine[charIndex++];
+      } else {
+        clearInterval(typingIntervalRef.current);
+        lineRef.current.push(buffer);
+        setDisplayLines([...lineRef.current]);
+        indexRef.current += 1;
+        setTimeout(typeLine, 30);
       }
 
-      const currentLine = scriptLines[currentIndex];
-      if (!currentLine) return;
+      if (terminalRef.current) {
+        terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
+      }
+    }, 10); // Faster typing
+  };
 
-      let charIndex = 0;
-      lineRef.current.push("");
+  typeLine();
 
-      typingIntervalRef.current = setInterval(() => {
-        if (charIndex < currentLine.length) {
-          lineRef.current[currentIndex] += currentLine[charIndex++];
-          setDisplayLines([...lineRef.current]);
-        } else {
-          clearInterval(typingIntervalRef.current);
-          indexRef.current += 1;
-          setTimeout(typeLine, 30);
-        }
-
-        if (terminalRef.current) {
-          terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
-        }
-      }, 20);
-    };
-
-    typeLine();
-
-    // Cleanup when component unmounts
-    return () => {
-      clearInterval(typingIntervalRef.current);
-    };
-  }, []); // Still runs once, but safely resets everything
+  return () => {
+    clearInterval(typingIntervalRef.current);
+  };
+}, []);
+ // Still runs once, but safely resets everything
 
   return (
     <div className="terminal-window">

@@ -88,8 +88,8 @@ const Header = () => {
         <AiOutlineGlobal className="icons" />
         <select value={language} onChange={(e) => setLanguage(e.target.value)}>
           <option value="EN">English</option>
-          <option value="ES">ES</option>
-          <option value="FR">FR</option>
+          {/* <option value="ES">ES</option>
+          <option value="FR">FR</option> */}
         </select>
       </div>
     </div>

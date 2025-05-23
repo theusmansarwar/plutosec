@@ -1,33 +1,30 @@
 /* services2.css */
 
 .services2-section {
-
   margin-bottom: 20px;
-
 }
 
 .service-section {
   width: 100%;
   margin: 0 auto;
 }
-.Head-area{
+.Head-area {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
-.Head-area .viewall-text{
+.Head-area .viewall-text {
   color: var(--headings-color);
   display: flex;
   align-items: center;
   gap: 5px;
   height: 80px;
-
-} 
-.Head-area .viewall-text:hover{
+}
+.Head-area .viewall-text:hover {
   color: var(--shadow-low3);
   cursor: pointer;
-} 
+}
 .heading-area {
   display: flex;
   justify-content: space-between;
@@ -35,7 +32,6 @@
   align-items: flex-start;
   margin-bottom: 20px;
   margin-top: 20px;
-  
 }
 .heading-area .left {
   width: 50%;
@@ -43,29 +39,27 @@
 .upper-section {
   display: flex;
 
-padding: 0%;
+  padding: 0%;
   align-items: flex-end;
   width: 100%;
 }
 .heading-area .left p {
   text-align: left;
-  font-size: var(--default-p-size );
+  font-size: var(--default-p-size);
   color: var(--text-color);
 }
 .heading-area .viewall-text {
   text-align: left;
   color: var(--headings-color);
-  font-size: var(--default-p-size );
-    display: flex;
+  font-size: var(--default-p-size);
+  display: flex;
   align-items: center;
   gap: 5px;
   height: 80px;
-
 }
 .heading-area .viewall-text:hover {
   color: var(--shadow-low3);
   cursor: pointer;
-
 }
 
 .upper-section h1 {
@@ -73,7 +67,6 @@ padding: 0%;
   text-align: left;
   margin: 0%;
   color: var(--headings-color);
-
 }
 .upper-section img {
   width: 15%;
@@ -105,20 +98,20 @@ padding: 0%;
 }
 
 .service-item {
-      background:var(--gradient-one);
-    padding: 30px;
-    border-radius:var(--default-border-radius);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
-    box-shadow: var(--default-box-shadow);
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-justify-content: space-between;
-    gap: 10px;
-    cursor: pointer;
+  background: var(--gradient-one);
+  padding: 30px;
+  border-radius: var(--default-border-radius);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  box-shadow: var(--default-box-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
 }
 
 .service-item:hover {
@@ -130,16 +123,15 @@ justify-content: space-between;
   width: 75px;
   height: 75px;
   color: var(--headings-color);
-  
 }
 
-.service-item  h2 {
+.service-item h2 {
   font-size: 1.25rem;
   color: var(--headings-color);
   margin-bottom: 0.5rem;
 }
 
-.service-item  p {
+.service-item p {
   color: var(--text-color);
   font-size: var(--default-p-size);
 }
@@ -175,20 +167,20 @@ justify-content: space-between;
   color: var(--primary-color);
 }
 .service-item2 {
-      background:var(--gradient-one);
-    padding: 30px;
-    border-radius:var(--default-border-radius);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
-    box-shadow: var(--default-box-shadow);
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-justify-content: space-between;
-    gap: 0px;
-    cursor: pointer;
+  background: var(--gradient-one);
+  padding: 30px;
+  border-radius: var(--default-border-radius);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  box-shadow: var(--default-box-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  gap: 0px;
+  cursor: pointer;
 }
 
 .service-item2:hover {
@@ -200,70 +192,74 @@ justify-content: space-between;
   width: 125px;
   height: 125px;
   color: var(--headings-color);
-  
 }
 
-.service-item2  h2 {
+.service-item2 h2 {
   font-size: 1.25rem;
   color: var(--headings-color);
   margin-bottom: 0.5rem;
 }
 
-.service-item2  p {
+.service-item2 p {
   color: var(--text-color);
   font-size: var(--default-p-size);
 }
 
 @media (max-width: 900px) {
-  
-    .heading-area {
-        align-items: center;
-        flex-direction: column;
-        
-      }
-     
-      .heading-area .left {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-      .upper-section {
-        display: flex;
-      
-        align-items: flex-end;
-        width: 100%;
-      }
-      .heading-area .left p {
-        text-align: left;
-        font-size: var(--default-p-size);
-      }
-      
-      .upper-section h1 {
-        width: 100%;
-        text-align: left;
-      }
-      .upper-section img {
-       display: none;
-      }
-      
-      .service-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-        width: 100%;
-      }
-      .headings h1 {
-        text-align: left;
-        width: 100%;
-      }
-      .headings p {
-        text-align: left;
-      }
-      .headings img {
-        display: none;
-      }
-      .heading-area .viewall-text{
-        height: fit-content;
-      margin: 0%;
-      } 
-     
-    }
+  .heading-area {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .heading-area .left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .upper-section {
+    display: flex;
+
+    align-items: flex-end;
+    width: 100%;
+  }
+  .heading-area .left p {
+    text-align: left;
+    font-size: var(--default-p-size);
+  }
+
+  .upper-section h1 {
+    width: 100%;
+    text-align: left;
+  }
+  .upper-section img {
+    display: none;
+  }
+
+  .service-item2 img {
+    width: 75px;
+    height: 75px;
+    color: var(--headings-color);
+  }
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+  }
+  .headings h1 {
+    text-align: left;
+    width: 100%;
+  }
+  .headings p {
+    text-align: left;
+  }
+  .headings img {
+    display: none;
+  }
+  .heading-area .viewall-text {
+    height: fit-content;
+    margin: 0%;
+  }
+  .service-item2 {
+    padding: 20px;
+  }
+}

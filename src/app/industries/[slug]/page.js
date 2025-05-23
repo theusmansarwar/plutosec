@@ -152,7 +152,7 @@ export default async function Page({ params }) {
     </>
   );
 })()}
-<h1 className={styles.htext}>What PLUTOSEC offers our {htext} Clients.</h1>
+<h1 className={styles.htext2}>What PLUTOSEC offers our {htext} Clients.</h1>
 <Services3 slug={slug}/>
       <Testimonial />
       <Blogs />
