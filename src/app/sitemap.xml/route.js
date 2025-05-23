@@ -1,5 +1,7 @@
-import { getblogSlugs } from "@/DAL/fetch";
 
+export const dynamic = 'force-dynamic'; // 👈 Forces runtime generation
+
+import { getblogSlugs } from "@/DAL/fetch";
 const services = [
   { slug: "penetration-testing" },
   { slug: "managed-security" },
@@ -28,22 +30,16 @@ const industries = [
 // Make sure you import or define getblogSlugs somewhere
 // const getblogSlugs = require('./your-api-file').getblogSlugs;
 
+
+
+
+
 export async function GET() {
   const baseUrl = "https://plutosec.ca";
 
   const staticRoutes = [
-    "",
-    "careers",
-    "contact",
-    "services",
-    "why-us",
-    "testimonial",
-    "partner",
-    "industries",
-    "success-stories",
-    "terms-and-condition",
-    "privacy-policy",
-    "about-us",
+    "", "careers", "contact", "services", "why-us", "testimonial", "partner",
+    "industries", "success-stories", "terms-and-condition", "privacy-policy", "about-us"
   ];
 
   const serviceRoutes = services.map(s => `services/${s.slug}`);
@@ -74,8 +70,7 @@ export async function GET() {
           ? "0.7"
           : "0.9"
       }</priority>
-    </url>`)
-    .join("")}
+    </url>`).join("")}
 </urlset>`;
 
   return new Response(sitemap, {
