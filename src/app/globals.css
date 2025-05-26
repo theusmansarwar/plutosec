@@ -153,7 +153,8 @@ h1 {
 }
 
 .first-btn,
-.second-btn {
+.second-btn,
+.third-btn {
   background-color: var(--background-color);
   position: fixed;
   padding: 10px ;
@@ -168,12 +169,14 @@ h1 {
 }
 
 .first-btn:hover,
-.second-btn:hover {
+.second-btn:hover,
+.third-btn:hover {
   background-color: var(--shadow-low3);
 }
 
 .first-btn span,
-.second-btn span {
+.second-btn span,
+.third-btn span {
   font-size: 12px;
 }
 
@@ -185,6 +188,11 @@ h1 {
 .second-btn {
   bottom: 90px;
   right: 0;
+}
+.third-btn {
+   bottom: 140px;
+  right: 0;
+display: none;
 }
 
 .linkss {
@@ -204,13 +212,20 @@ h1 {
   }
 
   .first-btn,
-  .second-btn {
+  .second-btn,
+  .third-btn {
     border-radius: 50%;
-    font-size: 28px;
+    font-size: 24px;
+    width: 45px;
   }
+  .third-btn {
+display: flex;
+ 
+}
 
   .first-btn span,
-  .second-btn span {
+  .second-btn span,
+  .third-btn span {
     display: none;
   }
 }
@@ -230,8 +245,6 @@ h1 {
 
   margin-top: 20px;
 }
-.first-btn {
-  bottom: 30px;
-  right: 0;
-}
+
+
 }

@@ -7,6 +7,7 @@ import "./globals.css";
 import { Montserrat } from "next/font/google";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { LuMessageSquareQuote } from "react-icons/lu";
+import { IoCallOutline } from "react-icons/io5";
 import Link from "next/link";
 import ViewCounter from "@/Components/ViewCounter";
 import { ToastContainer } from "react-toastify";
@@ -16,8 +17,10 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-const title = "Canada’s Leading Cybersecurity & Penetration Testing Services | PlutoSec";
-const description = "PlutoSec offers expert penetration testing in Canada, helping businesses and governments boost security and fix vulnerabilities.";
+const title =
+  "Canada’s Leading Cybersecurity & Penetration Testing Services | PlutoSec";
+const description =
+  "PlutoSec offers expert penetration testing in Canada, helping businesses and governments boost security and fix vulnerabilities.";
 const url = "https://plutosec.ca"; // Replace with your actual URL
 const image = "/plutofav.png"; // Or another Open Graph-friendly image
 
@@ -49,16 +52,10 @@ export const metadata = {
   },
 };
 
-
 export default function RootLayout({ children }) {
-  
- 
-
   return (
     <html lang="en" className={montserrat.variable}>
-      <head>
-       
-      </head>
+      <head></head>
       <body>
         <LanguageProvider>
           <HtmlWrapper>
@@ -68,7 +65,6 @@ export default function RootLayout({ children }) {
                 <div className="circle"></div>
               </div>
               <div className="content">
-               
                 <Link href="/contact" className="linkss">
                   <div className="first-btn">
                     <LuMessageSquareQuote /> <span>Get a quote</span>
@@ -79,13 +75,19 @@ export default function RootLayout({ children }) {
                     <MdOutlineMailOutline /> <span>Email Us</span>
                   </div>
                 </a>
-                  <ToastContainer
-          position="top-right"
-          autoClose={3000}
-          pauseOnHover={false}
-          newestOnTop
-        />
-                <ViewCounter/>
+                <a href="tel:+19053676038" className="linkss">
+                  <div className="third-btn">
+                    <IoCallOutline /> <span>Call</span>
+                  </div>
+                </a>
+
+                <ToastContainer
+                  position="top-right"
+                  autoClose={3000}
+                  pauseOnHover={false}
+                  newestOnTop
+                />
+                <ViewCounter />
                 <Header />
                 {children}
                 <Footer />
