@@ -47,12 +47,19 @@ export default function BlogDetail({ slug }) {
       {blog && (
         <Head>
           <title>{blog.title} | PlutoSec</title>
-          <meta name="description" content={blog.metaDescription || blog.title} />
+          <meta
+            name="description"
+            content={blog.metaDescription || blog.title}
+          />
           <meta property="og:title" content={blog.title} />
-          <meta property="og:description" content={blog.metaDescription || blog.title} />
+          <meta
+            property="og:description"
+            content={blog.metaDescription || blog.title}
+          />
           <meta property="og:image" content={baseUrl + blog.thumbnail} />
           <meta property="og:type" content="article" />
           <link rel="preload" as="image" href={baseUrl + blog.thumbnail} />
+          
         </Head>
       )}
 
@@ -69,20 +76,29 @@ export default function BlogDetail({ slug }) {
               <span>{blog.category?.name}</span>
             </p>
             <div className="Top-Blog-section">
-            <img
-              src={baseUrl + blog.thumbnail}
-              alt={blog.title}
-              className="blog-image"
-            />
-            <div className="sub-block">  <SubscribeBlock /></div>
-           
+              <img
+                src={baseUrl + blog.thumbnail}
+                alt={blog.title}
+                className="blog-image"
+              />
+              <div className="sub-block">
+                {" "}
+                <SubscribeBlock />
+              </div>
             </div>
             <div
               className="description"
               dangerouslySetInnerHTML={{ __html: sanitizedContent }}
             />
-       <Comments blogId={blog?._id} comments={blog?.comments}/>
-        <AuthorShare author={blog?.author} />
+     
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: blog?.faqSchema, // This must be a valid JSON string without surrounding quotes!
+  }}
+/>
+            <Comments blogId={blog?._id} comments={blog?.comments} />
+            <AuthorShare author={blog?.author} />
           </>
         )}
       </div>
