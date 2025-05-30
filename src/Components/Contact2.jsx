@@ -14,7 +14,7 @@ const Contact2 = () => {
     lastname: "",
     email: "",
     phone: "",
-    subject: "",
+    subject: [],
     message: "",
   });
 
@@ -36,15 +36,32 @@ const Contact2 = () => {
     setCaptchaToken(token);
   };
 
+  const handleSubjectChange = (e) => {
+  const { value, checked } = e.target;
+
+  setFormData((prev) => {
+    const subjects = new Set(prev.subject);
+    if (checked) {
+      subjects.add(value);
+    } else {
+      subjects.delete(value);
+    }
+    return { ...prev, subject: [...subjects] };
+  });
+};
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    const formatSubject = (subjects) => {
+      if (subjects.length === 0) return "";
+      if (subjects.length === 1) return subjects[0];
+      return subjects.slice(0, -1).join(", ") + " and " + subjects.slice(-1);
+    };
     const payload = {
       name: formData.name,
       lastname: formData.lastname,
       phone: formData.phone,
       email: formData.email,
-      subject: formData.subject,
+      subject: formatSubject(formData.subject),
       query: formData.message,
       captchaToken,
     };
@@ -186,9 +203,10 @@ const Contact2 = () => {
                       type="checkbox"
                       name="subject"
                       value={subject}
-                      checked={formData.subject === subject}
-                      onChange={handleChange}
+                      checked={formData.subject.includes(subject)}
+                      onChange={handleSubjectChange}
                     />
+
                     <label htmlFor={id} className="radio-wrapper">
                       {subject}
                     </label>
@@ -203,9 +221,7 @@ const Contact2 = () => {
             value={formData.message}
             onChange={handleChange}
           ></textarea>
-          {errors.query && (
-            <span className="error-msg">{errors.query}</span>
-          )}
+          {errors.query && <span className="error-msg">{errors.query}</span>}
 
           <div className="recaptch-div">
             <ReCAPTCHA
@@ -214,11 +230,10 @@ const Contact2 = () => {
               onChange={handleCaptchaChange}
               theme="dark"
             />
-             {errors.captchaToken && (
-            <span className="error-msg">{errors.captchaToken}</span>
-          )}
+            {errors.captchaToken && (
+              <span className="error-msg">{errors.captchaToken}</span>
+            )}
           </div>
-
 
           <button type="submit">Submit</button>
         </form>
