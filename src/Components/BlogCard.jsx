@@ -77,7 +77,6 @@ const BlogCard = () => {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 width: "100%",
-                height: "200px",
               }}
             />
             <div className="post-content">
