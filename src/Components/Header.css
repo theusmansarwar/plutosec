@@ -76,6 +76,9 @@ ul.nav li:hover {
     width: 100%;
     margin-left: 0px;
     background-color: rgba(0, 0, 0, 0.679);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px;
   }
   .Header img {
  height: 35px;
@@ -85,20 +88,42 @@ ul.nav li:hover {
   .menu-icon {
     display: block;
     margin-top: 5px;
-    margin-right: var(--right-space);
+    margin-right: 5px;
   }
+.menu-icon .close-icon {
+  background-color: var(--background-color);
+  color: black;
+  border-radius: 50%;
+  font-size: 34px;
+  animation: floatY 0.4s ease-in-out infinite alternate;
+  box-shadow: var(--default-box-shadow);
+}
+
+@keyframes floatY {
+  0% {
+    transform: translatez(1px);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
+
+ 
   ul.nav {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 55px;
+    top: 70px;
     left: 0;
     right: 0;
     background-color: var(--primary-color);
     padding: 5px;
     z-index: 10;
     width: 100%;
-    border-radius: 20px;
+    justify-content: flex-start;
+    border-radius: 6px;
+  
   }
   ul.nav.open {
     display: flex;
@@ -112,9 +137,5 @@ ul.nav li:hover {
     width: 100%;
     justify-content: center;
   }
-  .Header {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0px;
-  }
+ 
 }

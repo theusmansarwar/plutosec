@@ -17,7 +17,6 @@ const Contact2 = () => {
     subject: [],
     message: "",
   });
-
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState(null);
   const recaptchaRef = useRef(null);

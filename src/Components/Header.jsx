@@ -1,9 +1,10 @@
-'use client';
-import React, { useEffect, useState, useRef } from 'react';
-import { usePathname, useRouter } from 'next/navigation';
-import { AiOutlineGlobal } from 'react-icons/ai';
-import { FiMenu, FiX } from 'react-icons/fi';
-import './Header.css';
+"use client";
+import React, { useEffect, useState, useRef } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { AiOutlineGlobal } from "react-icons/ai";
+import { FiMenu, FiX } from "react-icons/fi";
+import "./Header.css";
+import { RiCloseCircleFill } from "react-icons/ri";
 
 const Header = () => {
   const pathname = usePathname();
@@ -13,13 +14,19 @@ const Header = () => {
   const lastScrollY = useRef(0);
 
   const controlHeader = () => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       const currentScrollY = window.scrollY;
 
+      // Hide header on scroll down, show on scroll up
       if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
-        setShowHeader(false); // Scrolling down
+        setShowHeader(false);
       } else {
-        setShowHeader(true); 
+        setShowHeader(true);
+      }
+
+      // Close mobile menu if scrolling on small screen
+      if (mobileOpen && window.innerWidth < 900) {
+        setMobileOpen(false);
       }
 
       lastScrollY.current = currentScrollY;
@@ -27,33 +34,33 @@ const Header = () => {
   };
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', controlHeader);
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlHeader);
       return () => {
-        window.removeEventListener('scroll', controlHeader);
+        window.removeEventListener("scroll", controlHeader);
       };
     }
   }, []);
 
-  const [activeItem, setActiveItem] = useState('');
-  const [language, setLanguage] = useState('EN');
+  const [activeItem, setActiveItem] = useState("");
+  const [language, setLanguage] = useState("EN");
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const menuItems = [
-    { label: 'Home', path: '/' },
-    { label: 'Services', path: '/services' },
-    { label: 'Industries', path: '/industries' },
-    { label: 'Why Us', path: '/why-us' },
-    { label: 'Careers', path: '/careers' },
-    { label: 'Contact Us', path: '/contact' },
+    { label: "Home", path: "/" },
+    { label: "Services", path: "/services" },
+    { label: "Industries", path: "/industries" },
+    { label: "Why Us", path: "/why-us" },
+    { label: "Careers", path: "/careers" },
+    { label: "Contact Us", path: "/contact" },
   ];
 
   useEffect(() => {
     const foundItem = menuItems.find((item) => item.path === pathname);
-    if (foundItem)
-      { setActiveItem(foundItem.label);}
-    else{
-       setActiveItem("");
+    if (foundItem) {
+      setActiveItem(foundItem.label);
+    } else {
+      setActiveItem("");
     }
   }, [pathname]);
 
@@ -64,20 +71,20 @@ const Header = () => {
   };
 
   const handleNavClick2 = () => {
-    router.push('/');
+    router.push("/");
   };
 
   return (
-    <div className={`Header ${showHeader ? 'show' : 'hide'}`}>
+    <div className={`Header ${showHeader ? "show" : "hide"}`}>
       <img src="/logo4.png" alt="Logo" onClick={handleNavClick2} />
       <div className="menu-icon" onClick={() => setMobileOpen(!mobileOpen)}>
-        {mobileOpen ? <FiX /> : <FiMenu />}
+        {mobileOpen ? <RiCloseCircleFill className="close-icon" /> : <FiMenu />}
       </div>
-      <ul className={`nav ${mobileOpen ? 'open' : ''}`}>
+      <ul className={`nav ${mobileOpen ? "open" : ""}`}>
         {menuItems.map((item) => (
           <li
             key={item.label}
-            className={activeItem === item.label ? 'active' : ''}
+            className={activeItem === item.label ? "active" : ""}
             onClick={() => handleNavClick(item)}
           >
             {item.label}
@@ -88,8 +95,6 @@ const Header = () => {
         <AiOutlineGlobal className="icons" />
         <select value={language} onChange={(e) => setLanguage(e.target.value)}>
           <option value="EN">English</option>
-          {/* <option value="ES">ES</option>
-          <option value="FR">FR</option> */}
         </select>
       </div>
     </div>
