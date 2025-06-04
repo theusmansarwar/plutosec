@@ -10,32 +10,33 @@ import { useRouter } from "next/navigation";
 
 const TestimonialCard = () => {
   const router = useRouter();
-  const testimonials = [
+ const testimonials = [
   {
     id: 1,
-    image: "/person3.jpg",
+    image: "/person2.jpg",
     quote:
-      "PlutoSec helped secure our ecommerce platform. Their clear reports, quick action, and expertise made a real difference. Highly recommended, excellent team.",
+      "As a System Administrator, I value precision and speed—PlutoSec delivered both. Their structured reports and quick threat mitigation helped us maintain uptime without compromise.",
     role: "System Administrator",
     name: "Tessa Martel",
   },
   {
     id: 2,
-    image: "/person2.jpg",
+    image: "/person4.jpg",
     quote:
-      "PlutoSec provides strong security for our government systems. Transparent pricing, clear communication, and technical expertise make them a top Canadian firm.",
-    role: "SOC Analyst",
-    name: "Lily Moreau",
+      "Managing IT operations at scale requires trustworthy security partners. PlutoSec enhanced our infrastructure’s resilience with clear processes, responsive support, and proactive defenses.",
+    role: "IT Manager",
+    name: "Rohan Sharma",
   },
   {
     id: 3,
     image: "/person1.jpg",
     quote:
-      "We needed compliance in healthcare. PlutoSec guided us well, explained everything clearly, and delivered secure results. Professional, responsive, and easy to trust.",
+      "In my role as CTO, compliance and data protection are top priorities. PlutoSec brought clarity to complex healthcare standards and executed a secure, scalable solution.",
     role: "CTO",
     name: "Charlotte Tremblay",
   },
 ];
+
   return (
     
       <div className="testimonial2-grid-section">
