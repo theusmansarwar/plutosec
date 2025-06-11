@@ -33,7 +33,7 @@ const cards = [
   { id: 24, logo: '/cpa.png', title: "Chartered Professional Accountants LLP " },
   { id: 25, logo: '/cleved.png', title: "Cleveland & Clinic Canada" },
   { id: 26, logo: '/canadas.png', title: "Canada's Medical Clinic" },
-  { id: 27, logo: '/Canada.png', title: "Canada Clinics" },
+  { id: 27, logo: '/canada.png', title: "Canada Clinics" },
 ];
 
 
