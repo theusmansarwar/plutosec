@@ -55,7 +55,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={montserrat.variable}>
-      <head></head>
+      <head>
+         <meta
+          name="google-site-verification"
+          content="6lxBCbEUwWnkkyGfpvEJvaP_LBDcQ8IOtyc2LEqDeKM"
+        />
+      </head>
       <body>
         <LanguageProvider>
           <HtmlWrapper>
