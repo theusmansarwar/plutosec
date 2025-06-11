@@ -19,6 +19,21 @@ const cards = [
   { id: 10, logo: '/CISSPTraining.png', title: "CISSP Training" },
   { id: 11, logo: '/SwitchJob.png', title: "Switch Job" },
   { id: 12, logo: '/hiremeus.png', title: "HireMeUS" },
+  { id: 13, logo: '/utho.png', title: "Utho" },
+  { id: 14, logo: '/mhc.png', title: "Men's Health Clinic" },
+  { id: 15, logo: '/paramed.png', title: "ParaMed" },
+  { id: 16, logo: '/rh.png', title: "RH Insurance" },
+  { id: 17, logo: '/srj.png', title: "SRJ Chartered Professional Accountants" },
+  { id: 18, logo: '/prasad.png', title: "Prasad & Company LLP" },
+  { id: 19, logo: '/negup.png', title: "Negup" },
+  { id: 20, logo: '/lowest.png', title: "LowestRates.ca Toronto" },
+  { id: 21, logo: '/insurance.png', title: "Insurance-Canada.ca" },
+  { id: 22, logo: '/dharna.png', title: "Dharna CPA Accounting & Tax Services" },
+  { id: 23, logo: '/cql.png', title: "CQL & Partners" },
+  { id: 24, logo: '/cpa.png', title: "Chartered Professional Accountants LLP " },
+  { id: 25, logo: '/cleved.png', title: "Cleveland & Clinic Canada" },
+  { id: 26, logo: '/canadas.png', title: "Canada's Medical Clinic" },
+  { id: 27, logo: '/Canada.png', title: "Canada Clinics" },
 ];
 
 

@@ -5,7 +5,7 @@ const SuccessSection = () => {
   const successStories = [
     {
       title: "NEGUP Solution",
-      image: "./negup.png",
+      image: "./negup1.png",
       description:
         "Every security challenge tells a story. PlutoSec builds strong protection through clear strategies that work in real environments. Our experience with NEGUP Solution proves that serious threats can shift into lasting resilience through the right balance of innovation, precision, and smart execution.",
       problems: [
@@ -36,7 +36,7 @@ const SuccessSection = () => {
     },
     {
       title: "Utho",
-      image: "./utho.png",
+      image: "./utho1.png",
       description:
         "Cyber threats hit without warning. Utho relied on PlutoSec to build real-time protection that keeps their infrastructure safe around the clock. Our custom strategy improved server security, locked customer data, and defended the cloud system from deep attacks and hidden threats.",
       problems: [
@@ -59,7 +59,7 @@ const SuccessSection = () => {
     },
     {
       title: "ParaMed",
-      image: "./paramed.png",
+      image: "./paramed1.png",
       description:
         "Healthcare systems require more than care and need strong protection. ParaMed chose PlutoSec to guard their digital world. We provide solutions that keep patient data safe, meet all regulations, and secure medical operations. All this happened without stopping the daily care they deliver.",
       problems: [
