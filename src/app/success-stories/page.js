@@ -36,6 +36,7 @@ export default function Page() {
       <h1 className={styles.htext}>{htext}</h1>
       <p className={styles.ptext}>{ptext}</p>
 <SuccessSection/>
+
 <Zerosection/>
 <OurPartnersCard/>
 

@@ -13,6 +13,14 @@
 
   
 }
+.Servicearea .htext2{  line-height: 1;
+  text-align: center;
+  color: var(--headings-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  
+}
 .Servicearea .ptext{
 text-align: center;
 color: var(--text-color);

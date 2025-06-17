@@ -11,6 +11,8 @@ import Contact2 from '@/Components/Contact2';
 import ReviewsCarousel from '@/Components/ReviewsCarousel';
 import Featured from '@/Components/Featured';
 import HCard from '@/Components/Skeletonloaders/HCard';
+import Zerosection from '@/Components/Zerosection';
+import Zerosection2 from '@/Components/Zerosection2';
 
 const title = "Canada’s Leading Cybersecurity & Penetration Testing Services | PlutoSec";
 const description = "PlutoSec offers expert penetration testing in Canada, helping businesses and governments boost security and fix vulnerabilities.";
@@ -64,7 +66,9 @@ export default function Home() {
    <Whyus/>
     <ReviewsCarousel/> 
    <Blogs/>
+   
      <Testimonial/>
+     <Zerosection2/>
    <div className="headings">
           <h1>Contact Us</h1>
           <img src="/headingimg.svg" alt="headingimg"/>

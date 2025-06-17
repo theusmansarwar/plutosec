@@ -655,7 +655,8 @@ const KeyOfferings = ({ slug }) => {
   else if (slug === "cybersecurity-consultancy") {
     offerings = offerings10;
   } else {
-    offerings = [];
+    // offerings = [];
+    offerings = offerings10;
   }
   
 

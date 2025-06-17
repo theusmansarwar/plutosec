@@ -4,6 +4,12 @@
   margin-bottom: var(--default-space);
   margin: 30px 0px;
 }
+.zero-section h1{
+  text-align: left;
+}
+.zero-section .description{
+  text-align: left;
+}
 
 .zero-section .hr2 {
   background-color: white;
