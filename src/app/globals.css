@@ -25,6 +25,11 @@
   margin: 0;
     scrollbar-color: var(--background-color) #090909;
 
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+
 }
 
 body {
@@ -34,6 +39,22 @@ body {
   color: var(--text-color);
   line-height: 1.5;
 }
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  border-top-color: #0070f3;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 textarea {
   font-family: 'Montserrat', sans-serif;

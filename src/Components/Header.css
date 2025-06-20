@@ -89,7 +89,7 @@ ul.nav li:hover {
   justify-content: space-between;
   background: var(--gradient-one);
 }
-.sidebar-item {
+.sidebar-items {
   color: #888;
   font-weight: bold;
   cursor: pointer;
@@ -100,25 +100,25 @@ ul.nav li:hover {
   margin: 10px 0;
   gap: 8px;
 }
-.sidebar-item span {
+.sidebar-items span {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.sidebar-item span:first-child {
+.sidebar-items span:first-child {
   width: 90%;
 }
 
-.sidebar-item img {
+.sidebar-items img {
   height: 50px;
   width: 50px;
 }
-.sidebar-item.active .side-line {
+.sidebar-items.active .side-line {
   background-color: var(--background-color);
 }
-.sidebar-item.active .sidebar-link {
+.sidebar-items.active .sidebar-link {
   color: var(--background-color);
 }
 
@@ -137,10 +137,10 @@ ul.nav li:hover {
   border-radius: var(--default-border-radius);
 }
 /* Hover effect */
-.sidebar-item:hover .sidebar-link {
+.sidebar-items:hover .sidebar-link {
   color: var(--background-color);
 }
-.sidebar-item:hover .side-line {
+.sidebar-items:hover .side-line {
   background-color: var(--background-color);
 }
 

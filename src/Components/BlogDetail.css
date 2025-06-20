@@ -28,6 +28,9 @@ gap: 5px;
   text-align: justify;
   margin: auto;
 }
+.description a{
+  color: var(--background-color);
+}
 .description h1,
 .description h2,
 .description h3,
@@ -44,8 +47,8 @@ gap: 5px;
 .description img {
     display: flex;
     justify-self: center ;
-  max-width: 720px;
-  max-height: 420px;
+ width: 720px;
+  height: 420px;
   border-radius: 6px;
 }
 

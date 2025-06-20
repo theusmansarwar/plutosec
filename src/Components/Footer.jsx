@@ -3,13 +3,13 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import "./Footer.css";
-import './Comments.css'
+import "./Comments.css";
 import { RiFacebookFill } from "react-icons/ri";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaMapMarkerAlt } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
-import { RiTiktokFill,RiTwitterXFill  } from "react-icons/ri";
+import { RiTiktokFill, RiTwitterXFill } from "react-icons/ri";
 import { AiFillInstagram } from "react-icons/ai";
 import { Subscribe } from "@/DAL/create";
 import { toast, ToastContainer } from "react-toastify";
@@ -40,7 +40,7 @@ const Footer = () => {
     { label: "Blogs", path: "/blogs" },
     { label: "Industries", path: "/industries" },
     { label: "Testimonials", path: "/testimonial" },
-      { label: "Career", path: "/careers" },
+    { label: "Career", path: "/careers" },
     { label: "Contact Us", path: "/contact" },
     { label: "Success Stories", path: "/success-stories" },
     { label: "Partner Program", path: "/partner" },
@@ -56,7 +56,6 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-     
       <div className="footer-container">
         {/* Logo & About */}
         <div className="footer-section">
@@ -93,7 +92,7 @@ const Footer = () => {
                 <AiFillInstagram />
               </div>
             </a>
-             <a
+            <a
               href="https://www.tiktok.com/@plutosec.cyber.sec"
               target="_blank"
               rel="noopener noreferrer"
@@ -102,13 +101,13 @@ const Footer = () => {
                 <RiTiktokFill />
               </div>
             </a>
-             <a
+            <a
               href="https://x.com/Pluto_Sec"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="icon">
-                <RiTwitterXFill  />
+                <RiTwitterXFill />
               </div>
             </a>
           </div>
@@ -142,18 +141,18 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Join a Newsletter</h4>
           <p>Your Email</p>
-              {error && <p className="error-message">{error}</p>}
+          {error && <p className="error-message">{error}</p>}
           <input
             type="email"
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          
+
           <button onClick={handleSubscribe}>
             {loading ? "Subscribing..." : "Subscribe"}
           </button>
-      
+
           <div className="contact-info">
             <p>
               <CiMail />{" "}
@@ -164,13 +163,13 @@ const Footer = () => {
             </p>
             <p>
               <IoLocationOutline />{" "}
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=335+Yonge+St,+Toronto,+ON+M5B+2L3"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                335 Yonge St, Toronto, ON M5B 2L3
-              </a>
+               <a
+    href="https://www.google.com/maps/search/?api=1&query=201A-23+Westmore+Dr,+Etobicoke,+ON+M9V+3Y7"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+     201A-23 Westmore Dr. Etobicoke ON M9V 3Y7
+  </a>
             </p>
           </div>
         </div>

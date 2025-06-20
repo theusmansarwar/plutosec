@@ -16,6 +16,7 @@ const BlogCard = () => {
   const router = useRouter();
   const [blogs, setBlogs] = useState([]);
  const [loading, setLoading] = useState(true);
+  const [navigating, setNavigating] = useState(false);
   const [error, setError] = useState(null);
    const [page, setPage] = useState(1);
 
@@ -54,6 +55,12 @@ const BlogCard = () => {
       </>
     );
   };
+  const handleClick = (slug) => {
+    setNavigating(true);
+    router.push(`/blogs/${slug}`);
+     setNavigating(false);
+  };
+
 
   return (
     <>
@@ -62,13 +69,17 @@ const BlogCard = () => {
         <BCard />
       ) : error ? (
         <p className="error">{error}</p>
+      )
+      
+      : navigating ? (
+           <div className="spinner" />
       ) : (
       
        blogs?.map((post) => (
           <div
             key={post._id}
             className="blog-post-card"
-            onClick={() => router.push(`/blogs/${post.slug}`)}
+            onClick={() => handleClick(post.slug)}
           >
             <div
               className="post-image"

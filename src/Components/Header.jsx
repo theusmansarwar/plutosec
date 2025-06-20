@@ -75,176 +75,176 @@ const Header = () => {
           title: "Breach and Attack Simulation Services",
           slug: "breach-attack-simulation",
         },
-        {
-          title: "Security Architecture Review Services by plutosec",
-          slug: "architecture-review-services",
-        },
-        { title: "Purple Team Testing", slug: "purple-teaming" },
-        {
-          title: "Privileged Access Management (PAM)",
-          slug: "privileged-access-management",
-        },
-        { title: "Blockchain Security", slug: "blockchain-security" },
-        { title: "Mobile Threat Defense (MTD)", slug: "mobile-threat-defence" },
-        {
-          title: "Cybersecurity Incident Response Retainer Services",
-          slug: "incident-response-retainer",
-        },
-        {
-          title: "Simulating DDoS Attacks for Robust Cyber Defense",
-          slug: "ddos-attack-sim",
-        },
-        { title: "Asset attack surface management", slug: "caasm" },
-        {
-          title: "Cloud Penetration Testing Services",
-          slug: "cloud-pentesting-solutions",
-        },
+        // {
+        //   title: "Security Architecture Review Services by plutosec",
+        //   slug: "architecture-review-services",
+        // },
+        // { title: "Purple Team Testing", slug: "purple-teaming" },
+        // {
+        //   title: "Privileged Access Management (PAM)",
+        //   slug: "privileged-access-management",
+        // },
+        // { title: "Blockchain Security", slug: "blockchain-security" },
+        // { title: "Mobile Threat Defense (MTD)", slug: "mobile-threat-defence" },
+        // {
+        //   title: "Cybersecurity Incident Response Retainer Services",
+        //   slug: "incident-response-retainer",
+        // },
+        // {
+        //   title: "Simulating DDoS Attacks for Robust Cyber Defense",
+        //   slug: "ddos-attack-sim",
+        // },
+        // { title: "Asset attack surface management", slug: "caasm" },
+        // {
+        //   title: "Cloud Penetration Testing Services",
+        //   slug: "cloud-pentesting-solutions",
+        // },
       ],
     },
-    {
-      heading: "Management Security Services",
-      icon: "/2logo.png",
-      data: [
-        {
-          title: "SOC as a Service (Security Operations Centre as a Service)",
-          slug: "soc-service",
-        },
-        {
-          title: "MSSP: Managed Security Service Provider That You Can Rely On",
-          slug: "managed-security-providers",
-        },
-        {
-          title:
-            "EDR: Fortify Your Defences with MCS Managed Endpoint Detection and Response",
-          slug: "endpoint-detect-response",
-        },
-        {
-          title: "NDR: Managed Network Detection and Response",
-          slug: "network-detection-response",
-        },
-        { title: "Managed SIEM and SOAR", slug: "managed-siem-soar" },
-        {
-          title: "Threat Intelligence and Hunting Services",
-          slug: "threat-intelligence-hunting",
-        },
-        { title: "MITRE ATTaCK Framework", slug: "mitre-attack-framework" },
-        {
-          title: "Custom Reports for Compliance",
-          slug: "custom-reporting-compliance",
-        },
-        {
-          title:
-            "Digital Forensic DFIR: Digital Forensics and Incident Response",
-          slug: "digital-forensics-incident-response",
-        },
-        {
-          title: "Insider threat and behavioral monitoring services",
-          slug: "insider-threat-monitoring",
-        },
-        {
-          title: "File Integrity Monitoring and Malware Analysis Services",
-          slug: "fimm-analysis",
-        },
-        {
-          title: "Account Takeover protection",
-          slug: "account-takeover-protection",
-        },
-      ],
-    },
-    {
-      heading: "Cyber Technology Solutions",
-      icon: "/3logo.png",
-      data: [
-        {
-          title: "Deception Tech (phishing attack)",
-          slug: "deception-technology",
-        },
-        {
-          title: "Identity Threat Detection and Response (Separate)",
-          slug: "identity-threat-detection-response",
-        },
-        {
-          title: "Unified Cyber Security asset management",
-          slug: "unified-asset-management",
-        },
-        {
-          title: "Cyber risk Quantification",
-          slug: "cyber-risk-quantification",
-        },
-        {
-          title: "Identity and Access Management Services",
-          slug: "identity-access-management",
-        },
-        { title: "Data security Solutions", slug: "data-security-solutions" },
-        {
-          title: "Threat intelligence Solutions",
-          slug: "threat-intelligence-solutions",
-        },
-        {
-          title: "Email security solution IMP",
-          slug: "emai-lsecurity-solutions",
-        },
-        {
-          title: "Zero Trust Network Access",
-          slug: "zero-trust-network-access",
-        },
-        { title: "Web Application Firewall Services", slug: "waf-services" },
-        { title: "Web security solution", slug: "web-security-solutions" },
-        { title: "Network security solution", slug: "network-security" },
-        {
-          title: "Secure access services edge Solutions",
-          slug: "sase-solutions",
-        },
-        {
-          title: "Backup and Disaster Recovery Services",
-          slug: "backup-disaster-recovery",
-        },
-        { title: "Iaas security solution", slug: "iaas" },
-        { title: "Micro-segmentation Security", slug: "micro-segmentation" },
-        {
-          title: "Secure Software Development Life Cycle (SSDLC)",
-          slug: "ssd-lifecycle",
-        },
-      ],
-    },
-    {
-      heading: "Compliance & Consulting",
-      icon: "/4logo.png",
-      data: [
-        { title: "CIOS as a services", slug: "ciso" },
-        {
-          title: "Security Maturity assessment",
-          slug: "security-maturity-assessment",
-        },
-        {
-          title: "Process & Policy Audits and Reviews",
-          slug: "process-policy-audits-reviews",
-        },
-        {
-          title: "Governance, Risk, and Compliance (GRC) Services",
-          slug: "governance-risk-compliance",
-        },
-        {
-          title: "Senior management assurance",
-          slug: "senior-management-assurance",
-        },
-        {
-          title: "Cyber Security Strategy and Roadmap",
-          slug: "cs-strategy-roadmap",
-        },
-        {
-          title:
-            "ISO 27001, PCI DSS & GDPR IMP (Cybersecurity Compliance Services)",
-          slug: "compliance-services",
-        },
-        {
-          title: "SOC2 Type II Assessment Services (specify category)",
-          slug: "soc2",
-        },
-        { title: "Hipaa compliance", slug: "hipaa-compliance" },
-        { title: "NIST compliance", slug: "nist-compliance" },
-      ],
-    },
+    // {
+    //   heading: "Management Security Services",
+    //   icon: "/2logo.png",
+    //   data: [
+    //     {
+    //       title: "SOC as a Service (Security Operations Centre as a Service)",
+    //       slug: "soc-service",
+    //     },
+    //     {
+    //       title: "MSSP: Managed Security Service Provider That You Can Rely On",
+    //       slug: "managed-security-providers",
+    //     },
+    //     {
+    //       title:
+    //         "EDR: Fortify Your Defences with MCS Managed Endpoint Detection and Response",
+    //       slug: "endpoint-detect-response",
+    //     },
+    //     {
+    //       title: "NDR: Managed Network Detection and Response",
+    //       slug: "network-detection-response",
+    //     },
+    //     { title: "Managed SIEM and SOAR", slug: "managed-siem-soar" },
+    //     {
+    //       title: "Threat Intelligence and Hunting Services",
+    //       slug: "threat-intelligence-hunting",
+    //     },
+    //     { title: "MITRE ATTaCK Framework", slug: "mitre-attack-framework" },
+    //     {
+    //       title: "Custom Reports for Compliance",
+    //       slug: "custom-reporting-compliance",
+    //     },
+    //     {
+    //       title:
+    //         "Digital Forensic DFIR: Digital Forensics and Incident Response",
+    //       slug: "digital-forensics-incident-response",
+    //     },
+    //     {
+    //       title: "Insider threat and behavioral monitoring services",
+    //       slug: "insider-threat-monitoring",
+    //     },
+    //     {
+    //       title: "File Integrity Monitoring and Malware Analysis Services",
+    //       slug: "fimm-analysis",
+    //     },
+    //     {
+    //       title: "Account Takeover protection",
+    //       slug: "account-takeover-protection",
+    //     },
+    //   ],
+    // },
+    // {
+    //   heading: "Cyber Technology Solutions",
+    //   icon: "/3logo.png",
+    //   data: [
+    //     {
+    //       title: "Deception Tech (phishing attack)",
+    //       slug: "deception-technology",
+    //     },
+    //     {
+    //       title: "Identity Threat Detection and Response (Separate)",
+    //       slug: "identity-threat-detection-response",
+    //     },
+    //     {
+    //       title: "Unified Cyber Security asset management",
+    //       slug: "unified-asset-management",
+    //     },
+    //     {
+    //       title: "Cyber risk Quantification",
+    //       slug: "cyber-risk-quantification",
+    //     },
+    //     {
+    //       title: "Identity and Access Management Services",
+    //       slug: "identity-access-management",
+    //     },
+    //     { title: "Data security Solutions", slug: "data-security-solutions" },
+    //     {
+    //       title: "Threat intelligence Solutions",
+    //       slug: "threat-intelligence-solutions",
+    //     },
+    //     {
+    //       title: "Email security solution IMP",
+    //       slug: "emai-lsecurity-solutions",
+    //     },
+    //     {
+    //       title: "Zero Trust Network Access",
+    //       slug: "zero-trust-network-access",
+    //     },
+    //     { title: "Web Application Firewall Services", slug: "waf-services" },
+    //     { title: "Web security solution", slug: "web-security-solutions" },
+    //     { title: "Network security solution", slug: "network-security" },
+    //     {
+    //       title: "Secure access services edge Solutions",
+    //       slug: "sase-solutions",
+    //     },
+    //     {
+    //       title: "Backup and Disaster Recovery Services",
+    //       slug: "backup-disaster-recovery",
+    //     },
+    //     { title: "Iaas security solution", slug: "iaas" },
+    //     { title: "Micro-segmentation Security", slug: "micro-segmentation" },
+    //     {
+    //       title: "Secure Software Development Life Cycle (SSDLC)",
+    //       slug: "ssd-lifecycle",
+    //     },
+    //   ],
+    // },
+    // {
+    //   heading: "Compliance & Consulting",
+    //   icon: "/4logo.png",
+    //   data: [
+    //     { title: "CIOS as a services", slug: "ciso" },
+    //     {
+    //       title: "Security Maturity assessment",
+    //       slug: "security-maturity-assessment",
+    //     },
+    //     {
+    //       title: "Process & Policy Audits and Reviews",
+    //       slug: "process-policy-audits-reviews",
+    //     },
+    //     {
+    //       title: "Governance, Risk, and Compliance (GRC) Services",
+    //       slug: "governance-risk-compliance",
+    //     },
+    //     {
+    //       title: "Senior management assurance",
+    //       slug: "senior-management-assurance",
+    //     },
+    //     {
+    //       title: "Cyber Security Strategy and Roadmap",
+    //       slug: "cs-strategy-roadmap",
+    //     },
+    //     {
+    //       title:
+    //         "ISO 27001, PCI DSS & GDPR IMP (Cybersecurity Compliance Services)",
+    //       slug: "compliance-services",
+    //     },
+    //     {
+    //       title: "SOC2 Type II Assessment Services (specify category)",
+    //       slug: "soc2",
+    //     },
+    //     { title: "Hipaa compliance", slug: "hipaa-compliance" },
+    //     { title: "NIST compliance", slug: "nist-compliance" },
+    //   ],
+    // },
   ];
 
   // Generate sidebar links from story titles
@@ -344,7 +344,7 @@ const Header = () => {
             <div className="sidebar">
               {sideLinks.map((link, index) => (
                 <div
-                  className={`sidebar-item ${
+                  className={`sidebar-items ${
                     index === activeStoryIndex ? "active" : ""
                   }`}
                   key={index}

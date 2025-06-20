@@ -43,6 +43,12 @@ const Blogs = () => {
     );
   };
 
+    const handleClick = (slug) => {
+    setNavigating(true);
+    router.push(`/blogs/${slug}`);
+     setNavigating(false);
+  };
+
   return (
     <div className="Blogs">
       <div className="Head-area">
@@ -50,7 +56,7 @@ const Blogs = () => {
           <h1>Latest Blogs</h1>
           <img src="/headingimg.svg" alt="Heading" />
         </div>
-        <p className="viewall-text" onClick={() => router.push("/blogs")}>
+        <p className="viewall-text"  onClick={() => handleClick(post.slug)}>
           View All <FaArrowRightLong />
         </p>
       </div>

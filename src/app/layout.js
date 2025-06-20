@@ -11,6 +11,7 @@ import { IoCallOutline } from "react-icons/io5";
 import Link from "next/link";
 import ViewCounter from "@/Components/ViewCounter";
 import { ToastContainer } from "react-toastify";
+import ClientLayout from "./ClientLayout";
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -56,7 +57,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={montserrat.variable}>
       <head>
-         <meta
+        <meta
           name="google-site-verification"
           content="6lxBCbEUwWnkkyGfpvEJvaP_LBDcQ8IOtyc2LEqDeKM"
         />
@@ -92,10 +93,13 @@ export default function RootLayout({ children }) {
                   pauseOnHover={false}
                   newestOnTop
                 />
-                <ViewCounter />
-                <Header />
-                {children}
-                <Footer />
+
+                <ClientLayout>
+                  <ViewCounter />
+                  <Header />
+                  {children}
+                  <Footer />
+                </ClientLayout>
               </div>
             </div>
           </HtmlWrapper>

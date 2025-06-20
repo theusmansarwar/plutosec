@@ -16,11 +16,12 @@
 .Servicearea .ptext{
 text-align: center;
 color: var(--text-color);
-
-margin-bottom: 20px;
 font-size: var(--default-p-size)
 
 
+}
+.Servicearea .ptext a{
+  color: var(--background-color);
 }
 .bgSection {
   border-radius: var(--default-border-radius);

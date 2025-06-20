@@ -117,7 +117,7 @@ const Contact2 = () => {
             height: "100%",
             border: "0",
           }}
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.557138160897!2d-79.3807846!3d43.6573815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cab63b4553%3A0x55da329c904d70c!2s335%20Yonge%20St%2C%20Toronto%2C%20ON%20M5B%202L3%2C%20Canada!5e0!3m2!1sen!2s!4v1747299654493!5m2!1sen!2s"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.470967552435!2d-79.60309389999999!3d43.7423158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3afdb0955555%3A0x4020cb1e9a111b90!2s23%20Westmore%20Dr%20Unit%20201-A%2C%20Etobicoke%2C%20ON%20M9V%203Y7%2C%20Canada!5e0!3m2!1sen!2s!4v1750424039904!5m2!1sen!2s"
           frameBorder="0"
           allowFullScreen
         ></iframe>
